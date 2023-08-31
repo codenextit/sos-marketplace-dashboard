@@ -9,3 +9,67 @@
   --black: #000;
   --primary-font: "Poppins";
 }
+
+/* suppliers table start */
+
+#suppliers_table {
+  padding: 0px 30px 0px 40px;
+}
+
+.table_options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table_options .search_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.table_options .search_box span i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  color: #606060;
+  font-size: 1.2em;
+}
+
+.table_options .search_box input {
+  border: none;
+  outline: none;
+}
+
+.table_options .table_short {
+  display: flex;
+  align-items: center;
+}
+
+.table_short .shorting_select {
+  display: flex;
+  align-items: center;
+}
+
+.table_short .shorting_select .select_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.shorting_select .select_box select {
+  border: none;
+  outline: none;
+}
+
+/* suppliers table end */
