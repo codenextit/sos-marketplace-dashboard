@@ -13,7 +13,7 @@
 /* suppliers table start */
 
 #suppliers_table {
-  padding: 0px 30px 0px 40px;
+  padding: 0px 30px 30px 40px;
 }
 
 .table_options {
@@ -33,6 +33,10 @@
   border-radius: 5px;
 }
 
+.search_box input::placeholder {
+  font-size: 0.9em;
+}
+
 .table_options .search_box span i {
   width: 40px;
   height: 40px;
@@ -40,7 +44,7 @@
   display: inline-block;
   text-align: center;
   color: #606060;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .table_options .search_box input {
@@ -58,6 +62,11 @@
   align-items: center;
 }
 
+.table_short .shorting_select span {
+  font-size: 0.9em;
+  color: #606060;
+}
+
 .table_short .shorting_select .select_box {
   display: flex;
   align-items: center;
@@ -73,10 +82,12 @@
   border: none;
   outline: none;
   padding-right: 10px;
+  font-size: 0.9em;
+  color: #b1b1b1;
 }
 
 .table_short .add_user_btn {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .table_short .add_user_btn a {
@@ -86,7 +97,7 @@
   height: 45px;
   line-height: 45px;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 25px;
   display: inline-block;
   border-radius: 6px;
 }
@@ -99,7 +110,7 @@
 
 .table td {
   vertical-align: middle;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .table_user {

@@ -115,8 +115,8 @@
   min-width: 78px;
   text-align: center;
   line-height: 50px;
-  color: #000;
-  font-size: 20px;
+  color: #848ea2;
+  font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -133,9 +133,9 @@
   text-decoration: none;
 }
 .sidebar .nav-links li a .link_name {
-  font-size: 18px;
-  font-weight: 400;
-  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  color: #686868;
   transition: all 0.4s ease;
 }
 .sidebar.close .nav-links li a .link_name {
