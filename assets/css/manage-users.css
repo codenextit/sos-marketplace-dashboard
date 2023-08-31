@@ -5,6 +5,7 @@
   --primary-color: #00bc8b;
   --secondary-color: #f3be00;
   --accent-color: #ff5252;
+  --blue: #037bff;
   --white: #fff;
   --black: #000;
   --primary-font: "Poppins";
@@ -15,7 +16,7 @@
 }
 
 .nav-tabs .nav-link.active {
-  border-bottom: 2px solid #037bff !important;
+  border-bottom: 2px solid var(--blue) !important;
   color: #037bff !important;
   font-weight: 600;
 }
@@ -35,5 +36,46 @@
 .breadcrumb {
   font-size: 0.9rem !important;
   padding-left: 0 !important;
+}
+
+.manage-btn {
+  display: flex !important;
+  justify-content: end !important;
+  text-align: right !important;
+}
+
+.manage-btn button {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.learners-card {
+  border: 1px solid #d9d9d9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.learners-card h6 {
+  color: #696969;
+  font-weight: 600;
+}
+
+.invite-btn {
+  display: flex !important;
+  justify-content: end !important;
+  text-align: right !important;
+}
+
+.invite-button {
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  padding: 6px 15px;
+  background-color: #fff;
+  font-size: 14px;
+  color: var(--blue);
 }
 /* Tab Content Area */
