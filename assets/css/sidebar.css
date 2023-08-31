@@ -1,20 +1,23 @@
 /* Google Fonts Import Link */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   overflow: hidden;
 }
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: 260px;
+  width: 280px;
   background: #edf3fd;
   z-index: 100;
   transition: all 0.5s ease;
@@ -22,8 +25,18 @@ body {
 
 .sidebar_open_btn {
   position: absolute;
-  right: 10px;
+  right: -15px;
   top: 10px;
+}
+
+.sidebar_open_btn .open_btn {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #edf3fd;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .sidebar_open_btn i {
@@ -34,26 +47,35 @@ body {
   width: 78px;
 }
 .sidebar .logo-details {
-  height: 60px;
+  height: 90px;
+  padding: 0px 25px 0px 10px;
   width: 100%;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .sidebar .logo-details i {
-  font-size: 30px;
-  color: #000;
-  height: 50px;
-  min-width: 78px;
+  height: 40px;
+  min-width: 50px;
   text-align: center;
-  line-height: 50px;
 }
+
+.sidebar .logo-details i img {
+  width: 100%;
+  height: 100%;
+}
+
 .sidebar .logo-details .logo_name {
-  font-size: 22px;
-  color: #000;
-  font-weight: 600;
+  width: 180px;
+  height: 50px;
   transition: 0.3s ease;
   transition-delay: 0.1s;
 }
+
+.sidebar .logo-details .logo_name img {
+  width: 100%;
+}
+
 .sidebar.close .logo-details .logo_name {
   transition-delay: 0s;
   opacity: 0;
@@ -84,6 +106,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .sidebar.close .nav-links li .iocn-link {
   display: block;
 }
@@ -97,6 +120,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .sidebar .nav-links li.showMenu i.arrow {
   transform: rotate(-180deg);
 }
@@ -223,14 +247,15 @@ body {
 .sidebar .profile-details .job {
   font-size: 12px;
 }
+
+/* home section */
+
 .home-section {
   position: relative;
-  background: #e4e9f7;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
-  padding: 12px;
 }
 .sidebar.close ~ .home-section {
   left: 78px;
@@ -280,3 +305,98 @@ body {
     width: calc(100% - 78px);
   }
 }
+
+/* navbar start */
+
+.navbars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px 25px 40px;
+}
+
+.nav_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_items .search_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.nav_items .search_box span i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  color: #606060;
+  font-size: 1.2em;
+}
+
+.nav_items .search_box input {
+  border: none;
+  outline: none;
+}
+
+.nav_items .chat_btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.nav_items .chat_btn span {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: #ff5252;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.nav_items .chat_btn img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  margin: auto;
+}
+
+.nav_items .select_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.nav_items .select_box img {
+  width: 35px;
+  height: 35px;
+}
+
+.nav_items .select_box select {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+}
+
+/* navbar end */

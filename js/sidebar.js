@@ -7,7 +7,7 @@ for (var i = 0; i < arrow.length; i++) {
 }
 
 let sidebar = document.querySelector(".sidebar");
-let sidebarBtn = document.querySelector(".bx-menu");
+let sidebarBtn = document.querySelector(".open_btn");
 console.log(sidebarBtn);
 sidebarBtn.addEventListener("click", () => {
   sidebar.classList.toggle("close");
