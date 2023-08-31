@@ -18,10 +18,6 @@
   padding: 0px 20px 0px 30px;
 }
 
-.nav-tabs {
-  justify-content: space-between !important;
-}
-
 .nav-tabs .nav-link.active {
   border-bottom: 2px solid var(--blue) !important;
   color: #037bff !important;
@@ -56,8 +52,18 @@
   color: var(--white);
 }
 
-.all_tabs_content {
-  margin-top: 30px;
+.manage-btn {
+  justify-content: end !important;
+  text-align: right !important;
+}
+
+.manage-btn button {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 18px;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 5px;
 }
 
 /* prgress table */
