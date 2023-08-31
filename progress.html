@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOS Marketplace - Manage Users</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/progress.css" />
+
+    <!-- Boxicon CDN -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- font awosome CDN -->
+    <script
+      src="https://kit.fontawesome.com/44f1800e1f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <span class="sidebar_open_btn">
+        <box-icon class="open_btn" name="chevrons-left"></box-icon>
+      </span>
+
+      <div class="logo-details">
+        <i><img src="./assets/image/logo_icon.png" alt="" /></i>
+        <span class="logo_name">
+          <img src="./assets/image/logo_text.png" alt="" />
+        </span>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <div class="iocn-link">
+            <a href="./index.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="link_name">Home</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./index.html">Home</a></li>
+            <li><a href="#">HTML & CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP & MySQL</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-briefcase"></i>
+              <span class="link_name">Projects</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Projects</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Login Form</a></li>
+            <li><a href="#">Card Design</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-gear"></i>
+            <span class="link_name">Manage Users</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Manage Users</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-address-card"></i>
+            <span class="link_name">Staff</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-line-chart"></i>
+            <span class="link_name">To Do</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">To Do</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-line-chart"></i>
+            <span class="link_name">Chat</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Chat</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-line-chart"></i>
+            <span class="link_name">Finance</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Finance</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-line-chart"></i>
+            <span class="link_name">Buyer</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Buyer</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./suppliers.html">
+              <i class="bx bx-plug"></i>
+              <span class="link_name">Suppliers</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./suppliers.html">Suppliers</a></li>
+            <li><a href="#">UI Face</a></li>
+            <li><a href="#">Pigments</a></li>
+            <li><a href="#">Box Icons</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-plug"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Settings</a></li>
+            <li><a href="#">UI Face</a></li>
+            <li><a href="#">Pigments</a></li>
+            <li><a href="#">Box Icons</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Manage Users Page -->
+    <section class="home-section">
+      <!-- navbar start -->
+      <nav class="navbars">
+        <div class="nav_logo">
+          <h3>Manage users</h3>
+        </div>
+
+        <div class="nav_items">
+          <div class="search_box">
+            <span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="Search anything here" />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/chat_icon.svg" alt="" />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/bell_icon.svg" alt="" />
+          </div>
+
+          <div class="select_box">
+            <img src="./assets/icons/user_icon.png" alt="" />
+            <select name="" id="">
+              <option value="buyer">Buyer</option>
+              <option value="profile">Profile</option>
+              <option value="logout">Logout</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- Progress tabs -->
+      <div class="progress-user-tabs">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="progress_tab">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#home"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#discussion"
+                      >Discussion</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#modules"
+                      >Modules</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#projects"
+                      >Projects</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tasks"
+                      >Tasks</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#progress"
+                      >Progress</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="progress_member_btn">
+                <a href="#">
+                  <i class="fa-solid fa-user-plus"></i>
+                  Members
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <section class="all_tabs_content">
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <!-- home -->
+              <div id="home" class="container tab-pane fade">
+                <h3>Home</h3>
+              </div>
+
+              <!-- discussion -->
+              <div id="discussion" class="container tab-pane fade">
+                <h3>Discussion</h3>
+              </div>
+
+              <!-- modules -->
+              <div id="modules" class="container tab-pane fade">
+                <h3>Modules</h3>
+              </div>
+
+              <!-- projects -->
+              <div id="projects" class="container tab-pane fade">
+                <h3>Projects</h3>
+              </div>
+
+              <!-- tasks -->
+              <div id="tasks" class="container tab-pane fade">
+                <h3>Tasks</h3>
+              </div>
+
+              <!-- progress -->
+              <div id="progress" class="container tab-pane fade">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <td>Name</td>
+                      <td>Company Name</td>
+                      <td>Modules 100% complete</td>
+                      <td>Cultural Awareness</td>
+                      <td>Gender & Diversity</td>
+                      <td>Inclusive Communication</td>
+                      <td>Unconscious Bias</td>
+                      <td>Social Procurement 101</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="progress_table_user">
+                        <div>
+                          <img
+                            src="./assets/image/progress_table_avatar_1.png"
+                            alt=""
+                          />
+                        </div>
+                        Darlene Rober
+                      </td>
+                      <td>SOS</td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="progress_table_user">
+                        <div>
+                          <img
+                            src="./assets/image/progress_table_avatar_1.png"
+                            alt=""
+                          />
+                        </div>
+                        Darlene Rober
+                      </td>
+                      <td>SOS</td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="progress_table_user">
+                        <div>
+                          <img
+                            src="./assets/image/progress_table_avatar_1.png"
+                            alt=""
+                          />
+                        </div>
+                        Darlene Rober
+                      </td>
+                      <td>SOS</td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="progress_table_user">
+                        <div>
+                          <img
+                            src="./assets/image/progress_table_avatar_1.png"
+                            alt=""
+                          />
+                        </div>
+                        Darlene Rober
+                      </td>
+                      <td>SOS</td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="progress_table_user">
+                        <div>
+                          <img
+                            src="./assets/image/progress_table_avatar_1.png"
+                            alt=""
+                          />
+                        </div>
+                        Darlene Rober
+                      </td>
+                      <td>SOS</td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="progress_table_user">
+                        <div>
+                          <img
+                            src="./assets/image/progress_table_avatar_1.png"
+                            alt=""
+                          />
+                        </div>
+                        Darlene Rober
+                      </td>
+                      <td>SOS</td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="progress_table_user">
+                        <div>
+                          <img
+                            src="./assets/image/progress_table_avatar_1.png"
+                            alt=""
+                          />
+                        </div>
+                        Darlene Rober
+                      </td>
+                      <td>SOS</td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="progress_table_user">
+                        <div>
+                          <img
+                            src="./assets/image/progress_table_avatar_1.png"
+                            alt=""
+                          />
+                        </div>
+                        Darlene Rober
+                      </td>
+                      <td>SOS</td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="progress_table_user">
+                        <div>
+                          <img
+                            src="./assets/image/progress_table_avatar_1.png"
+                            alt=""
+                          />
+                        </div>
+                        Darlene Rober
+                      </td>
+                      <td>SOS</td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="progress_table_bar">
+                          <div class="active"></div>
+                          <span> 0/5</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- Tab panes -->
+        </div>
+      </div>
+      <!-- Progress tabs -->
+    </section>
+
+    <!-- Progress Page -->
+
+    <!-- script -->
+    <script src="./js/sidebar.js"></script>
+  </body>
+</html>

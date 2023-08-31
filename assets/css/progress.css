@@ -5,9 +5,118 @@
   --primary-color: #00bc8b;
   --secondary-color: #f3be00;
   --accent-color: #ff5252;
+  --blue: #037bff;
   --white: #fff;
   --black: #000;
   --primary-font: "Poppins";
 }
 
 /* suppliers table start */
+
+/* progress tab start */
+
+.progress-user-tabs {
+  margin-top: 100px;
+  padding: 0px 20px 0px 30px;
+}
+
+.nav-tabs {
+  justify-content: space-between !important;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 2px solid var(--blue) !important;
+  color: #037bff !important;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: #696969 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-right: 30px !important;
+  font-size: 1.1em !important;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+}
+
+.progress_member_btn {
+  text-align: end;
+}
+
+.progress_member_btn a {
+  text-decoration: none;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  padding: 0 20px;
+  display: inline-block;
+  background-color: var(--blue);
+  border-radius: 5px;
+  color: var(--white);
+}
+
+.all_tabs_content {
+  margin-top: 30px;
+}
+
+/* prgress table */
+
+.progress_table_user {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.progress_table_user div {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.progress_table_user div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.progress_table_bar {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9em;
+  color: #696969;
+  border-radius: 30px;
+  background-color: #edf3fd;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.progress_table_bar div.active {
+  width: 80%;
+  color: var(--white);
+  height: 100%;
+  background: var(--primary-color);
+  z-index: 111;
+  position: relative;
+}
+
+.progress_table_bar span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999 !important;
+}
+
+/* progress tab start */
