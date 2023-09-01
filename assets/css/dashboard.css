@@ -31,6 +31,7 @@
   border-radius: 0 !important;
   border: none !important;
   clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+  z-index: 0;
 }
 
 .border {
@@ -40,6 +41,7 @@
   right: 0px;
   bottom: 1px;
   clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+  z-index: 1;
 }
 
 .nav-item .nav-link.active {
@@ -51,41 +53,54 @@
 .dashboard_card {
   width: 100%;
   height: 150px;
-  padding: 20px 10px 10px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 20px 10px 0;
   border-radius: 8px;
   display: grid;
   margin-top: 40px;
 }
 
+.dashboard_card.green {
+  background-color: var(--primary-color);
+}
+.dashboard_card.yellow {
+  background-color: var(--secondary-color);
+}
+.dashboard_card.red {
+  background-color: var(--accent-color);
+}
+.dashboard_card.black {
+  background-color: var(--black);
+}
+
 .dashboard_card h4 {
   font-size: 0.9em;
   font-family: var(--primary-font);
-  color: var(--black);
+  color: var(--white);
   font-weight: 600;
 }
 
 .dashboard_card p {
   font-size: 0.9em;
   font-family: var(--primary-font);
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 0;
 }
 
 .dashboard_card p i {
-  color: #848ea2;
+  color: var(--white);
   margin-right: 10px;
 }
 
 .dashboard_card div {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family: var(--primary-font);
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .dashboard_card div span {
-  font-size: 1.8em;
+  font-size: 1.7em;
   font-weight: 700;
+  color: var(--white);
 }
 
 .dashboard_card div span.green {
@@ -140,17 +155,12 @@
   border-radius: 10px;
 }
 
-.chart_box #chartThreeBar {
-  width: 100%;
-  height: 100%; /* Add this line */
-}
-
 .chart_two {
   position: relative;
   width: 100%;
   padding-top: 30px;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 30px;
 }
 
@@ -162,4 +172,28 @@
   border-radius: 10px;
 }
 
+.chart_box div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chart_box p {
+  margin-bottom: 0;
+  font-family: var(--primary-font);
+}
+
+.chart_box div p {
+  margin-bottom: 0;
+  font-family: var(--primary-font);
+}
+
+.chart_box div p:first-child {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.chart_box div p:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}
 /* dashboard end */

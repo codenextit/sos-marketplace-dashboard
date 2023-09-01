@@ -209,8 +209,8 @@
             <li class="nav-item">
               <a class="nav-link active" data-bs-toggle="pill" href="#social">
                 <span class="border"></span>
-                Social Procurement</a
-              >
+                Social Procurement
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="pill" href="#inclusion">
@@ -251,41 +251,41 @@
               <!-- <div class="container p-0"> -->
               <div class="row p-0">
                 <div class="col-lg-3">
-                  <div class="dashboard_card">
+                  <div class="dashboard_card green">
                     <h4>Total Project Spend</h4>
                     <p><i class="fa-solid fa-filter"></i>1 Filter</p>
                     <div>
-                      <span class="green">100</span>
+                      <span>$150,000</span>
                       Total
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3">
-                  <div class="dashboard_card">
+                  <div class="dashboard_card yellow">
                     <h4>Package Compliance Progress</h4>
                     <p><i class="fa-solid fa-filter"></i>1 Filter</p>
                     <div>
-                      <span class="yellow">100</span>
+                      <span>18%</span>
                       Total
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3">
-                  <div class="dashboard_card">
+                  <div class="dashboard_card red">
                     <h4>Overdue Compliance</h4>
                     <p><i class="fa-solid fa-filter"></i>1 Filter</p>
                     <div>
-                      <span class="red">100</span>
+                      <span>04</span>
                       Total
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3">
-                  <div class="dashboard_card">
+                  <div class="dashboard_card black">
                     <h4>Total Project Compliance Progress</h4>
                     <p><i class="fa-solid fa-filter"></i>1 Filter</p>
                     <div>
-                      <span class="black">100</span>
+                      <span>15%</span>
                       Total
                     </div>
                   </div>
@@ -295,43 +295,54 @@
               <!-- chart start -->
               <div class="chart_one">
                 <div class="chart_box">
-                  <div id="chartBar" class="chart"></div>
+                  <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                    Project Compliance status
+                  </p>
+                  <div id="chartRadial" class="chart"></div>
                 </div>
                 <div class="chart_box">
-                  <div id="chartDonut" class="chart"></div>
-                </div>
-              </div>
-
-              <div class="chart_two">
-                <div class="chart_box">
-                  <div id="chartThreeBar" class="chart"></div>
-                </div>
-                <div class="chart_box">
-                  <div id="chartStacked" class="chart"></div>
-                </div>
-                <div class="chart_box">
-                  <div id="chartArea" class="chart"></div>
+                  <div>
+                    <p>Total Project Social Suppliers</p>
+                    <p>By Month</p>
+                  </div>
+                  <div id="chartThreeColumn" class="chart"></div>
                 </div>
               </div>
 
               <div class="chart_two">
                 <div class="chart_box">
-                  <div id="chartStackedTwo" class="chart"></div>
-                </div>
-                <div class="chart_box">
-                  <div id="chartBarThree" class="chart"></div>
-                </div>
-                <div class="chart_box">
-                  <div id="chartBarX" class="chart"></div>
+                  <div>
+                    <p>Contractor Spend Status</p>
+                    <p>By Month</p>
+                  </div>
+                  <div id="chartBarOne" class="chart"></div>
                 </div>
               </div>
 
-              <div class="chart_one">
+              <div class="chart_two">
                 <div class="chart_box">
-                  <div id="chartPieOne" class="chart"></div>
+                  <p
+                    style="
+                      text-align: center;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                    "
+                  >
+                    Total Priority Group (FTE) Contribution Status from Social
+                    Benefit Suppliers
+                  </p>
+
+                  <div id="chartPie" class="chart"></div>
                 </div>
+              </div>
+
+              <div class="chart_two">
                 <div class="chart_box">
-                  <div id="chartPieTwo" class="chart"></div>
+                  <div>
+                    <p>Risk and target status</p>
+                    <p>By Month</p>
+                  </div>
+                  <div id="chartBarTwo" class="chart"></div>
                 </div>
               </div>
             </div>
@@ -358,12 +369,11 @@
 
     <!-- script -->
     <script src="./js/sidebar.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.js"
-      integrity="sha512-HctQcT5hnI/elQck4950pvd50RuDnjCSGSoHI8CNyQIYVxsUoyJ+gSQIOrll4oM/Z7Kfi7WCLMIbJbiwYHFCpA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.26.3/apexcharts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/chart.js"></script>
+    <script src="./js/pieChart.js"></script>
+    <script src="./js/barChart.js"></script>
   </body>
 </html>
