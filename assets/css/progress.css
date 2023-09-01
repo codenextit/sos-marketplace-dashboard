@@ -75,6 +75,7 @@
 
 .table td {
   vertical-align: middle;
+  padding: 15px 0px !important;
 }
 
 .progress_table_user div {
@@ -92,7 +93,7 @@
 
 .progress_table_bar {
   width: 70px;
-  height: 30px;
+  height: 42px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -103,10 +104,43 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
+  margin-bottom: -5px;
 }
 
-.progress_table_bar div.active {
+.progress_table_bar div.one {
+  width: 20%;
+  color: var(--white);
+  height: 100%;
+  background: var(--primary-color);
+  z-index: 111;
+  position: relative;
+}
+.progress_table_bar div.two {
+  width: 40%;
+  color: var(--white);
+  height: 100%;
+  background: var(--primary-color);
+  z-index: 111;
+  position: relative;
+}
+.progress_table_bar div.three {
+  width: 60%;
+  color: var(--white);
+  height: 100%;
+  background: var(--primary-color);
+  z-index: 111;
+  position: relative;
+}
+.progress_table_bar div.four {
   width: 80%;
+  color: var(--white);
+  height: 100%;
+  background: var(--primary-color);
+  z-index: 111;
+  position: relative;
+}
+.progress_table_bar div.five {
+  width: 100%;
   color: var(--white);
   height: 100%;
   background: var(--primary-color);
@@ -122,4 +156,13 @@
   z-index: 999 !important;
 }
 
+.table-head td {
+  color: rgba(30, 39, 73, 0.8) !important;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.progress_table_user td {
+  color: rgba(30, 39, 73, 0.7) !important;
+}
 /* progress tab start */
