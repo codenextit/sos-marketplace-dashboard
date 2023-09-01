@@ -230,6 +230,9 @@ var options = {
     stacked: true,
     stackType: "100%",
   },
+  title: {
+    text: "Total Project Social Suppliers",
+  },
   responsive: [
     {
       breakpoint: 480,
@@ -287,6 +290,9 @@ var options = {
     height: 350,
     type: "area",
   },
+  title: {
+    text: "Total Project Social Suppliers",
+  },
   dataLabels: {
     enabled: false,
   },
@@ -336,6 +342,9 @@ var options = {
     height: 350,
     stacked: true,
     stackType: "100%",
+  },
+  title: {
+    text: "Total Project Social Suppliers",
   },
   responsive: [
     {
@@ -398,6 +407,9 @@ var options = {
     type: "bar",
     height: 350,
   },
+  title: {
+    text: "Total Project Social Suppliers",
+  },
   plotOptions: {
     bar: {
       horizontal: false,
@@ -448,6 +460,9 @@ var options = {
     type: "bar",
     height: 350,
   },
+  title: {
+    text: "Total Project Social Suppliers",
+  },
   plotOptions: {
     bar: {
       borderRadius: 4,
@@ -483,6 +498,9 @@ var options = {
     width: 380,
     type: "pie",
   },
+  title: {
+    text: "Total Project Social Suppliers",
+  },
   labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
   responsive: [
     {
@@ -508,6 +526,9 @@ var options = {
   chart: {
     width: 380,
     type: "pie",
+  },
+  title: {
+    text: "Total Project Social Suppliers",
   },
   labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
   responsive: [
