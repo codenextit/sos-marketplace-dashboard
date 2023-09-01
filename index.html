@@ -24,6 +24,14 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.css"
+      integrity="sha512-nnNXPeQKvNOEUd+TrFbofWwHT0ezcZiFU5E/Lv2+JlZCQwQ/ACM33FxPoQ6ZEFNnERrTho8lF0MCEH9DBZ/wWw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="sidebar">
@@ -229,7 +237,62 @@
 
           <!-- Tab panes -->
           <div class="tab-content">
-            <div class="tab-pane container active" id="social">social</div>
+            <!-- social dashboard -->
+            <div class="tab-pane container active" id="social">
+              <!-- <div class="container p-0"> -->
+              <div class="row p-0">
+                <div class="col-lg-3 ps-0">
+                  <div class="dashboard_card">
+                    <h4>Total Project Spend</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span class="green">100</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card">
+                    <h4>Package Compliance Progress</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span class="yellow">100</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card">
+                    <h4>Overdue Compliance</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span class="red">100</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card">
+                    <h4>Total Project Compliance Progress</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span class="black">100</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="bar_chart">
+                    <div id="chart"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- </div> -->
+            </div>
+
             <div class="tab-pane container fade" id="inclusion">
               Indigenous Inclusion
             </div>
@@ -251,5 +314,12 @@
 
     <!-- script -->
     <script src="./js/sidebar.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.js"
+      integrity="sha512-HctQcT5hnI/elQck4950pvd50RuDnjCSGSoHI8CNyQIYVxsUoyJ+gSQIOrll4oM/Z7Kfi7WCLMIbJbiwYHFCpA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/chart.js"></script>
   </body>
 </html>
