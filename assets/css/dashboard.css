@@ -23,11 +23,12 @@
 
 .nav-item .nav-link {
   position: relative;
-  background-color: rgba(20, 68, 146, 0.8);
+  /* background-color: rgba(20, 68, 146, 0.8); */
   color: var(--blue) !important;
   font-family: var(--primary-font) !important;
   font-weight: 500 !important;
-  margin-right: 15px;
+  margin-right: 0;
+  padding-right: 20px;
   border-radius: 0 !important;
   border: none !important;
   clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
