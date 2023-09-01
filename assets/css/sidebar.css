@@ -305,10 +305,6 @@
 /* navbar start */
 
 .navbars {
-  position: fixed;
-  top: 0;
-  left: 280px;
-  right: 0;
   background-color: #fff;
   display: flex;
   align-items: center;

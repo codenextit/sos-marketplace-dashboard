@@ -14,8 +14,11 @@
 /* dashboard start */
 
 #dashboard {
-  margin-top: 100px;
   padding: 0px 20px 0px 45px;
+}
+
+.tab-content {
+  margin: 0;
 }
 
 .nav-item .nav-link {
@@ -29,6 +32,70 @@
 .nav-item .nav-link.active {
   background-color: var(--blue) !important;
   color: var(--white) !important;
+}
+
+.dashboard_card {
+  width: 100%;
+  height: 150px;
+  padding: 20px 10px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  display: grid;
+  margin-top: 40px;
+}
+
+.dashboard_card h4 {
+  font-size: 0.9em;
+  font-family: var(--primary-font);
+  color: var(--black);
+  font-weight: 600;
+}
+
+.dashboard_card p {
+  font-size: 0.9em;
+  font-family: var(--primary-font);
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+}
+
+.dashboard_card p i {
+  color: #848ea2;
+  margin-right: 10px;
+}
+
+.dashboard_card div {
+  font-size: 1.3em;
+  font-family: var(--primary-font);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.dashboard_card div span {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.dashboard_card div span.green {
+  color: var(--primary-color);
+}
+.dashboard_card div span.yellow {
+  color: var(--secondary-color);
+}
+.dashboard_card div span.red {
+  color: var(--accent-color);
+}
+.dashboard_card div span.black {
+  color: var(--black);
+}
+
+.bar_chart {
+  margin-top: 50px;
+}
+
+.bar_chart #chart {
+  width: 100%;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
 }
 
 /* dashboard end */
