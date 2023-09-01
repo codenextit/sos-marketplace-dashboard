@@ -10,6 +10,9 @@ var options = {
   chart: {
     type: "bar",
     height: 350,
+    toolbar: {
+      show: false,
+    },
   },
   title: {
     text: "Contractor target progress",
@@ -20,14 +23,15 @@ var options = {
       horizontal: false,
       columnWidth: "35%",
       endingShape: "rounded",
+      borderRadius: 4,
     },
   },
   dataLabels: {
     enabled: false,
   },
   stroke: {
-    show: true,
-    width: 2,
+    show: false,
+    width: 0,
     colors: ["transparent"],
   },
   xaxis: {
@@ -129,6 +133,11 @@ var options = {
       highlightDataSeries: true,
     },
   },
+  stroke: {
+    show: false,
+    width: 0,
+    colors: ["transparent"],
+  },
   responsive: [
     {
       breakpoint: 480,
@@ -151,21 +160,24 @@ chart.render();
 var options = {
   series: [
     {
-      name: "Net Profit",
+      name: "Social enterprise",
       data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
     },
     {
-      name: "Revenue",
+      name: "Indigenous Business",
       data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
     },
     {
-      name: "Free Cash Flow",
+      name: "Disability Social Enterprise",
       data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
     },
   ],
   chart: {
     type: "bar",
     height: 350,
+    toolbar: {
+      show: false,
+    },
   },
   title: {
     text: "Total Project Social Suppliers",
@@ -231,7 +243,7 @@ var options = {
     stackType: "100%",
   },
   title: {
-    text: "Total Project Social Suppliers",
+    text: "Contractor Spend Status",
   },
   responsive: [
     {
@@ -291,7 +303,7 @@ var options = {
     type: "area",
   },
   title: {
-    text: "Total Project Social Suppliers",
+    text: "Total Project",
   },
   dataLabels: {
     enabled: false,
@@ -344,7 +356,7 @@ var options = {
     stackType: "100%",
   },
   title: {
-    text: "Total Project Social Suppliers",
+    text: "Package Risk Status",
   },
   responsive: [
     {
@@ -408,7 +420,7 @@ var options = {
     height: 350,
   },
   title: {
-    text: "Total Project Social Suppliers",
+    text: "Bad hires as % of actives",
   },
   plotOptions: {
     bar: {
@@ -461,7 +473,7 @@ var options = {
     height: 350,
   },
   title: {
-    text: "Total Project Social Suppliers",
+    text: "Project's Social Benefit suppliers per Quadrant (Victoria)",
   },
   plotOptions: {
     bar: {
@@ -499,7 +511,7 @@ var options = {
     type: "pie",
   },
   title: {
-    text: "Total Project Social Suppliers",
+    text: "Total Priority Group (FTE) Contribution Status from Social Benefit Suppliers",
   },
   labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
   responsive: [
@@ -528,7 +540,7 @@ var options = {
     type: "pie",
   },
   title: {
-    text: "Total Project Social Suppliers",
+    text: "Active employee count",
   },
   labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
   responsive: [

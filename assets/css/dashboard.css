@@ -98,9 +98,9 @@
   justify-content: center;
 }
 
-.bar_chart .chart {
-  width: 100%;
-  height: 100% !important;
+.chart_box .chart {
+  width: 100% !important;
+  min-height: 100% !important;
 }
 
 .apexcharts-legend {
@@ -124,6 +124,11 @@
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;
+}
+
+.chart_box #chartThreeBar {
+  width: 100%;
+  height: 100%; /* Add this line */
 }
 
 .chart_two {
