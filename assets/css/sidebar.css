@@ -79,7 +79,7 @@
 }
 .sidebar .nav-links {
   height: 100%;
-  padding: 30px 0 150px 0;
+  padding: 30px 10px 150px;
   overflow: auto;
 }
 .sidebar.close .nav-links {
@@ -106,14 +106,19 @@
 .sidebar.close .nav-links li .iocn-link {
   display: block;
 }
+
+.sidebar .nav-links li i:first-child {
+  color: #fc7e14;
+}
+
 .sidebar .nav-links li i {
   height: 50px;
-  min-width: 78px;
+  min-width: 58px;
   text-align: center;
   line-height: 50px;
-  color: #848ea2;
   font-size: 15px;
   cursor: pointer;
+  color: #144492;
   transition: all 0.3s ease;
 }
 
@@ -131,7 +136,7 @@
 .sidebar .nav-links li a .link_name {
   font-size: 15px;
   font-weight: 500;
-  color: #686868;
+  color: #144492;
   transition: all 0.4s ease;
 }
 .sidebar.close .nav-links li a .link_name {
@@ -148,15 +153,20 @@
   display: block;
 }
 .sidebar .nav-links li .sub-menu a {
-  color: #000;
+  color: #144492;
   font-size: 15px;
+  font-weight: 500;
   padding: 5px 0;
   white-space: nowrap;
-  opacity: 0.6;
   transition: all 0.3s ease;
 }
 .sidebar .nav-links li .sub-menu a:hover {
   opacity: 1;
+}
+
+.nav-links li .sub-menu li img {
+  width: 10px;
+  margin-right: 8px;
 }
 .sidebar.close .nav-links li .sub-menu {
   position: absolute;
@@ -254,8 +264,8 @@
   transition: all 0.5s ease;
 }
 .sidebar.close ~ .home-section {
-  left: 78px;
-  width: calc(100% - 78px);
+  left: 58px;
+  width: calc(100% - 58px);
 }
 .home-content {
   display: flex;

@@ -1,6 +1,6 @@
 // pie chart
 var options = {
-  series: [40, 20, 8, 8, 8, 8],
+  series: [40, 20, 8, 8, 8, 8, 8],
   chart: {
     width: 620,
     type: "pie",
@@ -12,6 +12,20 @@ var options = {
     "Asylum seeker/refugees",
     "Long term unemployed",
     "LGBTQI+",
+  ],
+  stroke: {
+    show: false,
+    width: 0,
+    colors: ["transparent"],
+  },
+  colors: [
+    "#C7E800",
+    "#037BFF",
+    "#F3BE00",
+    "#FD4802",
+    "#00BC8B",
+    "#037BFF",
+    "#F3BE00",
   ],
   legend: {
     show: true,
