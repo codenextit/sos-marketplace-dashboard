@@ -75,7 +75,7 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#chartBarOne"), options);
 chart.render();
 
-// chart bar two
+// Risk and target status Bar Chart
 var options = {
   series: [
     {
@@ -83,12 +83,35 @@ var options = {
         48, 22, 10, 28, 16, 21, 13, 30, 20, 28, 40, 18, 34, 28, 34, 45, 22, 32,
         37, 25,
       ],
+      name: ["Low"],
+    },
+    {
+      data: [
+        48, 22, 10, 28, 16, 21, 13, 30, 20, 28, 40, 18, 34, 28, 34, 45, 22, 32,
+        37, 25,
+      ],
+      name: ["Medium"],
+    },
+    {
+      data: [
+        48, 22, 10, 28, 16, 21, 13, 30, 20, 28, 40, 18, 34, 28, 34, 45, 22, 32,
+        37, 25,
+      ],
+      name: ["High"],
+    },
+    {
+      data: [
+        48, 22, 10, 28, 16, 21, 13, 30, 20, 28, 40, 18, 34, 28, 34, 45, 22, 32,
+        37, 25,
+      ],
+      name: ["Targeted Audience"],
     },
   ],
+
   chart: {
     height: 350,
     type: "bar",
-    events: {
+    eevents: {
       click: function (chart, w, e) {
         // console.log(chart, w, e)
       },
@@ -97,6 +120,54 @@ var options = {
       show: false,
     },
   },
+
+  legend: {
+    show: true,
+    showForSingleSeries: false,
+    showForNullSeries: true,
+    showForZeroSeries: true,
+    position: "top",
+    // horizontalAlign: "left",
+    floating: false,
+    fontSize: "16px",
+    fontFamily: "Poppins",
+    fontWeight: 400,
+    formatter: undefined,
+    inverseOrder: false,
+    width: undefined,
+    height: undefined,
+    tooltipHoverFormatter: undefined,
+    customLegendItems: ["Low", "Medium", "High", "Targeted Audience"],
+    offsetX: 0,
+    offsetY: 0,
+    labels: {
+      colors: ["#878787"],
+      useSeriesColors: false,
+    },
+    markers: {
+      width: 20,
+      height: 20,
+      strokeWidth: 0,
+      strokeColor: "#fff",
+      fillColors: undefined,
+      radius: 3,
+      customHTML: undefined,
+      onClick: undefined,
+      offsetX: 0,
+      offsetY: 0,
+    },
+    itemMargin: {
+      horizontal: 5,
+      vertical: 0,
+    },
+    onItemClick: {
+      toggleDataSeries: true,
+    },
+    onItemHover: {
+      highlightDataSeries: true,
+    },
+  },
+
   colors: ["#F3BE00", "#00BC8B", "#037BFF", "#FD4802"],
   plotOptions: {
     bar: {
@@ -107,9 +178,13 @@ var options = {
   dataLabels: {
     enabled: false,
   },
-  legend: {
+
+  stroke: {
     show: false,
+    width: 0,
+    colors: ["transparent"],
   },
+
   xaxis: {
     categories: [
       "Transport",

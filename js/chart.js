@@ -640,8 +640,7 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#chartRadial"), options);
 chart.render();
 
-// three column chart
-
+// <---- Total Project Social Suppliers Chart ----->
 var options = {
   series: [
     {
@@ -663,6 +662,56 @@ var options = {
       show: false,
     },
   },
+
+  colors: ["#00BC8B", "#037BFF", "#FF49ED"],
+
+  legend: {
+    show: true,
+    showForSingleSeries: false,
+    showForNullSeries: true,
+    showForZeroSeries: true,
+    position: "top",
+    // horizontalAlign: "left",
+    floating: false,
+    fontSize: "16px",
+    fontFamily: "Poppins",
+    fontWeight: 400,
+    formatter: undefined,
+    inverseOrder: false,
+    width: undefined,
+    height: undefined,
+    tooltipHoverFormatter: undefined,
+    customLegendItems: [],
+    offsetX: 0,
+    offsetY: 0,
+    labels: {
+      colors: ["#878787"],
+      useSeriesColors: false,
+    },
+    markers: {
+      width: 20,
+      height: 20,
+      strokeWidth: 0,
+      strokeColor: "#fff",
+      fillColors: undefined,
+      radius: 3,
+      customHTML: undefined,
+      onClick: undefined,
+      offsetX: 0,
+      offsetY: 0,
+    },
+    itemMargin: {
+      horizontal: 5,
+      vertical: 0,
+    },
+    onItemClick: {
+      toggleDataSeries: true,
+    },
+    onItemHover: {
+      highlightDataSeries: true,
+    },
+  },
+
   plotOptions: {
     bar: {
       horizontal: false,
