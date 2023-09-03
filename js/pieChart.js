@@ -43,7 +43,7 @@ var options = {
     width: undefined,
     height: undefined,
     tooltipHoverFormatter: undefined,
-    customLegendItems: ["Hello"],
+    customLegendItems: [],
     offsetX: 0,
     offsetY: 0,
     labels: {

@@ -8,6 +8,7 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/sidebar.css" />
     <link rel="stylesheet" href="./assets/css/progress.css" />
+    <link rel="stylesheet" href="./assets/css/manage-users.css" />
 
     <!-- Boxicon CDN -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -213,7 +214,7 @@
           <!-- Nav tabs -->
           <ul class="nav nav-pills" role="tablist">
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="pill" href="#home">
+              <a class="nav-link" data-bs-toggle="pill" href="#index">
                 <span class="border"></span>Home</a
               >
             </li>
@@ -243,44 +244,258 @@
               >
             </li>
           </ul>
-
-          <div class="row mb-4">
-            <div class="col-6 align-bottom mt-2">
-              <div id="home" class="container tab-pane active">
-                <br />
-                <nav
-                  style="--bs-breadcrumb-divider: '>'"
-                  aria-label="breadcrumb"
-                >
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="#">Learning Modules</a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page">
-                      Progress
-                    </li>
-                  </ol>
-                </nav>
-              </div>
-            </div>
-
-            <div class="col-6 mt-4 manage-btn">
-              <a href="#">
-                <button>
-                  <img src="./assets/icons/members.svg" alt="" />
-                  Members
-                </button></a
-              >
-            </div>
-          </div>
         </div>
 
         <!-- Tab panes -->
         <section class="all_tabs_content">
           <!-- Tab Content -->
           <div class="tab-content">
-            <div id="home" class="container-fluid tab-pane fade">
+            <!-- <div id="home" class="container-fluid tab-pane fade">
               <h3>Home</h3>
+            </div> -->
+
+            <div id="index" class="container-fluid tab-pane fade">
+              <div class="row mb-4">
+                <div class="col-6 align-bottom mt-2">
+                  <div id="home" class="container tab-pane active">
+                    <br />
+                    <nav
+                      style="--bs-breadcrumb-divider: '>'"
+                      aria-label="breadcrumb"
+                    >
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                          Library
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 mt-4 manage-btn">
+                  <a href="#">
+                    <button>
+                      <img src="./assets/icons/settings_icon.svg" alt="" />
+                      Manage Roles
+                    </button></a
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="learners-card">
+                    <div class="row">
+                      <div class="col-6">
+                        <h6>Learners</h6>
+                      </div>
+                      <div class="col-6">
+                        <div class="invite-btn">
+                          <a href="#">
+                            <button class="invite-button">
+                              Invite to join
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-3">
+                      <div class="col-6">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-1.png" alt="" />
+                            </div>
+
+                            <div class="profile-info">
+                              <h6>Lucretia de jong</h6>
+                              <p>
+                                lucretia de jong <br />Social change engineer,
+                                identifying and innovative
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-6">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-2.png" alt="" />
+                            </div>
+
+                            <div class="profile-info mt-3">
+                              <h6>clint webb</h6>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-6 mt-4">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-3.png" alt="" />
+                            </div>
+
+                            <div class="profile-info mt-3">
+                              <h6>Emily Mudge</h6>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-6 mt-4">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-4.png" alt="" />
+                            </div>
+
+                            <div class="profile-info mt-2">
+                              <h6>David Fraser</h6>
+                              <p>
+                                Social Outcome Solutions Pty LTD.
+                                CFOChartered...
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="faciliators-card mt-4 mb-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <h6>Facilitators</h6>
+                      </div>
+                      <div class="col-6">
+                        <div class="invite-btn">
+                          <a href="#">
+                            <button class="invite-button">
+                              Invite to join
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-3">
+                      <div class="col-6">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-5.png" alt="" />
+                            </div>
+
+                            <div class="profile-info mt-2">
+                              <h6>Jamie Engel (Neu)</h6>
+                              <p>Founder, Neutopia</p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-6.png" alt="" />
+                            </div>
+
+                            <div class="profile-info mt-2">
+                              <h6>Stephen Rutter</h6>
+                              <p>Founder, The Scale Institute</p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="coaches-card mt-4 mb-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <h6>Coaches</h6>
+                      </div>
+                      <div class="col-6">
+                        <div class="invite-btn">
+                          <a href="#">
+                            <button class="invite-button">
+                              Invite to join
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-3">
+                      <div class="col-6">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-7.png" alt="" />
+                            </div>
+
+                            <div class="profile-info mt-2">
+                              <h6>Larry Doran</h6>
+                              <p>
+                                Looking for partners for our digital ecosystem
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div id="discussion" class="container-fluid tab-pane fade">
@@ -301,6 +516,35 @@
 
             <!-- progress -->
             <div id="progress" class="container-fluid tab-pane active">
+              <div class="row mb-4">
+                <div class="col-6 align-bottom mt-2">
+                  <div id="home" class="container tab-pane active">
+                    <br />
+                    <nav
+                      style="--bs-breadcrumb-divider: '>'"
+                      aria-label="breadcrumb"
+                    >
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href="#">Learning Modules</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                          Progress
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 mt-4 manage-btn">
+                  <a href="#">
+                    <button>
+                      <img src="./assets/icons/members.svg" alt="" />
+                      Members
+                    </button></a
+                  >
+                </div>
+              </div>
               <table class="table">
                 <thead>
                   <tr class="table-head">

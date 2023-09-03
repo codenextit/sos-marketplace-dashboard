@@ -172,10 +172,14 @@
   overflow-x: auto !important;
 }
 
-.chart_box div {
+.chart_box .chart_name {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#chartPie .apexcharts-legend {
+  right: 0px !important;
 }
 
 .chart_box p {
@@ -196,4 +200,80 @@
 .chart_box div p:last-child {
   color: rgba(0, 0, 0, 0.5);
 }
+
+.target_status_legend {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.target_status_legend .legend_box {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.target_status_legend .legend_box.green {
+  background-color: var(--primary-color);
+}
+.target_status_legend .legend_box.blue {
+  background-color: var(--blue);
+}
+.target_status_legend .legend_box.red {
+  background-color: var(--accent-color);
+}
+.target_status_legend .legend_box.yellow {
+  background-color: var(--secondary-color);
+}
+
+.target_status_legend .legends {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.apexcharts-legend-series {
+  display: flex;
+  align-items: center;
+}
+
+/* priority legends */
+
+.Priority_legend {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Priority_legend .legend_box {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.Priority_legend .legend_box.lighGreen {
+  background-color: #c7e800;
+}
+.Priority_legend .legend_box.green {
+  background-color: var(--primary-color);
+}
+.Priority_legend .legend_box.blue {
+  background-color: var(--blue);
+}
+.Priority_legend .legend_box.red {
+  background-color: var(--accent-color);
+}
+.Priority_legend .legend_box.yellow {
+  background-color: var(--secondary-color);
+}
+
+.Priority_legend .legends {
+  margin: 13px 30px 13px 0;
+  display: flex;
+  align-items: center;
+}
+
 /* dashboard end */

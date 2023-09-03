@@ -18,14 +18,14 @@
 //     text: "Contractor target progress",
 //   },
 //   colors: ["#F3BE00"],
-//   plotOptions: {
-//     bar: {
-//       horizontal: false,
-//       columnWidth: "35%",
-//       endingShape: "rounded",
-//       borderRadius: 4,
-//     },
+// plotOptions: {
+//   bar: {
+//     horizontal: false,
+//     columnWidth: "35%",
+//     endingShape: "rounded",
+//     borderRadius: 4,
 //   },
+// },
 //   dataLabels: {
 //     enabled: false,
 //   },
@@ -563,11 +563,47 @@
 
 // radial chart
 var options = {
-  series: [44, 55, 67, 83],
+  series: [84, 55, 67, 33],
   chart: {
     height: 350,
     type: "radialBar",
   },
+  // plotOptions: {
+  //   radialBar: {
+  //     dataLabels: {
+  //       name: {
+  //         fontSize: "22px",
+  //       },
+  //       value: {
+  //         fontSize: "16px",
+  //       },
+  //       total: {
+  //         colors: ["#F3BE00"],
+  //         show: true,
+  //         label: "Medium Risk",
+  //         formatter: function (w) {
+  //           // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+  //         },
+  //       },
+  //     },
+  // track: {
+  //   show: false,
+  //   startAngle: 50,
+  //   endAngle: undefined,
+  //   background: "#f2f2f2",
+  //   strokeWidth: "100%",
+  //   opacity: 1,
+  //   margin: 5,
+  //   dropShadow: {
+  //     enabled: false,
+  //     top: 0,
+  //     left: 0,
+  //     blur: 3,
+  //     opacity: 0.5,
+  //   },
+  // },
+  //   },
+  // },
   plotOptions: {
     radialBar: {
       dataLabels: {
@@ -579,12 +615,17 @@ var options = {
         },
         total: {
           show: true,
-          label: "Total",
+          label: "Medium Risk",
           formatter: function (w) {
             // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
             return 249;
           },
         },
+      },
+      track: {
+        show: false,
+        startAngle: 50,
+        endAngle: undefined,
       },
     },
   },
@@ -634,7 +675,7 @@ var options = {
       highlightDataSeries: true,
     },
   },
-  labels: ["Low", "Medium", "High", "On Track"],
+  labels: ["Completion Timeline", "Low Risk", "Medium", "High Risk"],
 };
 
 var chart = new ApexCharts(document.querySelector("#chartRadial"), options);
