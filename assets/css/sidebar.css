@@ -92,9 +92,20 @@
   position: relative;
   list-style: none;
   transition: all 0.4s ease;
+  border-radius: 3px;
 }
 .sidebar .nav-links li:hover {
   background: #037bff;
+}
+
+.sidebar .nav-links li:hover a .link_name {
+  color: #ffffff; /* White text color */
+}
+.sidebar .nav-links li:hover a i {
+  color: #ffffff; /* White text color */
+}
+.sidebar .nav-links li:hover .iocn-link i {
+  color: #ffffff; /* White text color */
 }
 
 .sidebar .nav-links li .iocn-link {
@@ -144,7 +155,7 @@
   pointer-events: none;
 }
 .sidebar .nav-links li .sub-menu {
-  padding: 6px 6px 14px 80px;
+  padding: 6px 6px 14px 50px;
   margin-top: -10px;
   background: #edf3fd;
   display: none;
@@ -156,12 +167,12 @@
   color: #144492;
   font-size: 15px;
   font-weight: 500;
-  padding: 5px 0;
+  padding: 5px 10px;
   white-space: nowrap;
   transition: all 0.3s ease;
 }
 .sidebar .nav-links li .sub-menu a:hover {
-  opacity: 1;
+  color: #fff;
 }
 
 .nav-links li .sub-menu li img {
