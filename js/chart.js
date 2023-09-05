@@ -97,13 +97,14 @@ var options = {
       dataLabels: {
         name: {
           show: true,
+          color: "#000000",
         },
         value: {
           show: false,
         },
         total: {
           show: true,
-          label: "Medium Risk",
+          label: ["Medium", "Risk"],
           color: "#000",
           fontSize: "15px",
         },
@@ -117,14 +118,9 @@ var options = {
     },
   },
   colors: ["#144492", "#F3BE00", "#00B050", "#FF0000"],
-  labels: [
-    "Overall Status",
-    "Indigenous Business and Inclusion",
-    "Social Enterprise and Inclusion",
-    "Disability Social Enterprise and Inclusion",
-  ],
+  labels: ["Completion", "Medium", "Low Risk", "High Risk"],
   legend: {
-    show: true,
+    show: false,
     floating: true,
     fontSize: "14px",
     position: "left",
