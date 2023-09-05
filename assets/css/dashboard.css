@@ -23,7 +23,6 @@
 
 .nav-item .nav-link {
   position: relative;
-  /* background-color: rgba(20, 68, 146, 0.8); */
   color: var(--blue) !important;
   font-family: var(--primary-font) !important;
   font-weight: 500 !important;
@@ -128,12 +127,6 @@
   align-items: center;
   justify-content: center;
 }
-/* 
-.apexcharts-legend {
-  justify-content: center !important;
-  gap: 10px !important;
-  top: 0 !important;
-} */
 
 .chart_one {
   position: relative;

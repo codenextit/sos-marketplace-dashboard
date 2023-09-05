@@ -1,5 +1,4 @@
 // Contractor Spend Status Chart
-
 var options = {
   series: [
     {
