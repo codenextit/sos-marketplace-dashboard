@@ -1,10 +1,17 @@
 // pie chart
 var options = {
-  series: [40, 20, 8, 8, 8, 8, 8],
+  series: [8, 7, 5, 8, 10, 15, 10, 7, 13, 5, 8, 4],
   chart: {
-    width: 620,
+    width: 420,
     type: "pie",
   },
+  dataLabels: {
+    enabled: true,
+    formatter: function (val) {
+      return val + "%";
+    },
+  },
+
   labels: [
     "Youth 16-24",
     "Mature aged",
@@ -12,6 +19,12 @@ var options = {
     "Asylum seeker/refugees",
     "Long term unemployed",
     "LGBTQI+",
+    "Aboriginal & Torres Strait Islanders",
+    "Women",
+    "People living with a disability",
+    "Entrenched disadvantage",
+    "Women escaping violence",
+    "New migrants",
   ],
   stroke: {
     show: false,
@@ -19,59 +32,21 @@ var options = {
     colors: ["transparent"],
   },
   colors: [
-    "#C7E800",
-    "#037BFF",
-    "#F3BE00",
-    "#FD4802",
-    "#00BC8B",
-    "#037BFF",
-    "#F3BE00",
+    "#FF5438",
+    "#000091",
+    "#980090",
+    "#FF9F51",
+    "#A1DAE8",
+    "#FFBDCB",
+    "#FF787C",
+    "#82E200",
+    "#00C3FF",
+    "#8D0085",
+    "#00FFFF",
+    "#A627D3",
   ],
   legend: {
-    show: true,
-    showForSingleSeries: false,
-    showForNullSeries: true,
-    showForZeroSeries: true,
-    position: "right",
-    // horizontalAlign: "left",
-    floating: false,
-    fontSize: "16px",
-    fontFamily: "Poppins",
-    fontWeight: 400,
-    formatter: undefined,
-    inverseOrder: false,
-    width: undefined,
-    height: undefined,
-    tooltipHoverFormatter: undefined,
-    customLegendItems: [],
-    offsetX: 0,
-    offsetY: 0,
-    labels: {
-      colors: ["#878787"],
-      useSeriesColors: false,
-    },
-    markers: {
-      width: 20,
-      height: 20,
-      strokeWidth: 0,
-      strokeColor: "#fff",
-      fillColors: undefined,
-      radius: 3,
-      customHTML: undefined,
-      onClick: undefined,
-      offsetX: 0,
-      offsetY: 0,
-    },
-    itemMargin: {
-      horizontal: 5,
-      vertical: 0,
-    },
-    onItemClick: {
-      toggleDataSeries: true,
-    },
-    onItemHover: {
-      highlightDataSeries: true,
-    },
+    show: false,
   },
   responsive: [
     {
