@@ -357,11 +357,17 @@
   align-items: center;
 }
 
-#projectRiskChart:hover .apexcharts-datalabels .apexcharts-datalabel-label {
-  display: none !important;
+.project_legend_text {
+  position: absolute;
+  right: 52%;
+  top: 125px;
+  text-align: right;
 }
-#projectRiskChart:hover .apexcharts-datalabels .apexcharts-datalabel-value {
-  display: block !important; /* Ensure the value labels are still visible on hover */
+
+.project_legend_text div {
+  color: #878787;
+  font-size: 13px;
+  padding-bottom: 5px;
 }
 
 /* dashboard end */
