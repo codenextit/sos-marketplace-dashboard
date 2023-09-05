@@ -106,6 +106,7 @@ var options = {
     },
   ],
   chart: {
+    height: 380,
     type: "line",
     stacked: false,
     toolbar: false,
