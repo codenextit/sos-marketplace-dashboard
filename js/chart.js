@@ -162,25 +162,36 @@ var options = {
   series: [
     {
       name: "Net Profit",
+      type: "column",
       data: [25, 35, 45, 55, 65, 75, 85, 95, 75],
     },
     {
       name: "Revenue",
+      type: "column",
       data: [20, 30, 40, 50, 60, 70, 80, 90, 70],
     },
     {
       name: "Free Cash Flow",
+      type: "column",
       data: [15, 25, 35, 45, 55, 65, 75, 85, 65],
+    },
+    {
+      name: "01",
+      type: "line",
+      data: [15, 28, 35, 45, 60, 65, 75, 80, 70],
+      color: "#FD4802",
     },
   ],
   chart: {
-    type: "bar",
-    toolbar: {
-      show: false,
-    },
+    type: "line",
+    stacked: false,
+    toolbar: false,
   },
-
-  colors: ["#00BC8B", "#037BFF", "#FF49ED"],
+  stroke: {
+    width: [5, 5],
+    curve: "smooth",
+  },
+  colors: ["#00BC8B", "#037BFF", "#FF49ED", "#FD4802"],
 
   legend: {
     show: false,
