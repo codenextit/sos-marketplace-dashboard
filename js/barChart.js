@@ -24,6 +24,7 @@ var options = {
     },
   ],
   chart: {
+    fontFamily: "Poppins",
     type: "bar",
     height: 450,
     stacked: true,
@@ -140,6 +141,7 @@ var options = {
   ],
 
   chart: {
+    fontFamily: "Poppins",
     height: 450,
     type: "bar",
     eevents: {

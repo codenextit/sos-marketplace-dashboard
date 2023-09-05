@@ -4,6 +4,7 @@ var options = {
   chart: {
     height: 370,
     type: "radialBar",
+    fontFamily: "Poppins",
   },
   plotOptions: {
     radialBar: {
@@ -108,6 +109,7 @@ var options = {
     type: "line",
     stacked: false,
     toolbar: false,
+    fontFamily: "Poppins",
   },
   stroke: {
     width: [5, 5],

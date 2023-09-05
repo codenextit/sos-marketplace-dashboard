@@ -4,6 +4,7 @@ var options = {
   chart: {
     width: 420,
     type: "pie",
+    fontFamily: "Poppins",
   },
   dataLabels: {
     enabled: true,
