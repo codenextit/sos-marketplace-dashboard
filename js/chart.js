@@ -27,7 +27,7 @@ var options = {
         },
         total: {
           show: true,
-          label: ["Medium", "Risk"],
+          label: ["Medium"],
           color: "#000",
           fontSize: "15px",
         },
@@ -41,7 +41,7 @@ var options = {
     },
   },
   colors: ["#144492", "#F3BE00", "#00B050", "#FF0000"],
-  labels: ["Completion", "Medium", "Low Risk", "High Risk"],
+  labels: ["Completion", "Medium", "Low", "High"],
   legend: {
     show: false,
     floating: true,
