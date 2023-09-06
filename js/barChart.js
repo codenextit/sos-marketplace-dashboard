@@ -16,7 +16,7 @@ var options = {
         7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7,
         7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12,
         7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7,
-        7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12,
+        7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7,
       ],
     },
     {
@@ -96,7 +96,7 @@ var options = {
       "Workshop & T...",
       "Traffic Manage...",
       "Safety",
-      "First aid & spill kits",
+      "First aid & spi...",
       "civil works",
       "Inground services",
       "Structural Steel",
@@ -141,7 +141,7 @@ var options = {
       "Vinyl and Carp...",
       "Blinds and Fly...",
       "Signage",
-      "Pinboards/Whiteb...",
+      "Pinboards/Whit...",
       "Painting",
       "Joinery",
       "Shower Screens",
@@ -151,9 +151,9 @@ var options = {
       "Substation",
       "Mechanical Serv...",
       "Fire Services",
-      "Landscaping – Har...",
+      "Landscaping ...",
       "Landscaping & ...",
-      "Asphalt and Kerbi...",
+      "Asphalt and Ker...",
     ],
     scrollbar: {
       enabled: true, // Enable the scrollbar
