@@ -297,7 +297,7 @@ var options = {
       "Vinyl and Carp...",
       "Blinds and Fly...",
       "Signage",
-      "Pinboards/Whiteb...",
+      "Pinboards/Whi...",
       "Painting",
       "Joinery",
       "Shower Screens",
@@ -307,9 +307,9 @@ var options = {
       "Substation",
       "Mechanical Serv...",
       "Fire Services",
-      "Landscaping – Har...",
+      "Landscaping ...",
       "Landscaping & ...",
-      "Asphalt and Kerbi...",
+      "Asphalt and Ke...",
     ],
 
     labels: {
