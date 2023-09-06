@@ -5,21 +5,23 @@ var options = {
       name: "PRODUCT A",
       data: [
         15, 15, 18, 15, 17, 15, 15, 15, 18, 15, 17, 15, 15, 15, 18, 15, 17, 15,
-        15, 15, 18, 15, 17, 15, 15, 15, 18, 15, 17, 15, 16, 15,
+        15, 15, 18, 15, 17, 15, 15, 15, 18, 15, 17, 15, 16, 15, 15, 15, 18, 15,
+        17, 15, 16, 15,
       ],
     },
     {
       name: "PRODUCT B",
       data: [
         7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 12, 7,
-        7, 12, 7, 7, 12, 7, 7, 12, 7, 7,
+        7, 12, 7, 7, 12, 7, 7, 12, 7, 7, 7, 7, 12, 7, 7, 12, 7, 7,
       ],
     },
     {
       name: "PRODUCT C",
       data: [
         16, 16, 22, 16, 16, 22, 16, 16, 22, 16, 16, 22, 16, 16, 22, 16, 16, 22,
-        16, 16, 22, 16, 16, 22, 16, 16, 22, 16, 16, 22, 16, 16,
+        16, 16, 22, 16, 16, 22, 16, 16, 22, 16, 16, 22, 16, 16, 16, 16, 22, 16,
+        16, 22, 16, 16,
       ],
     },
   ],
@@ -54,6 +56,7 @@ var options = {
   plotOptions: {
     bar: {
       horizontal: false,
+      // barWidth: "80px",
       borderRadius: 0,
       dataLabels: {
         total: {
@@ -107,7 +110,19 @@ var options = {
       "Vinyl and Carpet Flooring",
       "Blinds and Fly Screens",
       "Signage",
+      "External Cladding",
+      "Windows and Glazing",
+      "Roofing",
+      "Partitions and linings",
+      "Wall Finishes Tiling",
+      "Vinyl and Carpet Flooring",
+      "Blinds and Fly Screens",
+      "Signage",
     ],
+    scrollbar: {
+      enabled: true, // Enable the scrollbar
+      offsetY: -10, // Adjust the position of the scrollbar
+    },
     labels: {
       style: {
         fontSize: "12px",
