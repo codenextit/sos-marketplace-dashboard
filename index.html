@@ -511,8 +511,257 @@
             </div>
             <!-- chart end -->
 
-            <div class="tab-pane container fade" id="inclusion">
-              Indigenous Inclusion
+            <div class="tab-pane container fade ps-0" id="inclusion">
+              <div class="row p-0">
+                <div class="col-lg-3">
+                  <div class="dashboard_card green">
+                    <h4>Total Project Spend</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>$1,680,000</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card yellow">
+                    <h4>Package Compliance Progress</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>37%</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card red">
+                    <h4>Overdue Compliance</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>52</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card black">
+                    <h4 style="margin-bottom: 25px">
+                      Total Project Compliance Progress
+                    </h4>
+                    <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
+                    <div>
+                      <span>79%</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- chart start -->
+              <div class="chart_one">
+                <div class="chart_box">
+                  <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                    Project Indigenous Inclusion Risk Levels
+                  </p>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Completion Timeline</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High</span>
+                    </div>
+                  </section>
+
+                  <div class="project_legend_text">
+                    <div>Indigenous Business Spend</div>
+                    <div>Indigenous Inclusion (FTE)</div>
+                    <div>Contractor Cultural Awareness Completion</div>
+                    <div>FTE Indigenous Employment Retention</div>
+                  </div>
+
+                  <div id="indigenousProjectRiskChart" class="chart"></div>
+                </div>
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Total Project Indigenous Businesses</p>
+                    <p>By Month</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Indigenous Training/Employment Provider</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Certified Indigenous Business</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box pink"></div>
+                      <span>Registered Indigenous Business</span>
+                    </div>
+                  </section>
+
+                  <div id="indigenousSuppliersChart" class="chart"></div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Contractor Spend Status</p>
+                    <p>By Month</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Certified Indigenous Business</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Registered Indigenous Business</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box pink"></div>
+                      <span>Indigenous Training/ Employment Provider</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="indigenousConstractorChart"
+                      class="chart"
+                      style="width: 250%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: center;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                    "
+                  >
+                    Total Indigenous Inclusion (FTE) Contribution Status from
+                    Indigenous <br />
+                    businesses and Social benefit Suppliers
+                  </p>
+
+                  <section class="priority_legend priority_legend_one">
+                    <div class="legends">
+                      <div class="legend_box color1"></div>
+                      <span>Youth 16-24</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color2"></div>
+                      <span>Mature aged</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color3"></div>
+                      <span>Ex justice</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color4"></div>
+                      <span>Asylum seeker/refugees</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color5"></div>
+                      <span>Long term unemployed</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color6"></div>
+                      <span>LGBTQI+</span>
+                    </div>
+                  </section>
+
+                  <section class="priority_legend priority_legend_two">
+                    <div class="legends">
+                      <div class="legend_box color7"></div>
+                      <span>Aboriginal & Torres Strait Islanders</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color8"></div>
+                      <span>Women</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color9"></div>
+                      <span>People living with a disability</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color10"></div>
+                      <span>Entrenched disadvantage</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color11"></div>
+                      <span>Women escaping violence</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color12"></div>
+                      <span>New migrants</span>
+                    </div>
+                  </section>
+
+                  <div id="indigenousChartPie" class="chart"></div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Indigenous Inclusion Risk and Compliance Status</p>
+                    <p>By Month</p>
+                  </div>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>On Track</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="indigenousRiskChart"
+                      class="chart"
+                      style="width: 250%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="tab-pane container fade" id="MPSG">MPSG</div>
             <div class="tab-pane container fade" id="disability">
@@ -538,5 +787,6 @@
     <script src="./js/chart.js"></script>
     <script src="./js/pieChart.js"></script>
     <script src="./js/barChart.js"></script>
+    <script src="./js/indigenousChart.js"></script>
   </body>
 </html>
