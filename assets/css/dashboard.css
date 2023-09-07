@@ -382,7 +382,7 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .project_legend_text div {
+  /* .project_legend_text div {
     font-size: 11px;
     padding-bottom: 6px;
   }
@@ -390,6 +390,16 @@
   .project_legend_text {
     right: 51%;
     top: 127px;
+  } */
+
+  .project_legend_text div {
+    font-size: 10px;
+    padding-bottom: 8px;
+  }
+
+  .project_legend_text {
+    right: 51%;
+    top: 128px;
   }
 
   .priority_legend_one {
@@ -421,7 +431,7 @@
   }
 }
 
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
   .project_legend_text div {
     font-size: 10px;
     padding-bottom: 8px;
@@ -431,6 +441,6 @@
     right: 51%;
     top: 128px;
   }
-}
+} */
 
 /* dashboard end */
