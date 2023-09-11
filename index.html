@@ -518,7 +518,7 @@
                     <h4>Total Project Indigenous Business spend</h4>
                     <p><i class="fa-solid fa-filter"></i>1 Filter</p>
                     <div>
-                      <span>910,000</span><br />
+                      <span>$910,000</span><br />
                       Total
                     </div>
                   </div>
@@ -624,7 +624,7 @@
                 <div class="chart_box">
                   <div class="chart_name">
                     <p>Contractor Spend Status</p>
-                    <p>By Month</p>
+                    <p>By Trade</p>
                   </div>
 
                   <section class="constractor_legend">
@@ -752,7 +752,7 @@
                 <div class="chart_box">
                   <div class="chart_name">
                     <p>Indigenous Inclusion Risk and Compliance Status</p>
-                    <p>By Month</p>
+                    <p>By Trade</p>
                   </div>
 
                   <section class="target_status_legend">
@@ -787,16 +787,291 @@
                 </div>
               </div>
             </div>
+
             <div class="tab-pane container fade" id="MPSG">MPSG</div>
+
+            <!-- disability dashboard -->
             <div class="tab-pane container fade" id="disability">
-              Disability
+              <div class="row p-0">
+                <div class="col-lg-3">
+                  <div class="dashboard_card green">
+                    <h4>Total Project Disability Spend</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>$565,000</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card yellow">
+                    <h4>Package Disability Compliance Progress</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>43%</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card red">
+                    <h4>Overdue Disability Complince Milestones</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>23</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card black">
+                    <h4 style="margin-bottom: 25px">
+                      Total Project Disability Compliance Progress
+                    </h4>
+                    <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
+                    <div>
+                      <span>40%</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- chart start -->
+              <div class="chart_one">
+                <div class="chart_box">
+                  <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                    Disability Inclusion Risk levels
+                  </p>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Completion Timeline</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div class="project_legend_text">
+                    <div>Overall Status</div>
+                    <div>Disability Social Enterprise Inclusion</div>
+                    <div>Training - Disability Inclusion</div>
+                    <div>Employment -Disability Inclusion</div>
+                  </div>
+
+                  <div id="disabilityProjectRiskChart" class="chart"></div>
+                </div>
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>After Total project</p>
+                    <p>By Month</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box red"></div>
+                      <span>Disability Training Providers</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box sky"></div>
+                      <span>Disability Employment Providers</span>
+                    </div>
+                    <div class="legends">
+                      <div
+                        class="legend_box disability_legend_box violet"
+                      ></div>
+                      <span>Disability Social Enterprise</span>
+                    </div>
+                  </section>
+
+                  <div id="disabilityTotalProjectChart" class="chart"></div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Contractor - Disability Inclusion Spend Status</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div
+                        class="legend_box disability_legend_box violet"
+                      ></div>
+                      <span>Disability Social Enterprise</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box red"></div>
+                      <span>Disability Training Provider</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box sky"></div>
+                      <span>Disability Employment</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="disabilityConstractorChart"
+                      class="chart"
+                      style="width: 250%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: left;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                    "
+                  >
+                    Total Disability Inclusion (FTE) Contribution Status
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="chart_content">
+                        <p style="color: #000000; margin: 30px 0">
+                          Who identify as:
+                        </p>
+                        <section class="priority_legend indigenous_legend">
+                          <div class="legends">
+                            <div class="legend_box color1"></div>
+                            <span>Youth 16-24</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color2"></div>
+                            <span>Mature aged</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color3"></div>
+                            <span>Ex justice</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color4"></div>
+                            <span>Asylum seeker/refugees</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color5"></div>
+                            <span>Long term unemployed</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color6"></div>
+                            <span>Aboriginal & Torres Strait Islander</span>
+                          </div>
+                        </section>
+
+                        <div id="disabilityChartPie" class="chart"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Training type
+                            </p>
+                            <div
+                              id="disabilityTrainingChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Employment type
+                            </p>
+                            <div
+                              id="disabilityEmploymentChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>After Disability Inclusion</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>On Track</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="disabilityRiskChart"
+                      class="chart"
+                      style="width: 250%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="tab-pane container fade" id="workforce">
-              Priority Workforce
-            </div>
-            <div class="tab-pane container fade" id="environmental">
-              Environmental
-            </div>
+          </div>
+
+          <div class="tab-pane container fade" id="workforce">
+            Priority Workforce
+          </div>
+          <div class="tab-pane container fade" id="environmental">
+            Environmental
           </div>
         </div>
       </section>
@@ -812,5 +1087,6 @@
     <script src="./js/pieChart.js"></script>
     <script src="./js/barChart.js"></script>
     <script src="./js/indigenousChart.js"></script>
+    <script src="./js/disabilityChart.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-// Project Risk Levels chart
+// Disability Inclusion Risk levels chart
 var options = {
   series: [76, 55, 68, 50],
   chart: {
@@ -14,7 +14,7 @@ var options = {
       hollow: {
         margin: 5,
         size: "30%",
-        background: "#FF0000",
+        background: "#00B050",
         image: undefined,
       },
       dataLabels: {
@@ -27,7 +27,7 @@ var options = {
         },
         total: {
           show: true,
-          label: ["High"],
+          label: ["Low"],
           color: "#000",
           fontSize: "15px",
         },
@@ -40,7 +40,7 @@ var options = {
       },
     },
   },
-  colors: ["#144492", "#F3BE00", "#00B050", "#000000"],
+  colors: ["#144492", "#F3BE00", "#00B050", "#FF0000"],
   labels: ["Completion", "Medium", "Low", "High"],
   legend: {
     show: false,
@@ -75,33 +75,33 @@ var options = {
 };
 
 var chart = new ApexCharts(
-  document.querySelector("#indigenousProjectRiskChart"),
+  document.querySelector("#disabilityProjectRiskChart"),
   options
 );
 chart.render();
 
-// <---- Total Project Social Suppliers Chart ----->
+// <---- Total Project Disability Chart ----->
 var options = {
   series: [
     {
       name: "Net Profit",
       type: "column",
-      data: [55, 30, 38, 23, 30, 38, 30, 25, 38],
+      data: [35, 30, 28, 32, 30, 38, 45, 40, 30],
     },
     {
       name: "Revenue",
       type: "column",
-      data: [20, 15, 13, 18, 12, 15, 12, 18, 14],
+      data: [30, 25, 24, 28, 27, 32, 40, 35, 25],
     },
     {
       name: "Free Cash Flow",
       type: "column",
-      data: [8, 5, 4, 5, 3, 6, 7, 4, 6],
+      data: [25, 20, 20, 23, 22, 26, 35, 30, 20],
     },
     {
       name: "01",
       type: "line",
-      data: [55, 30, 38, 23, 30, 38, 30, 25, 38],
+      data: [35, 30, 28, 32, 30, 38, 45, 40, 30],
       color: "#FD4802",
     },
   ],
@@ -116,7 +116,7 @@ var options = {
     width: [5, 5],
     curve: "smooth",
   },
-  colors: ["#F3BE00", "#964B00", "#FF5252", "#FD4802"],
+  colors: ["#FF5252", "#54A5FF", "#A020F0", "#FD4802"],
 
   legend: {
     show: false,
@@ -158,12 +158,12 @@ var options = {
 };
 
 var chart = new ApexCharts(
-  document.querySelector("#indigenousSuppliersChart"),
+  document.querySelector("#disabilityTotalProjectChart"),
   options
 );
 chart.render();
 
-// Contractor Spend Status Chart
+// disability Contractor Spend Status Chart
 var options = {
   series: [
     {
@@ -206,7 +206,7 @@ var options = {
       enabled: false,
     },
   },
-  colors: ["#964B00", "#FF5252", "#F3BE00"],
+  colors: ["#A020F0", "#FF5252", "#54A5FF"],
   dataLabels: {
     enabled: false,
   },
@@ -340,12 +340,12 @@ var options = {
 };
 
 var chart = new ApexCharts(
-  document.querySelector("#indigenousConstractorChart"),
+  document.querySelector("#disabilityConstractorChart"),
   options
 );
 chart.render();
 
-// indigenous pie chart
+// disability FTE pie chart
 var options = {
   series: [20, 20, 15, 10, 20, 15],
   chart: {
@@ -393,12 +393,12 @@ var options = {
 };
 
 var chart = new ApexCharts(
-  document.querySelector("#indigenousChartPie"),
+  document.querySelector("#disabilityChartPie"),
   options
 );
 chart.render();
 
-// Indigenous Training type Pie Chart
+// disability Training type Pie Chart
 var options = {
   series: [20, 20, 20, 40],
   chart: {
@@ -450,12 +450,12 @@ var options = {
 };
 
 var chart = new ApexCharts(
-  document.querySelector("#indigenousTrainingChartPie"),
+  document.querySelector("#disabilityTrainingChartPie"),
   options
 );
 chart.render();
 
-// Indigenous Employment type Pie Chart
+// disability Employment type Pie Chart
 var options = {
   series: [100, 100, 50, 200],
   chart: {
@@ -512,12 +512,12 @@ var options = {
 };
 
 var chart = new ApexCharts(
-  document.querySelector("#indigenousEmploymentChartPie"),
+  document.querySelector("#disabilityEmploymentChartPie"),
   options
 );
 chart.render();
 
-// Risk and target status Bar Chart
+// disability Risk and target status Bar Chart
 var options = {
   series: [
     {
@@ -659,7 +659,7 @@ var options = {
 };
 
 var chart = new ApexCharts(
-  document.querySelector("#indigenousRiskChart"),
+  document.querySelector("#disabilityRiskChart"),
   options
 );
 chart.render();

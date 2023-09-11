@@ -279,6 +279,16 @@
   background-color: #ff5252;
 }
 
+.disability_legend_box.red {
+  background-color: #ff5252;
+}
+.disability_legend_box.sky {
+  background-color: #54a5ff;
+}
+.disability_legend_box.violet {
+  background-color: #a020f0;
+}
+
 .constractor_legend .legends {
   margin-right: 15px;
   display: flex;
