@@ -269,6 +269,16 @@
   background-color: #ff49ed;
 }
 
+.indigenous_legend_box.yellow {
+  background-color: #f3be00;
+}
+.indigenous_legend_box.brown {
+  background-color: #964b00;
+}
+.indigenous_legend_box.red {
+  background-color: #ff5252;
+}
+
 .constractor_legend .legends {
   margin-right: 15px;
   display: flex;
@@ -362,6 +372,30 @@
   background-color: #00ffff;
 }
 
+.indigenous_legend .legend_box.color1 {
+  background-color: #ff5438;
+}
+.indigenous_legend .legend_box.color2 {
+  background-color: #000091;
+}
+.indigenous_legend .legend_box.color3 {
+  background-color: #a627d3;
+}
+.indigenous_legend .legend_box.color4 {
+  background-color: #ff9f51;
+}
+.indigenous_legend .legend_box.color5 {
+  background-color: #a1dae8;
+}
+.indigenous_legend .legend_box.color6 {
+  background-color: #ffbdcb;
+}
+
+.indigenous_legend {
+  top: 165px;
+  right: 0px;
+}
+
 .priority_legend .legends {
   margin: 13px 15px 13px 0;
   display: flex;
@@ -391,6 +425,15 @@
     right: 51%;
     top: 127px;
   } */
+
+  .indigenous_legend {
+    top: 130px;
+    right: 0px;
+  }
+
+  .indigenous_legend .legends {
+    margin: 8px 15px 8px;
+  }
 
   .project_legend_text div {
     font-size: 10px;

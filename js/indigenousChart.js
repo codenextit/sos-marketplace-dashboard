@@ -14,7 +14,7 @@ var options = {
       hollow: {
         margin: 5,
         size: "30%",
-        background: "#F3BE00",
+        background: "#FF0000",
         image: undefined,
       },
       dataLabels: {
@@ -27,7 +27,7 @@ var options = {
         },
         total: {
           show: true,
-          label: ["Medium"],
+          label: ["High"],
           color: "#000",
           fontSize: "15px",
         },
@@ -40,7 +40,7 @@ var options = {
       },
     },
   },
-  colors: ["#144492", "#F3BE00", "#00B050", "#FF0000"],
+  colors: ["#144492", "#F3BE00", "#00B050", "#000000"],
   labels: ["Completion", "Medium", "Low", "High"],
   legend: {
     show: false,
@@ -86,22 +86,22 @@ var options = {
     {
       name: "Net Profit",
       type: "column",
-      data: [25, 35, 45, 55, 65, 75, 85, 95, 75],
+      data: [55, 30, 38, 23, 30, 38, 30, 25, 38],
     },
     {
       name: "Revenue",
       type: "column",
-      data: [20, 30, 40, 50, 60, 70, 80, 90, 70],
+      data: [20, 15, 13, 18, 12, 15, 12, 18, 14],
     },
     {
       name: "Free Cash Flow",
       type: "column",
-      data: [15, 25, 35, 45, 55, 65, 75, 85, 65],
+      data: [8, 5, 4, 5, 3, 6, 7, 4, 6],
     },
     {
       name: "01",
       type: "line",
-      data: [15, 28, 35, 45, 60, 65, 75, 80, 70],
+      data: [55, 30, 38, 23, 30, 38, 30, 25, 38],
       color: "#FD4802",
     },
   ],
@@ -116,7 +116,7 @@ var options = {
     width: [5, 5],
     curve: "smooth",
   },
-  colors: ["#00BC8B", "#037BFF", "#FF49ED", "#FD4802"],
+  colors: ["#F3BE00", "#964B00", "#FF5252", "#FD4802"],
 
   legend: {
     show: false,
@@ -206,7 +206,7 @@ var options = {
       enabled: false,
     },
   },
-  colors: ["#00BC8B", "#037BFF", "#FF49ED"],
+  colors: ["#964B00", "#FF5252", "#F3BE00"],
   dataLabels: {
     enabled: false,
   },
@@ -345,11 +345,11 @@ var chart = new ApexCharts(
 );
 chart.render();
 
-// pie chart
+// indigenous pie chart
 var options = {
-  series: [8, 7, 5, 8, 10, 15, 10, 7, 13, 5, 8, 4],
+  series: [20, 20, 15, 10, 20, 15],
   chart: {
-    width: 420,
+    width: 300,
     type: "pie",
     fontFamily: "Poppins",
   },
@@ -367,41 +367,22 @@ var options = {
     "Asylum seeker/refugees",
     "Long term unemployed",
     "LGBTQI+",
-    "Aboriginal & Torres Strait Islanders",
-    "Women",
-    "People living with a disability",
-    "Entrenched disadvantage",
-    "Women escaping violence",
-    "New migrants",
   ],
   stroke: {
     show: false,
     width: 0,
     colors: ["transparent"],
   },
-  colors: [
-    "#FF5438",
-    "#000091",
-    "#980090",
-    "#FF9F51",
-    "#A1DAE8",
-    "#FFBDCB",
-    "#FF787C",
-    "#82E200",
-    "#00C3FF",
-    "#8D0085",
-    "#00FFFF",
-    "#A627D3",
-  ],
+  colors: ["#FF5438", "#000091", "#980090", "#FF9F51", "#A1DAE8", "#FFBDCB"],
   legend: {
     show: false,
   },
   responsive: [
     {
-      breakpoint: 480,
+      breakpoint: 1400,
       options: {
         chart: {
-          width: 200,
+          width: 220,
         },
         legend: {
           position: "bottom",
@@ -413,6 +394,120 @@ var options = {
 
 var chart = new ApexCharts(
   document.querySelector("#indigenousChartPie"),
+  options
+);
+chart.render();
+
+// Indigenous Training type Pie Chart
+var options = {
+  series: [20, 20, 20, 40],
+  chart: {
+    width: 300,
+    type: "pie",
+    fontFamily: "Poppins",
+  },
+  dataLabels: {
+    enabled: true,
+    formatter: function (val) {
+      return val + " " + "FTE";
+    },
+  },
+  plotOptions: {
+    pie: {
+      offsetX: 0,
+      offsetY: 0,
+    },
+  },
+
+  labels: [
+    "Youth 16-24",
+    "Mature aged",
+    "Ex justice",
+    "Asylum seeker/refugees",
+  ],
+  stroke: {
+    show: false,
+    width: 0,
+    colors: ["transparent"],
+  },
+  colors: ["#FF5438", "#000091", "#980090", "#FF9F51"],
+  legend: {
+    show: false,
+  },
+  responsive: [
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          width: 220,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+  ],
+};
+
+var chart = new ApexCharts(
+  document.querySelector("#indigenousTrainingChartPie"),
+  options
+);
+chart.render();
+
+// Indigenous Employment type Pie Chart
+var options = {
+  series: [100, 100, 50, 200],
+  chart: {
+    width: 300,
+    type: "pie",
+    fontFamily: "Poppins",
+  },
+  dataLabels: {
+    enabled: true,
+    formatter: function (val) {
+      return val + " " + "FTE";
+    },
+  },
+  plotOptions: {
+    pie: {
+      offsetX: 0,
+      offsetY: 0,
+    },
+  },
+
+  labels: [
+    "Youth 16-24",
+    "Mature aged",
+    "Ex justice",
+    "Asylum seeker/refugees",
+  ],
+  stroke: {
+    show: false,
+    width: 0,
+    colors: ["transparent"],
+  },
+  colors: ["#FF5438", "#000091", "#980090", "#FF9F51"],
+  legend: {
+    show: false,
+  },
+  responsive: [
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          width: 220,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+  ],
+};
+
+var chart = new ApexCharts(
+  document.querySelector("#indigenousEmploymentChartPie"),
   options
 );
 chart.render();

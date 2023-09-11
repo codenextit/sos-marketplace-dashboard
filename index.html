@@ -510,6 +510,7 @@
             </div>
             <!-- chart end -->
 
+            <!-- Indigenous dashboard -->
             <div class="tab-pane container-fluid fade ps-0" id="inclusion">
               <div class="row p-0">
                 <div class="col-lg-3">
@@ -517,7 +518,7 @@
                     <h4>Total Project Indigenous Business spend</h4>
                     <p><i class="fa-solid fa-filter"></i>1 Filter</p>
                     <div>
-                      <span>$1,680,000</span><br />
+                      <span>910,000</span><br />
                       Total
                     </div>
                   </div>
@@ -527,7 +528,7 @@
                     <h4>Indigenous Package Compliance Progress</h4>
                     <p><i class="fa-solid fa-filter"></i>1 Filter</p>
                     <div>
-                      <span>37%</span><br />
+                      <span>25%</span><br />
                       Total
                     </div>
                   </div>
@@ -537,7 +538,7 @@
                     <h4>Overdue Indigenous Compliance Milestones</h4>
                     <p><i class="fa-solid fa-filter"></i>1 Filter</p>
                     <div>
-                      <span>52</span><br />
+                      <span>65</span><br />
                       Total
                     </div>
                   </div>
@@ -550,7 +551,7 @@
                     </h4>
                     <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
                     <div>
-                      <span>79%</span><br />
+                      <span>20%</span><br />
                       Total
                     </div>
                   </div>
@@ -571,7 +572,7 @@
                     </div>
                     <div class="legends">
                       <div class="legend_box green"></div>
-                      <span>Low</span>
+                      <span>Low Risk</span>
                     </div>
                     <div class="legends">
                       <div class="legend_box yellow"></div>
@@ -579,15 +580,15 @@
                     </div>
                     <div class="legends">
                       <div class="legend_box red"></div>
-                      <span>High</span>
+                      <span>High Risk</span>
                     </div>
                   </section>
 
                   <div class="project_legend_text">
-                    <div>Indigenous Business Spend</div>
-                    <div>Indigenous Inclusion (FTE)</div>
                     <div>Contractor Cultural Awareness Completion</div>
-                    <div>FTE Indigenous Employment Retention</div>
+                    <div>Indigenous Inclusion (FTE)</div>
+                    <div>Indigenous Business Spend</div>
+                    <div>FTE Inclusion Training Employment Retention</div>
                   </div>
 
                   <div id="indigenousProjectRiskChart" class="chart"></div>
@@ -600,15 +601,17 @@
 
                   <section class="constractor_legend">
                     <div class="legends">
-                      <div class="legend_box green"></div>
+                      <div
+                        class="legend_box indigenous_legend_box yellow"
+                      ></div>
                       <span>Indigenous Training/Employment Provider</span>
                     </div>
                     <div class="legends">
-                      <div class="legend_box blue"></div>
+                      <div class="legend_box indigenous_legend_box brown"></div>
                       <span>Certified Indigenous Business</span>
                     </div>
                     <div class="legends">
-                      <div class="legend_box pink"></div>
+                      <div class="legend_box indigenous_legend_box red"></div>
                       <span>Registered Indigenous Business</span>
                     </div>
                   </section>
@@ -626,15 +629,17 @@
 
                   <section class="constractor_legend">
                     <div class="legends">
-                      <div class="legend_box green"></div>
+                      <div class="legend_box indigenous_legend_box brown"></div>
                       <span>Certified Indigenous Business</span>
                     </div>
                     <div class="legends">
-                      <div class="legend_box blue"></div>
+                      <div class="legend_box indigenous_legend_box red"></div>
                       <span>Registered Indigenous Business</span>
                     </div>
                     <div class="legends">
-                      <div class="legend_box pink"></div>
+                      <div
+                        class="legend_box indigenous_legend_box yellow"
+                      ></div>
                       <span>Indigenous Training/ Employment Provider</span>
                     </div>
                   </section>
@@ -656,71 +661,90 @@
                 <div class="chart_box">
                   <p
                     style="
-                      text-align: center;
+                      text-align: left;
                       color: rgba(0, 0, 0, 0.7);
                       font-weight: 600;
                     "
                   >
-                    Total Indigenous Inclusion (FTE) Contribution Status from
-                    Indigenous <br />
-                    businesses and Social benefit Suppliers
+                    FTE Contribution Status Indigenous Inclusion ( Indigenous
+                    Businesses & Social Enterprises)
                   </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="chart_content">
+                        <p style="color: #000000; margin: 30px 0">
+                          From people who identify as
+                        </p>
+                        <section class="priority_legend indigenous_legend">
+                          <div class="legends">
+                            <div class="legend_box color1"></div>
+                            <span>Youth 16-24</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color2"></div>
+                            <span>Mature aged</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color3"></div>
+                            <span>Ex justice</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color4"></div>
+                            <span>LGBTQI+</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color5"></div>
+                            <span>Make this last</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color6"></div>
+                            <span>Women escaping violence</span>
+                          </div>
+                        </section>
 
-                  <section class="priority_legend priority_legend_one">
-                    <div class="legends">
-                      <div class="legend_box color1"></div>
-                      <span>Youth 16-24</span>
+                        <div id="indigenousChartPie" class="chart"></div>
+                      </div>
                     </div>
-                    <div class="legends">
-                      <div class="legend_box color2"></div>
-                      <span>Mature aged</span>
-                    </div>
-                    <div class="legends">
-                      <div class="legend_box color3"></div>
-                      <span>Ex justice</span>
-                    </div>
-                    <div class="legends">
-                      <div class="legend_box color4"></div>
-                      <span>Asylum seeker/refugees</span>
-                    </div>
-                    <div class="legends">
-                      <div class="legend_box color5"></div>
-                      <span>Long term unemployed</span>
-                    </div>
-                    <div class="legends">
-                      <div class="legend_box color6"></div>
-                      <span>LGBTQI+</span>
-                    </div>
-                  </section>
 
-                  <section class="priority_legend priority_legend_two">
-                    <div class="legends">
-                      <div class="legend_box color7"></div>
-                      <span>Aboriginal & Torres Strait Islanders</span>
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Training type
+                            </p>
+                            <div
+                              id="indigenousTrainingChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Employment type
+                            </p>
+                            <div
+                              id="indigenousEmploymentChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="legends">
-                      <div class="legend_box color8"></div>
-                      <span>Women</span>
-                    </div>
-                    <div class="legends">
-                      <div class="legend_box color9"></div>
-                      <span>People living with a disability</span>
-                    </div>
-                    <div class="legends">
-                      <div class="legend_box color10"></div>
-                      <span>Entrenched disadvantage</span>
-                    </div>
-                    <div class="legends">
-                      <div class="legend_box color11"></div>
-                      <span>Women escaping violence</span>
-                    </div>
-                    <div class="legends">
-                      <div class="legend_box color12"></div>
-                      <span>New migrants</span>
-                    </div>
-                  </section>
-
-                  <div id="indigenousChartPie" class="chart"></div>
+                  </div>
                 </div>
               </div>
 
