@@ -355,6 +355,10 @@ var options = {
   },
   dataLabels: {
     enabled: true,
+    style: {
+      fontFamily: "Poppins", // Set the font family to Poppins
+      fontWeight: 300, // Set the font weight to 300
+    },
     formatter: function (val) {
       return val + "%";
     },
@@ -400,7 +404,7 @@ chart.render();
 
 // disability Training type Pie Chart
 var options = {
-  series: [20, 20, 20, 40],
+  series: [30, 25, 30, 25],
   chart: {
     width: 300,
     type: "pie",
@@ -408,9 +412,16 @@ var options = {
   },
   dataLabels: {
     enabled: true,
-    formatter: function (val) {
-      return val + " " + "FTE";
+    style: {
+      fontFamily: "Poppins", // Set the font family to Poppins
+      fontWeight: 300, // Set the font weight to 300
     },
+    formatter: function (val, opt) {
+      // return val + " " + "FTE";
+      return opt.w.globals.seriesNames[opt.seriesIndex];
+    },
+    position: "inside",
+    offset: 25,
   },
   plotOptions: {
     pie: {
@@ -419,12 +430,7 @@ var options = {
     },
   },
 
-  labels: [
-    "Youth 16-24",
-    "Mature aged",
-    "Ex justice",
-    "Asylum seeker/refugees",
-  ],
+  labels: ["Trainee", "Cadet", "Apprentice", ["Work", "Experience"]],
   stroke: {
     show: false,
     width: 0,
@@ -457,7 +463,7 @@ chart.render();
 
 // disability Employment type Pie Chart
 var options = {
-  series: [100, 100, 50, 200],
+  series: [20, 20, 20, 40],
   chart: {
     width: 300,
     type: "pie",
@@ -465,9 +471,16 @@ var options = {
   },
   dataLabels: {
     enabled: true,
-    formatter: function (val) {
-      return Math.floor(val) + " FTE";
+    style: {
+      fontFamily: "Poppins", // Set the font family to Poppins
+      fontWeight: 300, // Set the font weight to 300
     },
+    formatter: function (val, opt) {
+      // return val + " " + "FTE";
+      return opt.w.globals.seriesNames[opt.seriesIndex];
+    },
+    position: "inside",
+    offset: 25,
   },
   plotOptions: {
     pie: {
@@ -475,12 +488,8 @@ var options = {
       offsetY: 0,
     },
   },
-  labels: [
-    "Youth 16-24",
-    "Mature aged",
-    "Ex justice",
-    "Asylum seeker/refugees",
-  ],
+
+  labels: ["FTE", "Part Time", "Casual", "Labour Hire"],
   stroke: {
     show: false,
     width: 0,
@@ -489,12 +498,6 @@ var options = {
   colors: ["#FF5438", "#000091", "#980090", "#FF9F51"],
   legend: {
     show: false,
-  },
-  tooltip: {
-    enabled: true,
-    formatter: function (val, opts) {
-      return val.toFixed(2) + " FTE"; // Display original floating-point numbers in tooltips
-    },
   },
   responsive: [
     {
