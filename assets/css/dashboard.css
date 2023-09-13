@@ -477,6 +477,7 @@
 
 .environmental_chart_items {
   grid-row: 1;
+  position: relative;
 }
 
 .environmental_chart_items p {
@@ -485,6 +486,66 @@
   font-family: var(--primary-font);
   font-size: 14px;
   text-align: center;
+}
+
+.environmental_legend {
+  margin-top: 20px;
+  padding-left: 15px;
+}
+
+.environmental_legend .legends {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.environmental_legend .legend_box {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.environmental_legend .legends span {
+  color: #878787;
+  font-size: 13px;
+}
+
+.environmental_legend .legend_box.color1 {
+  background-color: #c5e0b4;
+}
+.environmental_legend .legend_box.color2 {
+  background-color: #70ad47;
+}
+.environmental_legend .legend_box.color3 {
+  background-color: #385723;
+}
+.environmental_legend .legend_box.color4 {
+  background-color: #999999;
+}
+.environmental_legend .legend_box.color5 {
+  background-color: #2e75b6;
+}
+.environmental_legend .legend_box.color6 {
+  background-color: #00b0f0;
+}
+.environmental_legend .legend_box.color7 {
+  background-color: #002060;
+}
+.environmental_legend .legend_box.color8 {
+  background-color: #bdd7ee;
+}
+.environmental_legend .legend_box.color9 {
+  background-color: #a0f4f2;
+}
+.environmental_legend .legend_box.color10 {
+  background-color: #2cc8b5;
+}
+.environmental_legend .legend_box.color11 {
+  background-color: #1d8b86;
+}
+.environmental_legend .legend_box.color12 {
+  background-color: #a5a5a5;
 }
 
 @media screen and (max-width: 1600px) {

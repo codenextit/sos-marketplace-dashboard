@@ -244,7 +244,7 @@ var options = {
             color: "rgba(0,0,0,0.7)",
             fontWeight: 700,
             formatter: function (val) {
-              return val + "T";
+              return val + "H";
             },
           },
         },
@@ -300,7 +300,7 @@ var options = {
             color: "rgba(0,0,0,0.7)",
             fontWeight: 700,
             formatter: function (val) {
-              return val + "T";
+              return val;
             },
           },
         },
