@@ -508,7 +508,6 @@
                 </div>
               </div>
             </div>
-            <!-- chart end -->
 
             <!-- Indigenous dashboard -->
             <div class="tab-pane container-fluid fade ps-0" id="inclusion">
@@ -788,14 +787,15 @@
               </div>
             </div>
 
-            <div class="tab-pane container fade" id="MPSG">
+            <!-- MPSG dashboard -->
+            <div class="tab-pane container-fluid fade ps-0" id="MPSG">
               <div class="row p-0">
                 <div class="col-lg-3">
                   <div class="dashboard_card green">
                     <h4>Total MPSG Workforce Hours</h4>
                     <p><i class="fa-solid fa-filter"></i>1 Filter</p>
                     <div>
-                      <span>20.5 (FTE)</span><br />
+                      <span>7,223</span><br />
                       Total
                     </div>
                   </div>
@@ -1146,7 +1146,7 @@
             </div>
 
             <!-- disability dashboard -->
-            <div class="tab-pane container fade" id="disability">
+            <div class="tab-pane container-fluid fade ps-0" id="disability">
               <div class="row p-0">
                 <div class="col-lg-3">
                   <div class="dashboard_card green">
@@ -1420,282 +1420,442 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Priority Workforce dashboard -->
-          <div class="tab-pane container fade" id="workforce">
-            <div class="row p-0">
-              <div class="col-lg-3">
-                <div class="dashboard_card green">
-                  <h4>Total FTE Priority Workforce Status</h4>
-                  <p><i class="fa-solid fa-filter"></i>1 Filter</p>
-                  <div>
-                    <span>4,126</span><br />
-                    Hrs
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="dashboard_card yellow">
-                  <h4>Package Compliance Progress- Priority workforce</h4>
-                  <p><i class="fa-solid fa-filter"></i>1 Filter</p>
-                  <div>
-                    <span>63%</span><br />
-                    Total
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="dashboard_card red">
-                  <h4>Overdue Priority Workforce (FTE) Milestones</h4>
-                  <p><i class="fa-solid fa-filter"></i>1 Filter</p>
-                  <div>
-                    <span>39</span><br />
-                    Total
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="dashboard_card black">
-                  <h4 style="margin-bottom: 25px">
-                    Total Project - Priority Workforce Compliance Progress
-                  </h4>
-                  <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
-                  <div>
-                    <span>58%</span><br />
-                    Total
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- chart start -->
-            <div class="chart_one">
-              <div class="chart_box">
-                <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
-                  Project Priority Workforce Risk Levels
-                </p>
-
-                <section class="target_status_legend">
-                  <div class="legends">
-                    <div class="legend_box blue"></div>
-                    <span>Completion Timeline</span>
-                  </div>
-                  <div class="legends">
-                    <div class="legend_box green"></div>
-                    <span>Low Risk</span>
-                  </div>
-                  <div class="legends">
-                    <div class="legend_box yellow"></div>
-                    <span>Medium</span>
-                  </div>
-                  <div class="legends">
-                    <div class="legend_box red"></div>
-                    <span>High Risk</span>
-                  </div>
-                </section>
-
-                <div class="project_legend_text">
-                  <div>Overall Status of Priority Workforce</div>
-                  <div>Employment</div>
-                  <div>Training</div>
-                  <div>Diversity & Inclusion Training Training</div>
-                </div>
-
-                <div id="priorityProjectRiskChart" class="chart"></div>
-              </div>
-
-              <div class="chart_box">
-                <div class="chart_name">
-                  <p>Total Project Social Suppliers</p>
-                  <p>By Month</p>
-                </div>
-
-                <section class="constractor_legend">
-                  <div class="legends">
-                    <div class="legend_box disability_legend_box red"></div>
-                    <span>Social enterprise</span>
-                  </div>
-                  <div class="legends">
-                    <div class="legend_box disability_legend_box sky"></div>
-                    <span>Indigenous Business</span>
-                  </div>
-                  <div class="legends">
-                    <div class="legend_box disability_legend_box violet"></div>
-                    <span>Disability Social Enterprise</span>
-                  </div>
-                </section>
-
-                <div id="priorityTotalProjectChart" class="chart"></div>
-              </div>
-            </div>
-
-            <div class="chart_two">
-              <div class="chart_box">
-                <div class="chart_name">
-                  <p>Total Contractor Priority Workforce (FTE) Status</p>
-                  <p>By Trade</p>
-                </div>
-
-                <section class="constractor_legend">
-                  <div class="legends">
-                    <div class="legend_box disability_legend_box violet"></div>
-                    <span>Disability Social Enterprise</span>
-                  </div>
-                  <div class="legends">
-                    <div class="legend_box disability_legend_box red"></div>
-                    <span>Disability Training Provider</span>
-                  </div>
-                  <div class="legends">
-                    <div class="legend_box disability_legend_box sky"></div>
-                    <span>Disability Employment</span>
-                  </div>
-                </section>
-
-                <div
-                  class="chart_container"
-                  style="width: 100%; overflow-x: scroll"
-                >
-                  <div
-                    id="priorityConstractorChart"
-                    class="chart"
-                    style="width: 250%"
-                  ></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="chart_two">
-              <div class="chart_box">
-                <p
-                  style="
-                    text-align: left;
-                    color: rgba(0, 0, 0, 0.7);
-                    font-weight: 600;
-                  "
-                >
-                  Total Disability Inclusion (FTE) Contribution Status
-                </p>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="chart_content">
-                      <p style="color: #000000; margin: 30px 0">
-                        Who identify as:
-                      </p>
-                      <section class="priority_legend indigenous_legend">
-                        <div class="legends">
-                          <div class="legend_box color1"></div>
-                          <span>Youth 16-24</span>
-                        </div>
-                        <div class="legends">
-                          <div class="legend_box color2"></div>
-                          <span>Mature aged</span>
-                        </div>
-                        <div class="legends">
-                          <div class="legend_box color3"></div>
-                          <span>Ex justice</span>
-                        </div>
-                        <div class="legends">
-                          <div class="legend_box color4"></div>
-                          <span>Asylum seeker/refugees</span>
-                        </div>
-                        <div class="legends">
-                          <div class="legend_box color5"></div>
-                          <span>Long term unemployed</span>
-                        </div>
-                        <div class="legends">
-                          <div class="legend_box color6"></div>
-                          <span>Aboriginal & Torres Strait Islander</span>
-                        </div>
-                      </section>
-
-                      <div id="priorityChartPie" class="chart"></div>
+            <!-- Priority Workforce dashboard -->
+            <div class="tab-pane container-fluid fade ps-0" id="workforce">
+              <div class="row p-0">
+                <div class="col-lg-3">
+                  <div class="dashboard_card green">
+                    <h4>Total FTE Priority Workforce Status</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>4,126</span><br />
+                      Hrs
                     </div>
                   </div>
-
-                  <div class="col-lg-6">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="chart_content">
-                          <p
-                            style="
-                              color: #000000;
-                              text-align: center;
-                              margin: 30px 0;
-                            "
-                          >
-                            Training type
-                          </p>
-                          <div
-                            id="priorityTrainingChartPie"
-                            class="chart"
-                          ></div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="chart_content">
-                          <p
-                            style="
-                              color: #000000;
-                              text-align: center;
-                              margin: 30px 0;
-                            "
-                          >
-                            Employment type
-                          </p>
-                          <div
-                            id="priorityEmploymentChartPie"
-                            class="chart"
-                          ></div>
-                        </div>
-                      </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card yellow">
+                    <h4>Package Compliance Progress- Priority workforce</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>63%</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card red">
+                    <h4>Overdue Priority Workforce (FTE) Milestones</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>39</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card black">
+                    <h4 style="margin-bottom: 25px">
+                      Total Project - Priority Workforce Compliance Progress
+                    </h4>
+                    <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
+                    <div>
+                      <span>58%</span><br />
+                      Total
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="chart_two">
-              <div class="chart_box">
-                <div class="chart_name">
-                  <p>Priority Workforce Risk and compliance Status</p>
-                  <p>By Trade</p>
+              <!-- chart start -->
+              <div class="chart_one">
+                <div class="chart_box">
+                  <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                    Project Priority Workforce Risk Levels
+                  </p>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Completion Timeline</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div class="project_legend_text">
+                    <div>Overall Status of Priority Workforce</div>
+                    <div>Employment</div>
+                    <div>Training</div>
+                    <div>Diversity & Inclusion Training Training</div>
+                  </div>
+
+                  <div id="priorityProjectRiskChart" class="chart"></div>
                 </div>
 
-                <section class="target_status_legend">
-                  <div class="legends">
-                    <div class="legend_box blue"></div>
-                    <span>On Track</span>
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Total Project Social Suppliers</p>
+                    <p>By Month</p>
                   </div>
-                  <div class="legends">
-                    <div class="legend_box green"></div>
-                    <span>Low Risk</span>
-                  </div>
-                  <div class="legends">
-                    <div class="legend_box yellow"></div>
-                    <span>Medium Risk</span>
-                  </div>
-                  <div class="legends">
-                    <div class="legend_box red"></div>
-                    <span>High Risk</span>
-                  </div>
-                </section>
 
-                <div
-                  class="chart_container"
-                  style="width: 100%; overflow-x: scroll"
-                >
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box green"></div>
+                      <span>Social enterprise</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box blue"></div>
+                      <span>Indigenous Business</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box pink"></div>
+                      <span>Disability Social Enterprise</span>
+                    </div>
+                  </section>
+
+                  <div id="priorityTotalProjectChart" class="chart"></div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Total Contractor Priority Workforce (FTE) Status</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box green"></div>
+                      <span>Disability Social Enterprise</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box blue"></div>
+                      <span>Disability Training Provider</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box pink"></div>
+                      <span>Disability Employment</span>
+                    </div>
+                  </section>
+
                   <div
-                    id="priorityRiskChart"
-                    class="chart"
-                    style="width: 250%"
-                  ></div>
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="priorityConstractorChart"
+                      class="chart"
+                      style="width: 250%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: left;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                    "
+                  >
+                    Total Disability Inclusion (FTE) Contribution Status
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="chart_content">
+                        <p style="color: #000000; margin: 30px 0">
+                          Who identify as:
+                        </p>
+                        <section class="priority_legend indigenous_legend">
+                          <div class="legends">
+                            <div class="legend_box color1"></div>
+                            <span>Youth 16-24</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color2"></div>
+                            <span>Mature aged</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color3"></div>
+                            <span>Ex justice</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color4"></div>
+                            <span>Asylum seeker/refugees</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color5"></div>
+                            <span>Long term unemployed</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color6"></div>
+                            <span>Aboriginal & Torres Strait Islander</span>
+                          </div>
+                        </section>
+
+                        <div id="priorityChartPie" class="chart"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Training type
+                            </p>
+                            <div
+                              id="priorityTrainingChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Employment type
+                            </p>
+                            <div
+                              id="priorityEmploymentChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Priority Workforce Risk and compliance Status</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>On Track</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="priorityRiskChart"
+                      class="chart"
+                      style="width: 250%"
+                    ></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane container fade" id="environmental">
-            Environmental
+
+            <!-- Environmental dashboard -->
+            <div class="tab-pane container-fluid fade ps-0" id="environmental">
+              <div class="row p-0">
+                <div class="col-lg-3">
+                  <div class="dashboard_card green">
+                    <h4>Total Project Spend</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>$1,680,000</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card yellow">
+                    <h4>Package Compliance Progress</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>37%</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card red">
+                    <h4>Overdue Compliance</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>52</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card black">
+                    <h4 style="margin-bottom: 25px">
+                      Total Project Compliance Progress
+                    </h4>
+                    <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
+                    <div>
+                      <span>79%</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- chart start -->
+              <div class="chart_one">
+                <div class="chart_box">
+                  <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                    Project Risk Levels
+                  </p>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Completion Timeline</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div class="project_legend_text">
+                    <div>Completion Timeline</div>
+                    <div>Energy</div>
+                    <div>Carbon Emissions</div>
+                    <div>Landfill Waste</div>
+                  </div>
+
+                  <div id="environmentalRiskChart" class="chart"></div>
+                </div>
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Total Project Social Suppliers</p>
+                    <p>By Month</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Waste Diverted From Landfill</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Recycled Content</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box pink"></div>
+                      <span
+                        >Carbon Eliminated, Reduced, Captured and Offset</span
+                      >
+                    </div>
+                  </section>
+
+                  <div id="environmentalSuppliersChart" class="chart"></div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: left;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    Total Project Outcomes
+                  </p>
+
+                  <div id="riskChart" class="chart"></div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: left;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    Summary of Environmental Benefits
+                  </p>
+
+                  <div class="environmental_wrapper">
+                    <div class="environmental_chart_items">
+                      <p>Waste Reduction (Tonnage)</p>
+
+                      <div id="environmentalWasteChart" class="chart"></div>
+                    </div>
+                    <div class="environmental_chart_items">
+                      <p>Environmental Regeneration Equivalent Hectares</p>
+
+                      <div
+                        id="environmentalRegenerationChart"
+                        class="chart"
+                      ></div>
+                    </div>
+                    <div class="environmental_chart_items">
+                      <p>Project Certification & Energy Initiatives</p>
+
+                      <div id="environmentalProjectChart" class="chart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1714,5 +1874,6 @@
     <script src="./js/mpsgChart.js"></script>
     <script src="./js/disabilityChart.js"></script>
     <script src="./js/priorityChart.js"></script>
+    <script src="./js/environmentalChart.js"></script>
   </body>
 </html>

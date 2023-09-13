@@ -40,7 +40,7 @@ var options = {
       },
     },
   },
-  colors: ["#144492", "#F3BE00", "#00B050", "#000000"],
+  colors: ["#144492", "#F3BE00", "#00B050", "#FF0000"],
   labels: ["Completion", "Medium", "Low", "High"],
   legend: {
     show: false,
@@ -268,7 +268,7 @@ chart.render();
 var options = {
   series: [20, 20, 15, 10, 20, 15],
   chart: {
-    width: 300,
+    width: "50%",
     type: "pie",
     fontFamily: "Poppins",
   },
@@ -298,6 +298,17 @@ var options = {
   },
   responsive: [
     {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+    {
       breakpoint: 1400,
       options: {
         chart: {
@@ -318,7 +329,7 @@ chart.render();
 var options = {
   series: [20, 20, 20, 40],
   chart: {
-    width: 300,
+    width: "100%",
     type: "pie",
     fontFamily: "Poppins",
   },
@@ -352,6 +363,17 @@ var options = {
   },
   responsive: [
     {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+    {
       breakpoint: 1400,
       options: {
         chart: {
@@ -375,7 +397,7 @@ chart.render();
 var options = {
   series: [100, 100, 50, 200],
   chart: {
-    width: 300,
+    width: "100%",
     type: "pie",
     fontFamily: "Poppins",
   },
@@ -413,6 +435,17 @@ var options = {
     },
   },
   responsive: [
+    {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
     {
       breakpoint: 1400,
       options: {

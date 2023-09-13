@@ -349,7 +349,7 @@ chart.render();
 var options = {
   series: [20, 20, 15, 10, 20, 15],
   chart: {
-    width: 300,
+    width: "50%",
     type: "pie",
     fontFamily: "Poppins",
   },
@@ -383,6 +383,17 @@ var options = {
   },
   responsive: [
     {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+    {
       breakpoint: 1400,
       options: {
         chart: {
@@ -406,7 +417,7 @@ chart.render();
 var options = {
   series: [30, 25, 30, 25],
   chart: {
-    width: 300,
+    width: "100%",
     type: "pie",
     fontFamily: "Poppins",
   },
@@ -442,6 +453,17 @@ var options = {
   },
   responsive: [
     {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+    {
       breakpoint: 1400,
       options: {
         chart: {
@@ -465,7 +487,7 @@ chart.render();
 var options = {
   series: [20, 20, 20, 40],
   chart: {
-    width: 300,
+    width: "100%",
     type: "pie",
     fontFamily: "Poppins",
   },
@@ -500,6 +522,17 @@ var options = {
     show: false,
   },
   responsive: [
+    {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
     {
       breakpoint: 1400,
       options: {

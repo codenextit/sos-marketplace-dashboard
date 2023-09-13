@@ -86,22 +86,22 @@ var options = {
     {
       name: "Net Profit",
       type: "column",
-      data: [35, 30, 28, 32, 30, 38, 45, 40, 30],
+      data: [45, 50, 42, 35, 50, 55, 45, 40, 50],
     },
     {
       name: "Revenue",
       type: "column",
-      data: [30, 25, 24, 28, 27, 32, 40, 35, 25],
+      data: [40, 45, 38, 30, 45, 50, 40, 35, 45],
     },
     {
       name: "Free Cash Flow",
       type: "column",
-      data: [25, 20, 20, 23, 22, 26, 35, 30, 20],
+      data: [35, 40, 33, 25, 40, 45, 35, 30, 40],
     },
     {
       name: "01",
       type: "line",
-      data: [35, 30, 28, 32, 30, 38, 45, 40, 30],
+      data: [45, 50, 42, 35, 50, 55, 45, 40, 50],
       color: "#FD4802",
     },
   ],
@@ -116,7 +116,7 @@ var options = {
     width: [5, 5],
     curve: "smooth",
   },
-  colors: ["#FF5252", "#54A5FF", "#A020F0", "#FD4802"],
+  colors: ["#00BC8B", "#037BFF", "#FF49ED", "#FD4802"],
 
   legend: {
     show: false,
@@ -206,7 +206,7 @@ var options = {
       enabled: false,
     },
   },
-  colors: ["#A020F0", "#FF5252", "#54A5FF"],
+  colors: ["#00BC8B", "#037BFF", "#FF49ED"],
   dataLabels: {
     enabled: false,
   },
@@ -349,7 +349,7 @@ chart.render();
 var options = {
   series: [20, 20, 15, 10, 20, 15],
   chart: {
-    width: 300,
+    width: "50%",
     type: "pie",
     fontFamily: "Poppins",
   },
@@ -383,6 +383,17 @@ var options = {
   },
   responsive: [
     {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+    {
       breakpoint: 1400,
       options: {
         chart: {
@@ -406,7 +417,7 @@ chart.render();
 var options = {
   series: [30, 25, 30, 25],
   chart: {
-    width: 300,
+    width: "100%",
     type: "pie",
     fontFamily: "Poppins",
   },
@@ -420,8 +431,6 @@ var options = {
       // return val + " " + "FTE";
       return opt.w.globals.seriesNames[opt.seriesIndex];
     },
-    position: "inside",
-    offset: 25,
   },
   plotOptions: {
     pie: {
@@ -430,7 +439,12 @@ var options = {
     },
   },
 
-  labels: ["Trainee", "Cadet", "Apprentice", ["Work", "Experience"]],
+  labels: [
+    ["Trainee", "(1.2 FTE)"],
+    ["Cadet", "0.4 FTE"],
+    ["Apprentice", "1.5 FTE"],
+    ["Work", "Experience", "(0.4 FTE)"],
+  ],
   stroke: {
     show: false,
     width: 0,
@@ -441,6 +455,17 @@ var options = {
     show: false,
   },
   responsive: [
+    {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
     {
       breakpoint: 1400,
       options: {
@@ -465,7 +490,7 @@ chart.render();
 var options = {
   series: [20, 20, 20, 40],
   chart: {
-    width: 300,
+    width: "100%",
     type: "pie",
     fontFamily: "Poppins",
   },
@@ -489,7 +514,12 @@ var options = {
     },
   },
 
-  labels: ["FTE", "Part Time", "Casual", "Labour Hire"],
+  labels: [
+    ["1.5 FTE"],
+    ["Part Time", "(1.0 FTE)"],
+    ["Casual", "(0.4 FTE)"],
+    ["Labour Hire", "(0.3 FTE)"],
+  ],
   stroke: {
     show: false,
     width: 0,
@@ -500,6 +530,17 @@ var options = {
     show: false,
   },
   responsive: [
+    {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
     {
       breakpoint: 1400,
       options: {

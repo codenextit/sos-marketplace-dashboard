@@ -402,8 +402,9 @@
 }
 
 .indigenous_legend {
-  top: 165px;
-  right: 0px;
+  top: 65%;
+  transform: translateY(-65%);
+  right: 0;
 }
 
 .priority_legend .legends {
@@ -468,6 +469,31 @@
   text-align: center;
 }
 
+/* Environmental */
+.environmental_wrapper {
+  display: grid;
+  grid-auto-columns: 1fr;
+}
+
+.environmental_chart_items {
+  grid-row: 1;
+}
+
+.environmental_chart_items p {
+  height: 40px;
+  color: var(--black);
+  font-family: var(--primary-font);
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1600px) {
+  .project_legend_text div {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   /* .project_legend_text div {
     font-size: 11px;
@@ -479,10 +505,10 @@
     top: 127px;
   } */
 
-  .indigenous_legend {
+  /* .indigenous_legend {
     top: 130px;
     right: 0px;
-  }
+  } */
 
   .indigenous_legend .legends {
     margin: 8px 15px 8px;
@@ -526,17 +552,5 @@
     margin-right: 0px;
   }
 }
-
-/* @media screen and (max-width: 1300px) {
-  .project_legend_text div {
-    font-size: 10px;
-    padding-bottom: 8px;
-  }
-
-  .project_legend_text {
-    right: 51%;
-    top: 128px;
-  }
-} */
 
 /* dashboard end */
