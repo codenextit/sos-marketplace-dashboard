@@ -425,6 +425,49 @@
   padding-bottom: 3px;
 }
 
+/* workforce tabs work */
+
+.workforce_items {
+  display: grid;
+  grid-auto-columns: 1fr;
+  margin-top: 20px;
+}
+
+.workforce_item {
+  grid-row: 1;
+  margin-top: 20px;
+}
+
+.worforce_item_icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+}
+
+.worforce_item_icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.worforce_content h4 {
+  font-family: var(--primary-font);
+  color: var(--black);
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.worforce_content p {
+  font-family: var(--primary-font);
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+}
+
 @media screen and (max-width: 1400px) {
   /* .project_legend_text div {
     font-size: 11px;
