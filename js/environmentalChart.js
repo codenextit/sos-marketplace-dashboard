@@ -86,17 +86,17 @@ var options = {
     {
       name: "Net Profit",
       type: "column",
-      data: [0.8, 1, 1.5, 1.5, 1.5, 2, 1.9, 1.5, 1.5],
+      data: [1, 0.8, 1, 1.5, 1.5, 1.5, 2, 1.9, 1.5, 1.5, 1.9, 1.7],
     },
     {
       name: "Revenue",
       type: "column",
-      data: [1, 1.5, 1.8, 2, 2, 2.5, 2, 2, 2],
+      data: [1.2, 1, 1.5, 1.8, 2, 2, 2.5, 2, 2, 2, 2.3, 2],
     },
     {
       name: "Free Cash Flow",
       type: "column",
-      data: [0.8, 1, 1.5, 1.5, 1.5, 2, 1.9, 1.5, 1.5],
+      data: [1, 0.8, 1, 1.5, 1.5, 1.5, 2, 1.9, 1.5, 1.5, 1.2, 1.5],
     },
   ],
   chart: {
@@ -128,7 +128,20 @@ var options = {
     colors: ["transparent"],
   },
   xaxis: {
-    categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+    categories: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ],
   },
   yaxis: {
     min: 0.5, // Set the minimum Y-axis value to 0.5
