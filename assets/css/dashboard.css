@@ -470,6 +470,11 @@
 }
 
 /* Environmental */
+.constractor_legend .legend_box.lightGreen {
+  background-color: #bfeee2;
+  /* color: #00000033; */
+}
+
 .environmental_wrapper {
   display: grid;
   grid-auto-columns: 1fr;
@@ -536,16 +541,88 @@
   background-color: #bdd7ee;
 }
 .environmental_legend .legend_box.color9 {
-  background-color: #a0f4f2;
+  background-color: #ff9f51;
 }
 .environmental_legend .legend_box.color10 {
-  background-color: #2cc8b5;
+  background-color: #ff5438;
 }
 .environmental_legend .legend_box.color11 {
-  background-color: #1d8b86;
+  background-color: #000091;
 }
 .environmental_legend .legend_box.color12 {
-  background-color: #a5a5a5;
+  background-color: #980090;
+}
+.environmental_legend .legend_box.color13 {
+  background-color: #cccccc;
+}
+.environmental_legend .legend_box.color14 {
+  background-color: #999999;
+}
+.environmental_legend .legend_box.color15 {
+  background-color: #767676;
+}
+.environmental_legend .legend_box.color16 {
+  background-color: #000000;
+}
+
+/* Total Project Outcomes chart */
+
+.chart_label_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.chart_label_item .chart_label_text {
+  width: 70px;
+  font-family: var(--primary-font);
+  color: #878787;
+  font-size: 0.8em;
+}
+
+.chart_label_item .chart_label_border {
+  width: 100%;
+  height: 1px;
+  background-color: #00000026;
+}
+
+.chart_labels {
+  position: relative;
+}
+
+.chart_series_items {
+  position: absolute;
+  width: calc(100% - 70px);
+  top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 70px;
+}
+
+.chart_series_item {
+  position: relative;
+}
+
+.chart_series_border {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 140px;
+  border-left: 2px dashed var(--blue);
+}
+
+.chart_series_icon .ellipse {
+  background: url(../icons/outcomes_chart_ellipse.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 50px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 0.8em;
 }
 
 @media screen and (max-width: 1600px) {

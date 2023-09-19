@@ -106,7 +106,7 @@ var options = {
     toolbar: false,
     fontFamily: "Poppins",
   },
-  colors: ["#00BC8B", "#037BFF", "#319379"],
+  colors: ["#00BC8B", "#037BFF", "#BFEEE2"],
 
   legend: {
     show: false,
@@ -231,7 +231,7 @@ chart.render();
 
 // Environmental Regeneration Equivalent Hectares Chart
 var options = {
-  series: [44, 55, 41, 17],
+  series: [34, 55, 41, 37],
   chart: {
     type: "donut",
   },
@@ -285,16 +285,16 @@ var chart = new ApexCharts(
 );
 chart.render();
 
-// Project Certification & Energy Initiatives Chart
+// Renewable Energy Chart
 var options = {
-  series: [44, 55, 41, 17, 15],
+  series: [34, 55, 41, 37],
   chart: {
     type: "donut",
   },
   legend: {
     show: false,
   },
-  colors: ["#A0F4F2", "#2CC8B5", "#A5A5A5", "#1D8B86"],
+  colors: ["#FF5438", "#000091", "#980090", "#FF9F51"],
   dataLabels: {
     enabled: false,
   },
@@ -313,7 +313,7 @@ var options = {
             color: "rgba(0,0,0,0.7)",
             fontWeight: 700,
             formatter: function (val) {
-              return val;
+              return val + "%";
             },
           },
         },
@@ -336,7 +336,63 @@ var options = {
 };
 
 var chart = new ApexCharts(
-  document.querySelector("#environmentalProjectChart"),
+  document.querySelector("#environmentalRenewableChart"),
+  options
+);
+chart.render();
+
+// Carbon Emissions Reduction Chart
+var options = {
+  series: [34, 55, 41, 37],
+  chart: {
+    type: "donut",
+  },
+  legend: {
+    show: false,
+  },
+  colors: ["#3c3c3cb3", "#00000066", "#00000033", "#000000"],
+  dataLabels: {
+    enabled: false,
+  },
+  plotOptions: {
+    pie: {
+      donut: {
+        labels: {
+          show: true,
+          name: {
+            show: false,
+          },
+          value: {
+            show: true,
+            fontSize: "30px",
+            fontFamily: "Poppins",
+            color: "rgba(0,0,0,0.7)",
+            fontWeight: 700,
+            formatter: function (val) {
+              return val + "T";
+            },
+          },
+        },
+      },
+    },
+  },
+  responsive: [
+    {
+      breakpoint: 480,
+      options: {
+        chart: {
+          width: 200,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+  ],
+};
+
+var chart = new ApexCharts(
+  document.querySelector("#environmentalCarbonChart"),
   options
 );
 chart.render();
