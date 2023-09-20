@@ -297,6 +297,7 @@
 
 .chart_container::-webkit-scrollbar {
   height: 8px;
+  width: 8px;
 }
 
 .chart_container::-webkit-scrollbar-track {
@@ -567,10 +568,16 @@
 
 /* Total Project Outcomes chart */
 
+.chart_labels {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .chart_label_item {
   display: flex;
   align-items: center;
-  margin-bottom: 35px;
 }
 
 .chart_label_item .chart_label_text {
@@ -592,8 +599,8 @@
 
 .chart_series_items {
   position: absolute;
+  bottom: 150px;
   width: calc(100% - 70px);
-  top: 30px;
   display: flex;
   justify-content: space-between;
   margin-left: 70px;
@@ -611,6 +618,12 @@
   border-left: 2px dashed var(--blue);
 }
 
+.chart_series_icon .icon {
+  width: 100%;
+  display: block;
+  margin: 0 auto 10px;
+}
+
 .chart_series_icon .ellipse {
   background: url(../icons/outcomes_chart_ellipse.svg);
   background-repeat: no-repeat;
@@ -623,6 +636,18 @@
   justify-content: center;
   color: var(--white);
   font-size: 0.8em;
+}
+
+.chart_legend {
+  width: calc(100% - 70px);
+  height: 300px;
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart_legend span {
+  transform: rotate(90deg);
 }
 
 @media screen and (max-width: 1600px) {
