@@ -86,22 +86,22 @@ var options = {
     {
       name: "Net Profit",
       type: "column",
-      data: [35, 30, 28, 32, 30, 38, 45, 40, 30],
+      data: [25, 35, 38, 35, 30, 28, 32, 30, 38, 45, 40, 30],
     },
     {
       name: "Revenue",
       type: "column",
-      data: [30, 25, 24, 28, 27, 32, 40, 35, 25],
+      data: [28, 32, 30, 30, 25, 24, 28, 27, 32, 40, 35, 25],
     },
     {
       name: "Free Cash Flow",
       type: "column",
-      data: [25, 20, 20, 23, 22, 26, 35, 30, 20],
+      data: [28, 27, 32, 25, 20, 20, 23, 22, 26, 35, 30, 20],
     },
     {
       name: "01",
       type: "line",
-      data: [35, 30, 28, 32, 30, 38, 45, 40, 30],
+      data: [30, 38, 35, 35, 30, 28, 32, 30, 38, 45, 40, 30],
       color: "#FD4802",
     },
   ],
@@ -138,11 +138,24 @@ var options = {
     colors: ["transparent"],
   },
   xaxis: {
-    categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+    categories: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ],
   },
   yaxis: {
     title: {
-      text: "$ (thousands)",
+      text: "",
     },
   },
   fill: {
@@ -441,8 +454,8 @@ var options = {
 
   labels: [
     ["Trainee", "(1.2 FTE)"],
-    ["Cadet", "0.4 FTE"],
-    ["Apprentice", "1.5 FTE"],
+    ["Cadet", "(0.4 FTE)"],
+    ["Apprentice", "(1.5 FTE)"],
     ["Work", "Experience", "(0.4 FTE)"],
   ],
   stroke: {
@@ -515,7 +528,7 @@ var options = {
   },
 
   labels: [
-    ["1.5 FTE"],
+    "1.5 FTE",
     ["Part Time", "(1.0 FTE)"],
     ["Casual", "(0.4 FTE)"],
     ["Labour Hire", "(0.3 FTE)"],

@@ -86,22 +86,22 @@ var options = {
     {
       name: "Net Profit",
       type: "column",
-      data: [55, 30, 38, 23, 30, 38, 30, 25, 38],
+      data: [35, 30, 30, 38, 23, 30, 38, 30, 25, 38, 30, 25],
     },
     {
       name: "Revenue",
       type: "column",
-      data: [20, 15, 13, 18, 12, 15, 12, 18, 14],
+      data: [18, 16, 15, 13, 18, 12, 15, 12, 18, 14, 11, 15],
     },
     {
       name: "Free Cash Flow",
       type: "column",
-      data: [8, 5, 4, 5, 3, 6, 7, 4, 6],
+      data: [5, 8, 5, 4, 5, 3, 6, 7, 4, 6, 5, 4],
     },
     {
       name: "01",
       type: "line",
-      data: [55, 30, 38, 23, 30, 38, 30, 25, 38],
+      data: [35, 30, 38, 23, 30, 38, 30, 25, 38, 30, 35, 28],
       color: "#FD4802",
     },
   ],
@@ -289,7 +289,7 @@ var options = {
       "Roofing",
       "Partitions and...",
       "Wall Finishes...",
-      "Vinyl and Carpet Flooring",
+      "Vinyl and Carp...",
       "Blinds and Fly...",
       "Signage",
       "External Cladd...",
@@ -424,7 +424,7 @@ chart.render();
 
 // Indigenous Training type Pie Chart
 var options = {
-  series: [30, 25, 30, 25],
+  series: [50, 20, 20, 40],
   chart: {
     width: "100%",
     type: "pie",

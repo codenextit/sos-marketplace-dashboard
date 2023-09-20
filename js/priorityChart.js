@@ -86,22 +86,22 @@ var options = {
     {
       name: "Net Profit",
       type: "column",
-      data: [45, 50, 42, 35, 50, 55, 45, 40, 50],
+      data: [40, 45, 50, 42, 35, 50, 55, 45, 40, 50],
     },
     {
       name: "Revenue",
       type: "column",
-      data: [40, 45, 38, 30, 45, 50, 40, 35, 45],
+      data: [38, 40, 45, 38, 30, 45, 50, 40, 35, 45],
     },
     {
       name: "Free Cash Flow",
       type: "column",
-      data: [35, 40, 33, 25, 40, 45, 35, 30, 40],
+      data: [34, 35, 40, 33, 25, 40, 45, 35, 30, 40],
     },
     {
       name: "01",
       type: "line",
-      data: [45, 50, 42, 35, 50, 55, 45, 40, 50],
+      data: [40, 45, 50, 42, 35, 50, 55, 45, 40, 50],
       color: "#FD4802",
     },
   ],
@@ -138,7 +138,20 @@ var options = {
     colors: ["transparent"],
   },
   xaxis: {
-    categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+    categories: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ],
   },
   yaxis: {
     title: {
