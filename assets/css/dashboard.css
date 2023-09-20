@@ -658,19 +658,26 @@
   font-size: 0.8em;
 }
 
-/* .chart_legend {
+.chart_legend {
   width: calc(100% - 70px);
-  position: relative;
-  height: 300px;
   margin-left: 70px;
+  position: relative;
+  height: 230px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .chart_legend span {
   transform: rotate(90deg);
   line-height: 10px;
+  width: 50px;
+  display: block;
   white-space: nowrap;
-} */
+  margin-top: -175px;
+  color: #878787;
+  font-size: 0.8em;
+}
 
 @media screen and (max-width: 1600px) {
   .project_legend_text div {
