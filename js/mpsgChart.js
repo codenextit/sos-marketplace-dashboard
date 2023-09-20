@@ -116,7 +116,7 @@ var options = {
     width: [5, 5],
     curve: "smooth",
   },
-  colors: ["#F3BE00", "#964B00", "#FF5252", "#FD4802"],
+  colors: ["#00BC8B", "#037BFF", "#FF49ED", "#FD4802"],
 
   legend: {
     show: false,
@@ -142,7 +142,7 @@ var options = {
   },
   yaxis: {
     title: {
-      text: "$ (thousands)",
+      text: "",
     },
   },
   fill: {
@@ -261,10 +261,10 @@ var options = {
   },
 
   labels: [
-    ["Trainee", "(1.2 FTE)"],
-    ["Cadet", "0.4 FTE"],
-    ["Apprentice", "1.5 FTE"],
-    ["Work", "Experience", "(0.4 FTE)"],
+    ["Intern", "(2 FTE)"],
+    ["Cadet", "1.5 FTE"],
+    ["Apprentice", "2.5 FTE"],
+    ["Work", "Experience", "(1.8 FTE)"],
   ],
   stroke: {
     show: false,
@@ -336,10 +336,10 @@ var options = {
   },
 
   labels: [
-    ["1.5 FTE"],
-    ["Part Time", "(1.0 FTE)"],
-    ["Casual", "(0.4 FTE)"],
-    ["Labour Hire", "(0.3 FTE)"],
+    ["Labour Hire", "(1.5 FTE)"],
+    ["Part Time", "(2.0 FTE)"],
+    ["Casual", "(1.3 FTE)"],
+    ["Full Time", "(3.0 FTE)"],
   ],
   stroke: {
     show: false,

@@ -1,6 +1,6 @@
 // Project Risk Levels chart
 var options = {
-  series: [76, 55, 68, 50],
+  series: [76, 65, 55, 68, 50],
   chart: {
     height: 370,
     type: "radialBar",
