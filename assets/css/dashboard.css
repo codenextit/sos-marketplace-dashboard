@@ -427,6 +427,26 @@
   padding-bottom: 3px;
 }
 
+/* mpsg chart */
+
+.breakdown_chart_table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.breakdown_chart_table,
+.breakdown_chart_table th,
+.breakdown_chart_table td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+}
+
+.breakdown_chart_table th,
+.breakdown_chart_table td {
+  height: 60px;
+  text-align: center;
+}
+
 /* workforce tabs work */
 
 .workforce_items {
@@ -638,17 +658,19 @@
   font-size: 0.8em;
 }
 
-.chart_legend {
+/* .chart_legend {
   width: calc(100% - 70px);
+  position: relative;
   height: 300px;
   margin-left: 70px;
   display: flex;
-  justify-content: space-between;
 }
 
 .chart_legend span {
   transform: rotate(90deg);
-}
+  line-height: 10px;
+  white-space: nowrap;
+} */
 
 @media screen and (max-width: 1600px) {
   .project_legend_text div {

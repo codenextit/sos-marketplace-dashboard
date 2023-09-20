@@ -431,8 +431,6 @@ var options = {
       // return val + " " + "FTE";
       return opt.w.globals.seriesNames[opt.seriesIndex];
     },
-    position: "inside",
-    offset: 25,
   },
   plotOptions: {
     pie: {
@@ -441,7 +439,12 @@ var options = {
     },
   },
 
-  labels: ["Trainee", "Cadet", "Apprentice", ["Work", "Experience"]],
+  labels: [
+    ["Trainee", "(1.2 FTE)"],
+    ["Cadet", "0.4 FTE"],
+    ["Apprentice", "1.5 FTE"],
+    ["Work", "Experience", "(0.4 FTE)"],
+  ],
   stroke: {
     show: false,
     width: 0,
@@ -511,7 +514,12 @@ var options = {
     },
   },
 
-  labels: ["FTE", "Part Time", "Casual", "Labour Hire"],
+  labels: [
+    ["1.5 FTE"],
+    ["Part Time", "(1.0 FTE)"],
+    ["Casual", "(0.4 FTE)"],
+    ["Labour Hire", "(0.3 FTE)"],
+  ],
   stroke: {
     show: false,
     width: 0,

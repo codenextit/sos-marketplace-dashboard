@@ -163,207 +163,6 @@ var chart = new ApexCharts(
 );
 chart.render();
 
-// Major Project Skills Guarantee Workforce Hours Chart
-// var options = {
-//   series: [
-//     {
-//       data: [
-//         {
-//           x: "Retained",
-//           y: 218,
-//         },
-//         {
-//           x: "Standard",
-//           y: 149,
-//         },
-//         {
-//           x: "Apprentice",
-//           y: 184,
-//         },
-//         {
-//           x: "Intern",
-//           y: 55,
-//         },
-//         {
-//           x: "Trained",
-//           y: 84,
-//         },
-//         {
-//           x: "New",
-//           y: 31,
-//         },
-//         {
-//           x: "Cadet",
-//           y: 70,
-//         },
-//         {
-//           x: "Social",
-//           y: 30,
-//         },
-//         {
-//           x: "Employee",
-//           y: 44,
-//         },
-//         {
-//           x: "Disability",
-//           y: 68,
-//         },
-//         {
-//           x: "Overall",
-//           y: 28,
-//         },
-//         {
-//           x: "Other",
-//           y: 19,
-//         },
-//         {
-//           x: "Business",
-//           y: 29,
-//         },
-//       ],
-//     },
-//   ],
-//   legend: {
-//     show: false,
-//   },
-//   chart: {
-//     height: 550,
-//     type: "treemap",
-//     toolbar: {
-//       show: false,
-//     },
-//   },
-//   plotOptions: {
-//     treemap: {
-//       colorScale: {
-//         ranges: [
-//           {
-//             from: -6,
-//             to: -2, // Blue color range
-//             color: "#0074D9", // Regular Blue
-//           },
-//           {
-//             from: -2.001, // Adjust the starting point for sky blue
-//             to: 2, // Ending point for sky blue
-//             color: "#52B12C", // Sky Blue
-//           },
-//           {
-//             from: 2.001, // Pink color range
-//             to: 6,
-//             color: "#FF49ED", // Pink
-//           },
-//         ],
-//       },
-//     },
-//   },
-// };
-
-// var chart = new ApexCharts(
-//   document.querySelector("#mpsgMajorProjectChart"),
-//   options
-// );
-// chart.render();
-var options = {
-  series: [
-    {
-      data: [
-        {
-          x: "Retained",
-          y: 218,
-        },
-        {
-          x: "Standard",
-          y: 149,
-        },
-        {
-          x: "Apprentice",
-          y: 184,
-        },
-        {
-          x: "Intern",
-          y: 55,
-        },
-        {
-          x: "Trained",
-          y: 84,
-        },
-        {
-          x: "New",
-          y: 31,
-        },
-        {
-          x: "Cadet",
-          y: 70,
-        },
-        {
-          x: "Social",
-          y: 30,
-        },
-        {
-          x: "Employee",
-          y: 44,
-        },
-        {
-          x: "Disability",
-          y: 68,
-        },
-        {
-          x: "Overall",
-          y: 28,
-        },
-        {
-          x: "Other",
-          y: 19,
-        },
-        {
-          x: "Business",
-          y: 29,
-        },
-      ],
-    },
-  ],
-  legend: {
-    show: false,
-  },
-  chart: {
-    height: 550,
-    type: "treemap",
-    toolbar: {
-      show: false,
-    },
-  },
-  plotOptions: {
-    treemap: {
-      colorScale: {
-        ranges: [
-          {
-            from: -6,
-            to: -2, // Blue color range
-            color: "#0074D9", // Regular Blue
-          },
-          {
-            from: -2,
-            to: 2, // Sky Blue color range
-            color: "#52B12C", // Sky Blue
-          },
-          {
-            from: 2,
-            to: 6, // Pink color range
-            color: "#FF49ED", // Pink
-          },
-        ],
-      },
-    },
-  },
-};
-
-var chart = new ApexCharts(
-  document.querySelector("#mpsgMajorProjectChart"),
-  options
-);
-
-chart.render();
-
 // mpsg pie chart
 var options = {
   series: [8, 7, 5, 8, 10, 15, 10, 7, 13, 5, 8, 4],
@@ -437,7 +236,7 @@ chart.render();
 
 // mpsg Training type Pie Chart
 var options = {
-  series: [20, 20, 20, 40],
+  series: [30, 25, 30, 25],
   chart: {
     width: "100%",
     type: "pie",
@@ -449,8 +248,9 @@ var options = {
       fontFamily: "Poppins", // Set the font family to Poppins
       fontWeight: 300, // Set the font weight to 300
     },
-    formatter: function (val) {
-      return val + " " + "FTE";
+    formatter: function (val, opt) {
+      // return val + " " + "FTE";
+      return opt.w.globals.seriesNames[opt.seriesIndex];
     },
   },
   plotOptions: {
@@ -461,10 +261,10 @@ var options = {
   },
 
   labels: [
-    "Youth 16-24",
-    "Mature aged",
-    "Ex justice",
-    "Asylum seeker/refugees",
+    ["Trainee", "(1.2 FTE)"],
+    ["Cadet", "0.4 FTE"],
+    ["Apprentice", "1.5 FTE"],
+    ["Work", "Experience", "(0.4 FTE)"],
   ],
   stroke: {
     show: false,
@@ -509,7 +309,7 @@ chart.render();
 
 // mpsg Employment type Pie Chart
 var options = {
-  series: [100, 100, 50, 200],
+  series: [20, 20, 20, 40],
   chart: {
     width: "100%",
     type: "pie",
@@ -521,9 +321,12 @@ var options = {
       fontFamily: "Poppins", // Set the font family to Poppins
       fontWeight: 300, // Set the font weight to 300
     },
-    formatter: function (val) {
-      return Math.floor(val) + " FTE";
+    formatter: function (val, opt) {
+      // return val + " " + "FTE";
+      return opt.w.globals.seriesNames[opt.seriesIndex];
     },
+    position: "inside",
+    offset: 25,
   },
   plotOptions: {
     pie: {
@@ -531,11 +334,12 @@ var options = {
       offsetY: 0,
     },
   },
+
   labels: [
-    "Youth 16-24",
-    "Mature aged",
-    "Ex justice",
-    "Asylum seeker/refugees",
+    ["1.5 FTE"],
+    ["Part Time", "(1.0 FTE)"],
+    ["Casual", "(0.4 FTE)"],
+    ["Labour Hire", "(0.3 FTE)"],
   ],
   stroke: {
     show: false,
@@ -545,12 +349,6 @@ var options = {
   colors: ["#FF5438", "#000091", "#980090", "#FF9F51"],
   legend: {
     show: false,
-  },
-  tooltip: {
-    enabled: true,
-    formatter: function (val, opts) {
-      return val.toFixed(2) + " FTE"; // Display original floating-point numbers in tooltips
-    },
   },
   responsive: [
     {

@@ -424,7 +424,7 @@ chart.render();
 
 // Indigenous Training type Pie Chart
 var options = {
-  series: [20, 20, 20, 40],
+  series: [30, 25, 30, 25],
   chart: {
     width: "100%",
     type: "pie",
@@ -432,8 +432,13 @@ var options = {
   },
   dataLabels: {
     enabled: true,
-    formatter: function (val) {
-      return val + " " + "FTE";
+    style: {
+      fontFamily: "Poppins", // Set the font family to Poppins
+      fontWeight: 300, // Set the font weight to 300
+    },
+    formatter: function (val, opt) {
+      // return val + " " + "FTE";
+      return opt.w.globals.seriesNames[opt.seriesIndex];
     },
   },
   plotOptions: {
@@ -444,10 +449,10 @@ var options = {
   },
 
   labels: [
-    "Youth 16-24",
-    "Mature aged",
-    "Ex justice",
-    "Asylum seeker/refugees",
+    ["Trainee", "(1.2 FTE)"],
+    ["Cadet", "0.4 FTE"],
+    ["Apprentice", "1.5 FTE"],
+    ["Work", "Experience", "(0.4 FTE)"],
   ],
   stroke: {
     show: false,
@@ -492,7 +497,7 @@ chart.render();
 
 // Indigenous Employment type Pie Chart
 var options = {
-  series: [100, 100, 50, 200],
+  series: [20, 20, 20, 40],
   chart: {
     width: "100%",
     type: "pie",
@@ -500,9 +505,16 @@ var options = {
   },
   dataLabels: {
     enabled: true,
-    formatter: function (val) {
-      return Math.floor(val) + " FTE";
+    style: {
+      fontFamily: "Poppins", // Set the font family to Poppins
+      fontWeight: 300, // Set the font weight to 300
     },
+    formatter: function (val, opt) {
+      // return val + " " + "FTE";
+      return opt.w.globals.seriesNames[opt.seriesIndex];
+    },
+    position: "inside",
+    offset: 25,
   },
   plotOptions: {
     pie: {
@@ -510,11 +522,12 @@ var options = {
       offsetY: 0,
     },
   },
+
   labels: [
-    "Youth 16-24",
-    "Mature aged",
-    "Ex justice",
-    "Asylum seeker/refugees",
+    ["1.5 FTE"],
+    ["Part Time", "(1.0 FTE)"],
+    ["Casual", "(0.4 FTE)"],
+    ["Labour Hire", "(0.3 FTE)"],
   ],
   stroke: {
     show: false,
@@ -524,12 +537,6 @@ var options = {
   colors: ["#FF5438", "#000091", "#980090", "#FF9F51"],
   legend: {
     show: false,
-  },
-  tooltip: {
-    enabled: true,
-    formatter: function (val, opts) {
-      return val.toFixed(2) + " FTE"; // Display original floating-point numbers in tooltips
-    },
   },
   responsive: [
     {
