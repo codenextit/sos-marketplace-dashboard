@@ -35,6 +35,7 @@
   </head>
 
   <body>
+    <!-- Sidebar Start -->
     <div class="sidebar">
       <span class="sidebar_open_btn">
         <box-icon class="open_btn" name="chevrons-left"></box-icon>
@@ -178,6 +179,7 @@
         </li>
       </ul>
     </div>
+    <!-- Sidebar End -->
 
     <!-- Dashboard Home -->
     <section class="home-section">
@@ -217,6 +219,7 @@
       </nav>
       <!-- navbar end -->
 
+      <!-- Tabs & Contents Start -->
       <section id="dashboard">
         <div class="dashboard_tabs">
           <ul class="nav nav-pills">
@@ -285,7 +288,7 @@
                 </div>
                 <div class="col-lg-3">
                   <div class="dashboard_card red">
-                    <h4>Overdue Compliance</h4>
+                    <h4>Overdue Compliance Milestones</h4>
                     <p><i class="fa-solid fa-filter"></i>1 Filter</p>
                     <div>
                       <span>52</span><br />
@@ -363,7 +366,18 @@
                     </div>
                   </section>
 
-                  <div id="suppliersChart" class="chart"></div>
+                  <div
+                    class="chart_container"
+                    style="overflow-x: scroll; overflow-y: hidden"
+                  >
+                    <div
+                      id="suppliersChart"
+                      class="chart"
+                      style="width: 110%"
+                    ></div>
+                  </div>
+
+                  <!-- <div id="suppliersChart" class="chart"></div> -->
                 </div>
               </div>
 
@@ -422,19 +436,19 @@
                     </div>
                     <div class="legends">
                       <div class="legend_box color2"></div>
-                      <span>Mature aged</span>
+                      <span>Mature Aged</span>
                     </div>
                     <div class="legends">
                       <div class="legend_box color3"></div>
-                      <span>Ex justice</span>
+                      <span>Ex Justice</span>
                     </div>
                     <div class="legends">
                       <div class="legend_box color4"></div>
-                      <span>Asylum seeker/refugees</span>
+                      <span>Asylum Seeker/Refugees</span>
                     </div>
                     <div class="legends">
                       <div class="legend_box color5"></div>
-                      <span>Long term unemployed</span>
+                      <span>Long Term Unemployed</span>
                     </div>
                     <div class="legends">
                       <div class="legend_box color6"></div>
@@ -453,19 +467,19 @@
                     </div>
                     <div class="legends">
                       <div class="legend_box color9"></div>
-                      <span>People living with a disability</span>
+                      <span>People Living with a Disability</span>
                     </div>
                     <div class="legends">
                       <div class="legend_box color10"></div>
-                      <span>Entrenched disadvantage</span>
+                      <span>Entrenched Disadvantage</span>
                     </div>
                     <div class="legends">
                       <div class="legend_box color11"></div>
-                      <span>Women escaping violence</span>
+                      <span>Women Escaping Violence</span>
                     </div>
                     <div class="legends">
                       <div class="legend_box color12"></div>
-                      <span>New migrants</span>
+                      <span>New Migrants</span>
                     </div>
                   </section>
 
@@ -476,8 +490,8 @@
               <div class="chart_two">
                 <div class="chart_box">
                   <div class="chart_name">
-                    <p>Risk and Target Status</p>
-                    <p>By Month</p>
+                    <p>Risk and Compliance Status</p>
+                    <p>By Trade</p>
                   </div>
 
                   <section class="target_status_legend">
@@ -514,7 +528,7 @@
               <div class="row p-0">
                 <div class="col-lg-3">
                   <div class="dashboard_card green">
-                    <h4>Total Project Indigenous Business spend</h4>
+                    <h4>Total Project Indigenous Business Spend</h4>
                     <p><i class="fa-solid fa-filter"></i>1 Filter</p>
                     <div>
                       <span>$910,000</span><br />
@@ -575,7 +589,7 @@
                     </div>
                     <div class="legends">
                       <div class="legend_box yellow"></div>
-                      <span>Medium</span>
+                      <span>Medium Risk</span>
                     </div>
                     <div class="legends">
                       <div class="legend_box red"></div>
@@ -583,18 +597,29 @@
                     </div>
                   </section>
 
-                  <div class="project_legend_text">
-                    <div>Contractor Cultural Awareness Completion</div>
-                    <div>Indigenous Inclusion (FTE)</div>
-                    <div>Indigenous Business Spend</div>
-                    <div>FTE Inclusion Training Employment Retention</div>
+                  <div class="project_legend_text" style="margin-top: -5px">
+                    <div style="padding-bottom: 0px; padding-top: 0px">
+                      Overall Status
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: 0px">
+                      Contractor Cultural Awareness Completion
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: 0px">
+                      Indigenous Inclusion (FTE)
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: 0px">
+                      Indigenous Business Spend
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: 0px">
+                      FTE Inclusion Training Employment Retention
+                    </div>
                   </div>
 
                   <div id="indigenousProjectRiskChart" class="chart"></div>
                 </div>
                 <div class="chart_box">
                   <div class="chart_name">
-                    <p>Total Project Indigenous Businesses</p>
+                    <p>Total Project Number of Indigenous Businesses</p>
                     <p>By Month</p>
                   </div>
 
@@ -615,7 +640,16 @@
                     </div>
                   </section>
 
-                  <div id="indigenousSuppliersChart" class="chart"></div>
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll; overflow-y: hidden"
+                  >
+                    <div
+                      id="indigenousSuppliersChart"
+                      class="chart"
+                      style="width: 110%"
+                    ></div>
+                  </div>
                 </div>
               </div>
 
@@ -645,7 +679,7 @@
 
                   <div
                     class="chart_container"
-                    style="width: 100%; overflow-x: scroll"
+                    style="width: 100%; overflow-x: scroll; overflow-y: scroll"
                   >
                     <div
                       id="indigenousConstractorChart"

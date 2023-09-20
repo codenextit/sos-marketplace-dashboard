@@ -1,6 +1,6 @@
-// Project Risk Levels chart
+// Project Indigenous Inclusion Risk Levels
 var options = {
-  series: [76, 55, 68, 50],
+  series: [78, 70, 55, 60, 50],
   chart: {
     height: 370,
     type: "radialBar",
@@ -40,7 +40,7 @@ var options = {
       },
     },
   },
-  colors: ["#144492", "#F3BE00", "#00B050", "#000000"],
+  colors: ["#144492", "#00B050", "#F3BE00", "#00B050", "#FF0000"],
   labels: ["Completion", "Medium", "Low", "High"],
   legend: {
     show: false,
@@ -80,7 +80,7 @@ var chart = new ApexCharts(
 );
 chart.render();
 
-// <---- Total Project Social Suppliers Chart ----->
+// <---- Total Project Number of Indigenous Businesses ----->
 var options = {
   series: [
     {
@@ -138,11 +138,24 @@ var options = {
     colors: ["transparent"],
   },
   xaxis: {
-    categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+    categories: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ],
   },
   yaxis: {
     title: {
-      text: "$ (thousands)",
+      text: "",
     },
   },
   fill: {
@@ -276,7 +289,7 @@ var options = {
       "Roofing",
       "Partitions and...",
       "Wall Finishes...",
-      "Vinyl and Car...",
+      "Vinyl and Carpet Flooring",
       "Blinds and Fly...",
       "Signage",
       "External Cladd...",
