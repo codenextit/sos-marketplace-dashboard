@@ -234,12 +234,6 @@
                 <span><i class="fa-solid fa-sort-down"></i></span>
                 Project Summary
               </h4>
-
-              <div class="project_add_button">
-                <button>
-                  <i class="fa-solid fa-plus"></i> Add Project Cost
-                </button>
-              </div>
             </div>
 
             <div class="project_table_body">
@@ -255,7 +249,7 @@
               </div>
               <div class="project_table_row">
                 <div class="project_table_row_left">
-                  <p>Contractor/Buyer Name</p>
+                  <p>Project Name</p>
                 </div>
                 <div class="project_table_row_right">
                   <input type="text" />
@@ -263,7 +257,7 @@
               </div>
               <div class="project_table_row">
                 <div class="project_table_row_left">
-                  <p>Contractor/Buyer Name</p>
+                  <p>Project Client</p>
                 </div>
                 <div class="project_table_row_right">
                   <input type="text" />
@@ -271,7 +265,7 @@
               </div>
               <div class="project_table_row">
                 <div class="project_table_row_left">
-                  <p>Contractor/Buyer Name</p>
+                  <p>Site Location <i class="fa-regular fa-map"></i></p>
                 </div>
                 <div class="project_table_row_right">
                   <input type="text" />
@@ -279,7 +273,7 @@
               </div>
               <div class="project_table_row">
                 <div class="project_table_row_left">
-                  <p>Contractor/Buyer Name</p>
+                  <p>Total Project Duration in Weeks</p>
                 </div>
                 <div class="project_table_row_right">
                   <input type="text" />
@@ -287,13 +281,109 @@
               </div>
               <div class="project_table_row">
                 <div class="project_table_row_left">
-                  <p>Contractor/Buyer Name</p>
+                  <select name="" id="">
+                    <option value="Project Stages">Project Stages</option>
+                    <option value="Project Stages 1">Project Stages 1</option>
+                    <option value="Project Stages 2">Project Stages 2</option>
+                  </select>
                 </div>
                 <div class="project_table_row_right">
                   <input type="text" />
                 </div>
               </div>
             </div>
+
+            <div class="divider"></div>
+
+            <div class="project_compliance_table_header">
+              <h4>
+                <span><i class="fa-solid fa-sort-down"></i></span>
+                Project Costs
+              </h4>
+
+              <div class="project_add_button">
+                <button>
+                  <i class="fa-solid fa-plus"></i> Add Project Cost
+                </button>
+              </div>
+            </div>
+
+            <div class="project_table_body">
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Total Project Cost</p>
+                </div>
+                <div class="project_table_row_right">
+                  <input type="text" placeholder="$ Enter Value" />
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Profit % and $</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data">
+                      <input type="text" placeholder="$ Enter Value" />
+                    </div>
+                    <div class="table_data">
+                      <input type="text" />
+                      <span>%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Overheads and Supervision</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data">
+                      <input type="text" placeholder="$ Enter Value" />
+                    </div>
+                    <div class="table_data">
+                      <input type="text" />
+                      <span>%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Prelims as % of total</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data">
+                      <input type="text" placeholder="$ Enter Value" />
+                    </div>
+                    <div class="table_data">
+                      <input type="text" />
+                      <span>%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Cost of Trades (excl. Prelims)</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data">
+                      <input type="text" placeholder="$ Enter Value" />
+                    </div>
+                    <div class="table_data">
+                      <input type="text" />
+                      <span>%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
           </div>
           <!-- project compliance table end -->
         </div>

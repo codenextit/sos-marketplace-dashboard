@@ -112,6 +112,11 @@
   width: 60%;
 }
 
+.project_table_row_left select {
+  border: none;
+  outline: none;
+}
+
 .project_table_row_left p {
   margin-bottom: 0;
   font-family: var(--primary-font);
@@ -139,6 +144,32 @@
   padding: 0 15px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 3px;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: rgba(20, 68, 146, 0.7);
+  margin: 40px 0;
+}
+
+.table_row_right_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.table_row_right_wrapper .table_data {
+  width: 50%;
+  position: relative;
+}
+
+.table_row_right_wrapper .table_data span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  color: rgba(30, 39, 73, 0.7);
 }
 
 /* project compliance start */
