@@ -419,7 +419,8 @@
 }
 
 .nav_logo h3 {
-  font-size: 1.8em;
+  font-size: 1.6em;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.7);
   font-family: "Poppins";
 }
