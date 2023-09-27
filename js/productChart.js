@@ -195,7 +195,7 @@ chart.render();
 
 // social proc chart
 var options = {
-  series: [30, 25, 30, 25],
+  series: [47, 36, 17],
   chart: {
     width: "60%",
     type: "pie",
@@ -219,18 +219,13 @@ var options = {
     },
   },
 
-  labels: [
-    ["Trainee", "(1.2 FTE)"],
-    ["Cadet", "0.4 FTE"],
-    ["Apprentice", "1.5 FTE"],
-    ["Work", "Experience", "(0.4 FTE)"],
-  ],
+  labels: [["47%"], ["36%"], ["17%"]],
   stroke: {
     show: false,
     width: 0,
     colors: ["transparent"],
   },
-  colors: ["#FF5438", "#000091", "#980090", "#FF9F51"],
+  colors: ["#FF5438", "#000091", "#980090"],
   legend: {
     show: false,
   },
