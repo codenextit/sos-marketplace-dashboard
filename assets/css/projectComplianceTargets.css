@@ -112,9 +112,24 @@
   width: 60%;
 }
 
+.project_table_row_left2 {
+  width: 40%;
+}
+
 .project_table_row_left select {
   border: none;
   outline: none;
+}
+
+.left-dropdown select {
+  border: none;
+  outline: none;
+  color: rgba(30, 39, 73, 0.7);
+  margin-left: 150px;
+}
+
+.project_table_row_left2 p {
+  margin-bottom: 0;
 }
 
 .project_table_row_left p {
@@ -127,6 +142,9 @@
 
 .project_table_row_right {
   width: 40%;
+}
+.project_table_row_right2 {
+  width: 60%;
 }
 
 .project_table_row_right p {
@@ -200,6 +218,14 @@
   left: 15px;
   color: rgba(30, 39, 73, 0.7);
 }
+ 
+.table_data_right_sign2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  color: var(--black);
+}
 
 .table_row_right_wrapper .table_data .table_data_right_sign {
   position: absolute;
@@ -236,6 +262,24 @@
   color: var(--black);
   font-size: 1em;
   font-weight: 500;
+}
+
+.table-data-center {
+  width: 30%;
+}
+.table-data-center p {
+  font-family: var(--primary-font);
+    color: var(--black) !important;
+    font-weight: 600 !important;
+}
+
+.project_table_row_left input {
+  width: 100%;
+  height: 35px;
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
 }
 
 /* project compliance start */
