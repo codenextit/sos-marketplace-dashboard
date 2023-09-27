@@ -1,0 +1,38 @@
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #00bc8b;
+  --secondary-color: #f3be00;
+  --accent-color: #ff5252;
+  --blue: #037bff;
+  --white: #fff;
+  --black: #000;
+  --primary-font: "Poppins";
+}
+
+
+/* Project & Program Cost Overview Section Start */
+.ppcost-container {
+    margin-left: 45px;
+    width: 1580px !important;
+}
+
+.pp-cost-heading p {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.table {
+    width: 100%;
+}
+
+.table th{
+font-weight: 500;
+font-size: 1rem;
+}
+
+.table thead tr th{
+background: #144492;
+}
+/* Project & Program Cost Overview Section End */
