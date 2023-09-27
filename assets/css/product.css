@@ -72,6 +72,125 @@
   color: var(--blue);
 }
 
+/* Product details start */
+
+#product_details {
+  margin-top: 30px;
+}
+
+.product_details_main_view {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product_details_main_view img {
+  width: 300px;
+}
+
+.product_details_tab_view {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.product_details_tab_view img {
+  width: 90px;
+}
+
+.product_details_tab_view.active,
+.product_details_tab_view:hover {
+  border: 1px solid var(--blue);
+}
+
+/* product rating */
+
+.product_cart_details h2 {
+  font-family: var(--primary-font);
+  color: var(--black);
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.product_id {
+  margin-bottom: 10px;
+}
+
+.product_id span {
+  color: var(--blue);
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.product_price_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product_price_row .product_price {
+  font-size: 2.3em;
+  font-family: var(--primary-font);
+  color: var(--black);
+  font-weight: 600;
+}
+
+.product_price_row .product_price span {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
+}
+
+.product_rating {
+  display: flex;
+  align-items: center;
+}
+
+.product_rating .rating_star {
+  margin-right: 5px;
+}
+
+.product_rating .rating_star i {
+  color: #f3be00;
+  font-size: 0.9em;
+}
+
+.product_rating span {
+  font-family: var(--primary-font);
+  color: var(--blue);
+  display: inline-block;
+  font-size: 0.9em;
+  padding: 0 10px;
+}
+
+.product_rating span:last-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.product_share_btn a {
+  text-decoration: none;
+  padding-left: 12px;
+}
+
+.product_share_btn a i {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Product details end */
+
 @media screen and (max-width: 1600px) {
   .product_chart_lagend {
     font-size: 0.7em;
