@@ -125,7 +125,7 @@
 }
 
 .product_id {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .product_id span {
@@ -189,7 +189,565 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
+.product_subject_details {
+  margin: 30px 0 35px;
+  padding: 0;
+  list-style: inside;
+}
+
+.product_subject_details li {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1530px) {
+}
+
+/* product cart option */
+
+.product_cart_option_item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.product_cart_option_item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.product_cart_option_item select {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  color: var(--black);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.product_delivery_button {
+  display: flex;
+  align-items: center;
+}
+
+.product_promo_code {
+  margin-top: 30px;
+}
+
+.product_promo_code_input input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.product_delivery_button .radio {
+  margin-right: 25px;
+}
+
+.product_delivery_button .radio label {
+  font-family: var(--primary-font);
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* product cart button */
+.product_cart_btn {
+  margin-top: 30px;
+}
+
+.product_cart_btn button {
+  border: none;
+  outline: none;
+  background-color: rgba(3, 123, 255, 0.1);
+  width: 100%;
+  height: 45px;
+  border-radius: 6px;
+  font-family: var(--primary-font);
+  font-size: 1.1em;
+  transition: 0.5s;
+}
+
+.product_cart_btn button.active,
+.product_cart_btn button:hover {
+  background-color: #037bff;
+  color: var(--white);
+}
+
 /* Product details end */
+
+/* product video start */
+
+#product_video {
+  margin: 50px 0;
+}
+
+.product_video_content {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.product_video_content img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.nav-item .nav-link {
+  position: relative;
+  color: var(--blue) !important;
+  font-family: var(--primary-font) !important;
+  font-weight: 500 !important;
+  margin-right: 0;
+  padding-right: 20px;
+  border-radius: 0 !important;
+  border: none !important;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+  z-index: 0;
+}
+
+.border {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 0px;
+  bottom: 1px;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+  z-index: 1;
+}
+
+.nav-item .nav-link.active {
+  background-color: #144492 !important;
+  color: var(--white) !important;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+}
+
+/* product video end */
+
+/* social proc chart start */
+
+#social_proc_chart {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.social_proc_chart_head p {
+  margin-bottom: 30px;
+  font-family: var(--primary-font);
+  color: var(--black);
+  font-weight: 600;
+}
+
+.social_proc_chart_head p span {
+  color: var(--blue);
+}
+
+.social_proc_chart_box_img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.social_proc_chart_box_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.social_proc_chart_box {
+  position: relative;
+}
+
+.social_proc_chart_box p {
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--black);
+  font-size: 1em;
+  padding: 15px 0;
+  margin-bottom: 0;
+}
+
+.social_proc_chart_box h4 {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #ff5438;
+  text-align: center;
+}
+
+.social_proc_chart_legend {
+  margin-top: 20px;
+  padding-left: 15px;
+  position: absolute;
+  top: 35%;
+  right: 50px;
+  transform: translateY(-35%);
+}
+
+.social_proc_chart_legend .legends {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.social_proc_chart_legend .legend_box {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.social_proc_chart_legend .legends span {
+  color: #878787;
+  font-size: 13px;
+}
+
+.social_proc_chart_legend .legend_box.color1 {
+  background-color: #000091;
+}
+.social_proc_chart_legend .legend_box.color2 {
+  background-color: #980090;
+}
+.social_proc_chart_legend .legend_box.color3 {
+  background-color: #ff5438;
+}
+
+/* social proc chart end */
+
+/* local industry start */
+
+#local_industry {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.workforce_items {
+  display: grid;
+  grid-auto-columns: 1fr;
+  margin-top: 20px;
+}
+
+.workforce_item {
+  grid-row: 1;
+  margin-top: 20px;
+}
+
+.worforce_item_icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #878787;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+}
+
+.worforce_item_icon.active {
+  background-color: var(--blue);
+}
+
+.worforce_item_icon img {
+  width: 45px;
+}
+
+.worforce_content h4 {
+  font-family: var(--primary-font);
+  color: var(--black);
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.worforce_content h4 span:first-child {
+  margin-right: 20px;
+}
+
+.worforce_content h5 {
+  font-family: var(--primary-font);
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.worforce_content h5.active {
+  color: var(--blue);
+}
+
+.worforce_content p {
+  font-family: var(--primary-font);
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* local industry end */
+
+/* sustainable start */
+
+#sustainable {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.sustainable_chart_head p {
+  text-align: center;
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: var(--primary-font);
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.sustainable_chart {
+  position: relative;
+}
+
+.sustainable_chart_features {
+  position: absolute;
+}
+
+.sustainable_chart_features p {
+  text-align: right;
+  font-size: 0.8em;
+}
+
+.sustainable_chart_features p span {
+  font-weight: 700;
+}
+
+.sustainable_chart_features_content1 {
+  left: 55%;
+}
+.sustainable_chart_features_content2 {
+  right: 16%;
+  top: 29%;
+}
+.sustainable_chart_features_content3 {
+  right: 22%;
+  bottom: 0;
+}
+.sustainable_chart_features_content4 {
+  left: 35%;
+  bottom: -15px;
+}
+.sustainable_chart_features_content5 {
+  left: 19%;
+  top: 52%;
+}
+.sustainable_chart_features_content6 {
+  left: 23%;
+  top: 2%;
+}
+
+#sustainableChart {
+  position: relative;
+}
+
+.sustainable_chart_content p {
+  position: absolute;
+  font-size: 1em;
+  text-align: center;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.sustainable_chart_content p:nth-child(1) {
+  left: 50%;
+  top: 23%;
+}
+.sustainable_chart_content p:nth-child(2) {
+  right: 37%;
+  top: 31%;
+}
+.sustainable_chart_content p:nth-child(3) {
+  right: 34%;
+  bottom: 32%;
+}
+.sustainable_chart_content p:nth-child(4) {
+  left: 48%;
+  bottom: 23%;
+}
+.sustainable_chart_content p:nth-child(5) {
+  left: 37%;
+  bottom: 32%;
+}
+.sustainable_chart_content p:nth-child(6) {
+  left: 37%;
+  top: 31%;
+}
+
+#sustainableChart img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.sustainable_chart_legend {
+  margin-top: 20px;
+  padding-left: 15px;
+}
+
+.sustainable_chart_legend .legends {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sustainable_chart_legend .legend_box {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.sustainable_chart_legend .legends span {
+  color: #878787;
+  font-size: 13px;
+}
+
+.sustainable_chart_legend .legend_box.color1 {
+  background-color: #09775a;
+}
+.sustainable_chart_legend .legend_box.color2 {
+  background-color: #dfaf06;
+}
+.sustainable_chart_legend .legend_box.color3 {
+  background-color: #ff5438;
+}
+.sustainable_chart_legend .legend_box.color4 {
+  background-color: #980090;
+}
+
+/* sustainable end */
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(20, 68, 146, 0.7);
+  margin: 35px 0;
+}
+
+/* related product start */
+
+#related_product {
+  margin-top: 20px;
+}
+
+.related_product_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.related_product_head h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: var(--primary-font);
+}
+
+.related_product_head_btn a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: var(--primary-font);
+  font-size: 1em;
+}
+
+.related_product_head_btn a i {
+  color: rgba(0, 0, 0, 0.8);
+  margin-left: 5px;
+  font-size: 1em;
+}
+
+.related_product_card_item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.related_product_card_img {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+}
+
+.related_product_card_img img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.related_product_card_rating {
+  margin: 30px 0 20px;
+}
+
+.related_product_card_rating a {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.related_product_card_rating a i {
+  color: #f3be00;
+}
+
+.related_product_card_desc {
+  display: flex;
+  align-items: center;
+}
+
+.related_product_card_desc_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.related_product_card_desc_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.related_product_card_desc_content p {
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.related_product_card_price {
+  font-size: 1.2em;
+  color: var(--black);
+  font-weight: 600;
+  font-family: var(--primary-font);
+  margin-top: 20px;
+}
+
+.related_product_card_price span:last-child {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+/* related product end */
 
 @media screen and (max-width: 1600px) {
   .product_chart_lagend {

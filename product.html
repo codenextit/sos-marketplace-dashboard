@@ -216,7 +216,7 @@
       <!-- navbar end -->
 
       <section class="product_wrapper">
-        <!-- Product Dashboard -->
+        <!-- Product Dashboard start -->
         <section id="product_dashboard">
           <div class="row d-flex align-items-center">
             <div class="col-md-6">
@@ -285,9 +285,9 @@
             </div>
           </div>
         </section>
-        <!-- Product Dashboard -->
+        <!-- Product Dashboard end -->
 
-        <!-- Product details -->
+        <!-- Product details start -->
         <section id="product_details">
           <div class="row">
             <div class="col-md-6">
@@ -348,11 +348,807 @@
                     <a href="#"><i class="fa-regular fa-heart"></i></a>
                   </div>
                 </div>
+
+                <ul class="product_subject_details">
+                  <li>48 x 100% Recycled Toilet Rolls</li>
+                  <li>360 Sheets x 4ply</li>
+                  <li>Diameter 12 cm per roll</li>
+                </ul>
+
+                <!-- product cart option -->
+                <div class="product_cart_option">
+                  <div class="product_cart_option_item">
+                    <select>
+                      <option value="Select colours">Select colours</option>
+                      <option value="Red">Red</option>
+                      <option value="Green">Green</option>
+                      <option value="Blue">Blue</option>
+                    </select>
+                  </div>
+                  <div class="product_cart_option_item">
+                    <select>
+                      <option value="Quantity">Quantity</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                  <div class="product_cart_option_item">
+                    <select>
+                      <option value="Add product type">Add product type</option>
+                      <option value="product type 1">product type 1</option>
+                      <option value="product type 2">product type 2</option>
+                      <option value="product type 3">product type 3</option>
+                    </select>
+                  </div>
+                  <div class="product_cart_option_item">
+                    <select>
+                      <option value="Select size">Select size</option>
+                      <option value="M">M</option>
+                      <option value="XL">XL</option>
+                      <option value="XXL">XXL</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- product promo code -->
+                <div class="product_promo_code">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-md-7">
+                      <div class="product_promo_code_input">
+                        <input type="text" placeholder="Promo Code" />
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="product_delivery_button">
+                        <div class="radio">
+                          <label
+                            ><input type="radio" name="optradio" checked /> Pick
+                            Up</label
+                          >
+                        </div>
+                        <div class="radio">
+                          <label
+                            ><input type="radio" name="optradio" />
+                            Delivery</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- product cart button -->
+                <div class="product_cart_btn">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <button type="button">Request Quote</button>
+                    </div>
+                    <div class="col-md-3">
+                      <button type="button">Add Pre Order</button>
+                    </div>
+                    <div class="col-md-3">
+                      <button type="button">Contact Seller</button>
+                    </div>
+                    <div class="col-md-3">
+                      <button type="button" class="active">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- Product details -->
+        <!-- Product details end -->
+
+        <!-- product video start -->
+        <section id="product_video">
+          <div class="row">
+            <div class="col-12">
+              <div class="product_video_content">
+                <img src="./assets/image/product_video_img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- product video end -->
+
+        <!-- product dashboard tab start -->
+        <div class="progress-user-tabs">
+          <div class="container-fluid">
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#index">
+                  <span class="border"></span>Social Procurement & Compliance</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#discussion">
+                  <span class="border"></span>Supplier Capability</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#modules">
+                  <span class="border"></span>Community Purpose</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#projects">
+                  <span class="border"></span>Rating and reviews</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#tasks">
+                  <span class="border"></span>UN SDG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#progress">
+                  <span class="border"></span>Location</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab panes -->
+          <section class="all_tabs_content">
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <div id="index" class="container-fluid tab-pane active">
+                <!-- social proc product chart start -->
+                <section id="social_proc_chart">
+                  <div class="social_proc_chart_head">
+                    <p>
+                      Social Procurement Workforce Hours Contributed for your
+                      purchase: <span>12 Hours</span>
+                    </p>
+                  </div>
+                  <div class="row d-flex align-items-center">
+                    <div class="col-md-5">
+                      <div class="social_proc_chart_box">
+                        <div id="socialProcChartPie"></div>
+
+                        <div class="social_proc_chart_legend">
+                          <div class="legends">
+                            <div class="legend_box color1"></div>
+                            <span>Youth 16-24</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color2"></div>
+                            <span>Mature Aged</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color3"></div>
+                            <span>Ex Justice</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-7">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="social_proc_chart_box">
+                            <div class="social_proc_chart_box_img">
+                              <img
+                                src="./assets/image/social_proc_chart_img_1.png"
+                                alt=""
+                              />
+                            </div>
+
+                            <p>
+                              Female Owned <br />
+                              Business
+                            </p>
+                            <h4 style="color: #000091">100%</h4>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="social_proc_chart_box">
+                            <div class="social_proc_chart_box_img">
+                              <img
+                                src="./assets/image/social_proc_chart_img_2.png"
+                                alt=""
+                              />
+                            </div>
+                            <p>
+                              Small to Medium <br />
+                              Enterprise (SME)
+                            </p>
+                            <h4>6 FTE</h4>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="social_proc_chart_box">
+                            <div class="social_proc_chart_box_img">
+                              <img
+                                src="./assets/image/social_proc_chart_img_3.png"
+                                alt=""
+                              />
+                            </div>
+                            <p>
+                              Manufactured in <br />
+                              Locally
+                            </p>
+                            <h4 style="color: #980090">Victoria</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- social proc product chart end -->
+
+                <!-- local industry start -->
+                <section id="local_industry">
+                  <div class="social_proc_chart_head">
+                    <p>
+                      Local Industry Development Contributions:
+                      <span>16.5 Hours</span>
+                    </p>
+                  </div>
+                  <div class="local_industry_employee">
+                    <p><b>N -</b> Workforce Hrs by New Employees</p>
+                    <p><b>R -</b> Workforce Hrs by Retained Employees</p>
+                  </div>
+
+                  <!-- worforce item -->
+                  <div class="workforce_items">
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon active">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4>16.5</h4>
+                        <h5 class="active">
+                          Local <br />
+                          Workforce
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon active">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_2.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4><span>N: 4</span> <span>R: 7</span></h4>
+                        <h5 class="active">Victorian</h5>
+                        <p>
+                          Building Equality <br />
+                          Policy Hrs
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon active">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_3.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4>N: 2.5</h4>
+                        <h5 class="active">Victorians</h5>
+                        <p>
+                          New Employee Hrs <br />
+                          For Other Roles
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_4.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4><span>N: 0</span> <span>R: 0</span></h4>
+                        <h5 class="active">Victorian</h5>
+                        <p>
+                          Cadet <br />
+                          Workforce Hrs
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon active">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_5.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4><span>N: 0</span> <span>R: 1</span></h4>
+                        <h5 class="active">Victorian</h5>
+                        <p>
+                          Intern <br />
+                          Workforce Hrs
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_6.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4><span>N: 0</span> <span>R: 0</span></h4>
+                        <h5 class="active">Victorian</h5>
+                        <p>
+                          Apprentice <br />
+                          Workforce Hrs
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon active">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_7.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4><span>N: 0</span> <span>R: 2</span></h4>
+                        <h5 class="active">Victorians</h5>
+                        <p>
+                          Progression <br />
+                          into New Role
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- worforce item -->
+                  <div class="workforce_items">
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4>16.5</h4>
+                        <h5>Outside Victorian</h5>
+                        <p>
+                          Total Workforce <br />
+                          Hrs
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_2.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4><span>N: 4</span> <span>R: 7</span></h4>
+                        <h5>Victorian</h5>
+                        <p>
+                          Building Equality <br />
+                          Policy Hrs
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_3.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4>N: 2.5</h4>
+                        <h5>Victorians</h5>
+                        <p>
+                          New Employee Hrs <br />
+                          For Other Roles
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_4.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4><span>N: 0</span> <span>R: 0</span></h4>
+                        <h5>Victorian</h5>
+                        <p>
+                          Cadet <br />
+                          Workforce Hrs
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_5.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4><span>N: 0</span> <span>R: 1</span></h4>
+                        <h5>Victorian</h5>
+                        <p>
+                          Intern <br />
+                          Workforce Hrs
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_6.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4><span>N: 0</span> <span>R: 0</span></h4>
+                        <h5>Victorian</h5>
+                        <p>
+                          Apprentice <br />
+                          Workforce Hrs
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/local_industry_workforce_icon_7.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4><span>N: 0</span> <span>R: 2</span></h4>
+                        <h5>Victorians</h5>
+                        <p>
+                          Progression <br />
+                          into New Role
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- local industry end -->
+
+                <!-- sustainable start -->
+                <section id="sustainable">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="sustainable_chart">
+                        <div class="sustainable_chart_head">
+                          <p>Environmental & Sustainable Content</p>
+                        </div>
+                      </div>
+                      <div id="sustainableChart">
+                        <div
+                          class="sustainable_chart_features_content1 sustainable_chart_features"
+                        >
+                          <p>
+                            Recycled <br />
+                            content <br />
+                            <span style="color: #9b7e18">UNSDG 12</span>
+                          </p>
+                        </div>
+                        <div
+                          class="sustainable_chart_features_content2 sustainable_chart_features"
+                        >
+                          <p>
+                            Product <br />
+                            stewardship <br />
+                            <span style="color: #ae9129">UNSDG 12</span>
+                          </p>
+                        </div>
+                        <div
+                          class="sustainable_chart_features_content3 sustainable_chart_features"
+                        >
+                          <p>
+                            Total UNSDG's <br />
+                            achieved <br />
+                            <span style="color: #3d8ed9">UNSDG COMPLIANCE</span>
+                          </p>
+                        </div>
+                        <div
+                          class="sustainable_chart_features_content4 sustainable_chart_features"
+                        >
+                          <p>
+                            Renewable <br />
+                            energy <br />
+                            <span style="color: #f3be00">UN SDG 7</span>
+                          </p>
+                        </div>
+                        <div
+                          class="sustainable_chart_features_content5 sustainable_chart_features"
+                        >
+                          <p>
+                            Stages of <br />
+                            circularity <br />
+                            <span style="color: #a58925">UNSDG 12</span>
+                          </p>
+                        </div>
+                        <div
+                          class="sustainable_chart_features_content6 sustainable_chart_features"
+                        >
+                          <p>
+                            Certifications <br />
+                            obtained <br />
+                            <span style="color: #d6a806">UNSDG 11</span>
+                          </p>
+                        </div>
+                        <div class="sustainable_chart_content">
+                          <p>5 <br />T</p>
+                          <p>8 <br />kg</p>
+                          <p>10 <br />UNSDGs</p>
+                          <p>0.5 <br />KWh</p>
+                          <p>3 <br />Cert.</p>
+                          <p>120 <br />Deg</p>
+                        </div>
+                        <img
+                          src="./assets/image/sustainable_chart_img.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="sustainable_chart">
+                            <div class="sustainable_chart_head">
+                              <p>Sustainable Materials</p>
+                            </div>
+                            <div
+                              id="sustainableMaterialsChartPie"
+                              class="chart"
+                            ></div>
+
+                            <div class="sustainable_chart_legend">
+                              <div class="legends">
+                                <div class="legend_box color1"></div>
+                                <span>Bamboo</span>
+                              </div>
+                              <div class="legends">
+                                <div class="legend_box color2"></div>
+                                <span>Recycled Packaging</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="sustainable_chart">
+                            <div class="sustainable_chart_head">
+                              <p>Local Content</p>
+                            </div>
+                            <div
+                              id="sustainableLocalChartPie"
+                              class="chart"
+                            ></div>
+
+                            <div class="sustainable_chart_legend">
+                              <div class="legends">
+                                <div class="legend_box color3"></div>
+                                <span
+                                  >Local Content <br />
+                                  /Australia & New Zealand</span
+                                >
+                              </div>
+                              <div class="legends">
+                                <div class="legend_box color4"></div>
+                                <span>Overseas Content</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- sustainable end -->
+
+                <div class="divider"></div>
+
+                <!-- related product start -->
+                <section id="related_product">
+                  <div class="related_product_head">
+                    <h3>Related Products</h3>
+
+                    <div class="related_product_head_btn">
+                      <a href="#"
+                        >View More
+                        <span><i class="fa-solid fa-arrow-right-long"></i></span
+                      ></a>
+                    </div>
+                  </div>
+
+                  <div class="related_product_cards">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="related_product_card_item">
+                          <div class="related_product_card_img">
+                            <img
+                              src="./assets/image/related_product_img_1.png"
+                              alt=""
+                            />
+                          </div>
+
+                          <div class="related_product_card_rating">
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-regular fa-star"></i></a>
+                          </div>
+
+                          <div class="related_product_card_desc">
+                            <div class="related_product_card_desc_img">
+                              <img
+                                src="./assets/image/related_product_card_desc_img.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="related_product_card_desc_content">
+                              <p>100% Bamboo Jumbo</p>
+                              <p>Toilet Rolls - 8 Rolls</p>
+                            </div>
+                          </div>
+
+                          <div class="related_product_card_price">
+                            <span>$18.73</span>
+                            <span>$24.17</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="related_product_card_item">
+                          <div class="related_product_card_img">
+                            <img
+                              src="./assets/image/related_product_img_2.png"
+                              alt=""
+                            />
+                          </div>
+
+                          <div class="related_product_card_rating">
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-regular fa-star"></i></a>
+                          </div>
+
+                          <div class="related_product_card_desc">
+                            <div class="related_product_card_desc_img">
+                              <img
+                                src="./assets/image/related_product_card_desc_img.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="related_product_card_desc_content">
+                              <p>100% Bamboo Jumbo</p>
+                              <p>Toilet Rolls - 8 Rolls</p>
+                            </div>
+                          </div>
+
+                          <div class="related_product_card_price">
+                            <span>$18.73</span>
+                            <span>$24.17</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="related_product_card_item">
+                          <div class="related_product_card_img">
+                            <img
+                              src="./assets/image/related_product_img_3.png"
+                              alt=""
+                            />
+                          </div>
+
+                          <div class="related_product_card_rating">
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-regular fa-star"></i></a>
+                          </div>
+
+                          <div class="related_product_card_desc">
+                            <div class="related_product_card_desc_img">
+                              <img
+                                src="./assets/image/related_product_card_desc_img.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="related_product_card_desc_content">
+                              <p>100% Bamboo Jumbo</p>
+                              <p>Toilet Rolls - 8 Rolls</p>
+                            </div>
+                          </div>
+
+                          <div class="related_product_card_price">
+                            <span>$18.73</span>
+                            <span>$24.17</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="related_product_card_item">
+                          <div class="related_product_card_img">
+                            <img
+                              src="./assets/image/related_product_img_4.png"
+                              alt=""
+                            />
+                          </div>
+
+                          <div class="related_product_card_rating">
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-regular fa-star"></i></a>
+                          </div>
+
+                          <div class="related_product_card_desc">
+                            <div class="related_product_card_desc_img">
+                              <img
+                                src="./assets/image/related_product_card_desc_img.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="related_product_card_desc_content">
+                              <p>100% Bamboo Jumbo</p>
+                              <p>Toilet Rolls - 8 Rolls</p>
+                            </div>
+                          </div>
+
+                          <div class="related_product_card_price">
+                            <span>$18.73</span>
+                            <span>$24.17</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- related product end -->
+              </div>
+
+              <div id="discussion" class="container-fluid tab-pane">
+                <h3>Discussion</h3>
+              </div>
+
+              <div id="modules" class="container-fluid tab-pane">
+                <h3>Modules</h3>
+              </div>
+
+              <div id="projects" class="container-fluid tab-pane">
+                <h3>Projects</h3>
+              </div>
+
+              <div id="tasks" class="container-fluid tab-pane">
+                <h3>Tasks</h3>
+              </div>
+
+              <!-- progress -->
+              <div id="progress" class="container-fluid tab-pane">progress</div>
+            </div>
+          </section>
+        </div>
+        <!-- product dashboard tab end -->
       </section>
     </section>
 
