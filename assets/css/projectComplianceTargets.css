@@ -209,4 +209,33 @@
   color: rgba(30, 39, 73, 0.7);
 }
 
+/* project stage costing */
+
+.project_stage_costing .project_table_row:first-child {
+  border-top: none;
+}
+
+.project_stage_costing .project_stage_costing_table_head p {
+  font-family: var(--primary-font);
+  color: var(--black) !important;
+  font-weight: 600 !important;
+}
+
+.project_stage_costing .project_table_row_left p {
+  font-family: var(--primary-font);
+  color: rgba(30, 39, 73, 0.7);
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.project_stage_costing .table_data_left p,
+.project_stage_costing .table_data_right p {
+  float: right;
+  padding-right: 15px;
+  font-family: var(--primary-font);
+  color: var(--black);
+  font-size: 1em;
+  font-weight: 500;
+}
+
 /* project compliance start */
