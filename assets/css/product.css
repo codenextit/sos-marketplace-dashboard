@@ -1125,6 +1125,37 @@
   }
 }
 
+/* Community Purpose Tab Start */
+.about-card {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  padding: 20px;
+}
+
+.card-head p {
+  color: #000;
+font-size: 24px;
+font-weight: 500;
+}
+
+.card-content p {
+  color: rgba(0, 0, 0, 0.60);
+font-size: 14px;
+font-weight: 400;
+}
+
+.card-partner-sec p {
+  color: rgba(20, 68, 146, 0.80);
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+}
+
+.card-partner-sec img {
+  width: 439px;
+}
+/* Community Purpose Tab End */
+
 /* UN SDG Tab All CSS Start */
 .un-sdg-goals-content {
   margin: 40px 0;
@@ -1132,8 +1163,15 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/* .all-step-images {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+} */
+
 .all-step-images img {
-  width: 150px;
+  width: 160px;
   padding: 10px;
 }
 /* UN SDG Tab All CSS End */
