@@ -1128,33 +1128,33 @@
 /* Community Purpose Tab Start */
 .about-card {
   border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
 .comm-return-card {
   border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
 .card-head p {
   color: #000;
-font-size: 24px;
-font-weight: 500;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .card-content p {
-  color: rgba(0, 0, 0, 0.60);
-font-size: 14px;
-font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .card-partner-sec p {
-  color: rgba(20, 68, 146, 0.80);
-text-align: center;
-font-size: 18px;
-font-weight: 600;
+  color: rgba(20, 68, 146, 0.8);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .card-partner-sec img {
@@ -1173,7 +1173,7 @@ font-weight: 600;
 
 .profit-info p {
   margin-top: 15px;
-  color: rgba(0, 0, 0, 0.80);
+  color: rgba(0, 0, 0, 0.8);
   font-size: 14px;
   font-weight: 600;
 }
@@ -1194,8 +1194,7 @@ font-weight: 600;
 } */
 
 .all-step-images img {
-  width: 160px;
-  padding: 10px;
+  width: 100%;
 }
 /* UN SDG Tab All CSS End */
 
