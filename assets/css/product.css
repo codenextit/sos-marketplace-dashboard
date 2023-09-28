@@ -1025,7 +1025,7 @@
 /* UN SDG Tab All CSS Start */
 .un-sdg-goals-content {
   margin: 40px 0;
-  border-radius: 12px;
+  border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -1034,3 +1034,126 @@
   padding: 10px;
 }
 /* UN SDG Tab All CSS End */
+
+/* Product Location Start */
+
+#product_location {
+  margin-top: 30px;
+}
+
+.product_location_content {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product_location_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.product_location_header h4 {
+  margin-bottom: 0;
+  font-family: var(--primary-font);
+  font-size: 1.6em;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.product_location_brand {
+  display: flex;
+  align-items: center;
+}
+
+.product_location_brand .brand_logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+.product_location_brand .brand_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product_location_brand p {
+  margin-bottom: 0;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+}
+
+.product_location_rating {
+  display: flex;
+  align-items: center;
+}
+
+.product_location_rating p {
+  padding-left: 15px;
+  margin-bottom: 0;
+  font-family: var(--primary-font);
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+}
+
+.product_location_rating .location_rating_star {
+  margin-left: 15px;
+}
+
+.product_location_rating .location_rating_star a {
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.product_location_rating .location_rating_star a i {
+  color: #f3be00;
+}
+
+.product_location_map {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 15px 10px;
+  margin-top: 20px;
+}
+
+.product_location_map iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.product_service_area_head {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.product_service_area_icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+}
+
+.product_service_area_icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product_service_area_head h4 {
+  margin-bottom: 0;
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  color: var(--black);
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+/* Product Location End */
