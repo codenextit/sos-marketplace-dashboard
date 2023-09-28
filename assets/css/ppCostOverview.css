@@ -11,6 +11,27 @@
   --primary-font: "Poppins";
 }
 
+.project-name-table {
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+.project-name-table::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  
+  .project-name-table::-webkit-scrollbar-track {
+    background-color: #fff;
+    outline: 1px solid #d9d9d9;
+    outline-offset: 2px;
+    border-radius: 30px;
+  }
+  .project-name-table::-webkit-scrollbar-thumb {
+    background: #d9d9d9;
+    border-radius: 30px;
+  }
+
 
 /* Project & Program Cost Overview Section Start */
 .ppcost-container {
@@ -23,16 +44,46 @@
     font-size: 1.2rem;
 }
 
-.table {
+.table-new {
+    border-radius: 10px !important;
+    border: 1px solid rgba(0, 0, 0, 0.15);
     width: 100%;
 }
 
-.table th{
-font-weight: 500;
-font-size: 1rem;
+.table-new thead {
+    background: #144492;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.80);
 }
 
-.table thead tr th{
-background: #144492;
+.table-new thead th {
+    font-size: 16px;
+    font-weight: 400 !important;
+    padding: 0 20px;
 }
+
+.table-new tbody td {
+    padding: 14px 20px;
+    font-size: 15px !important;
+}
+
+.table-new tbody td:first-child {
+    width: 50%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    color: #1E2749;
+    font-size: 18px;
+    font-weight: 600;
+}
+.table-new tbody td:nth-child(even) {
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    color: #1E2749;
+}
+
+.table-new tbody td:last-child {
+    text-align: right;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    color: #1E2749;
+}
+
 /* Project & Program Cost Overview Section End */
