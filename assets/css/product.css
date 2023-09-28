@@ -1132,6 +1132,12 @@
   padding: 20px;
 }
 
+.comm-return-card {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  padding: 20px;
+}
+
 .card-head p {
   color: #000;
 font-size: 24px;
@@ -1153,6 +1159,23 @@ font-weight: 600;
 
 .card-partner-sec img {
   width: 439px;
+}
+
+.profit-info {
+  justify-content: center;
+  padding: 20px;
+}
+
+.profit-info img {
+  width: 135px;
+  height: 138px;
+}
+
+.profit-info p {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.80);
+  font-size: 14px;
+  font-weight: 600;
 }
 /* Community Purpose Tab End */
 
