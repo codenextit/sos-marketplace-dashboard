@@ -112,6 +112,14 @@
   width: 60%;
 }
 
+.project_work_table_row_left {
+  width: 40% !important;
+}
+
+.project_table_row_right {
+  width: 60%;
+}
+
 .project_table_row_left2 {
   width: 40%;
 }
@@ -218,7 +226,7 @@
   left: 15px;
   color: rgba(30, 39, 73, 0.7);
 }
- 
+
 .table_data_right_sign2 {
   position: absolute;
   top: 50%;
@@ -269,8 +277,8 @@
 }
 .table-data-center p {
   font-family: var(--primary-font);
-    color: var(--black) !important;
-    font-weight: 600 !important;
+  color: var(--black) !important;
+  font-weight: 600 !important;
 }
 
 .project_table_row_left input {
