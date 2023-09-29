@@ -55,7 +55,7 @@
 /* project compliance table */
 
 .project_compliance_table {
-  margin-top: 30px;
+  margin: 30px;
 }
 
 .project_compliance_table_header {
@@ -248,6 +248,24 @@
   color: rgba(30, 39, 73, 0.7);
 }
 
+.table_data_right select {
+  border: none;
+  outline: none;
+  color: rgba(30, 39, 73, 0.7);
+}
+
+.project_work_table_row_left select {
+  border: none;
+  outline: none;
+  color: rgba(30, 39, 73, 0.7);
+}
+
+.project_work_table_row_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* project stage costing */
 
 .project_stage_costing .project_table_row:first-child {
@@ -293,6 +311,26 @@
   padding: 0 15px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 3px;
+}
+
+.project_table_body {
+  overflow-x: scroll;
+}
+
+.project_table_body::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.project_table_body::-webkit-scrollbar-track {
+  background-color: #fff;
+  outline: 1px solid #d9d9d9;
+  outline-offset: 2px;
+  border-radius: 30px;
+}
+.project_table_body::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 30px;
 }
 
 /* project compliance start */
