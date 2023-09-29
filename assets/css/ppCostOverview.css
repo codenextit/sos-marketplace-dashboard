@@ -13,7 +13,7 @@
 
 .project-name-table {
     overflow-x: scroll;
-    width: 100%;
+    width: 98%;
   }
 
 .project-name-table::-webkit-scrollbar {
@@ -36,7 +36,7 @@
 /* Project & Program Cost Overview Section Start */
 .ppcost-container {
     margin-left: 45px;
-    width: 1580px !important;
+    overflow-x: hidden;
 }
 
 .pp-cost-heading p {
@@ -46,7 +46,7 @@
 
 .table-new {
     border-radius: 10px !important;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    /* border: 1px solid rgba(0, 0, 0, 0.15); */
     width: 100%;
 }
 
@@ -60,6 +60,11 @@
     font-size: 16px;
     font-weight: 400 !important;
     padding: 0 20px;
+}
+
+.table-new tbody tr {
+  border-left: 1px solid rgba(0, 0, 0, 0.15);;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);;
 }
 
 .table-new tbody td {
