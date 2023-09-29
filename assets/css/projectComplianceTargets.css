@@ -116,7 +116,7 @@
   width: 40% !important;
 }
 
-.project_table_row_right {
+.project_work_table_row_left {
   width: 60%;
 }
 
@@ -151,6 +151,11 @@
 .project_table_row_right {
   width: 40%;
 }
+
+.project_work_table_row_right {
+  width: 60%;
+}
+
 .project_table_row_right2 {
   width: 60%;
 }
