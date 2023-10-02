@@ -425,4 +425,11 @@
   font-family: "Poppins";
 }
 
+.nav_logo h3 span:first-child {
+  color: #848ea2;
+}
+.nav_logo h3 span:last-child {
+  color: rgba(0, 0, 0, 0.4);
+}
+
 /* navbar end */
