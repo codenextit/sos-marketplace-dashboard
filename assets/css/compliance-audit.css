@@ -213,11 +213,11 @@
 
 .option_items_left_col_1 .option_select {
   margin-right: 10px;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .option_items_left_col_1 p {
-  font-size: .8em;
+  font-size: 0.8em;
   margin-bottom: 2px;
 }
 
@@ -312,6 +312,15 @@
   font-family: var(--primary-font);
   font-size: 1em;
   font-weight: 600;
+}
+
+.options_item_link {
+  float: right;
+}
+
+.options_item_link p {
+  margin-bottom: 0;
+  font-size: 0.9em;
 }
 
 .options_item_link a {
@@ -446,5 +455,70 @@
     font-size: 0.7em;
   }
 } */
+
+/* Workforce-Duty of Care Start */
+
+.option_items_right_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.workforce_option_select {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.workforce_option_select select {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: rgba(30, 39, 73, 0.7);
+}
+
+.workforce_option_download_btn a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: #144492;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 4px;
+  background-color: rgba(20, 68, 146, 0.1);
+}
+
+.workforce_option_download_btn a svg {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.workforce_option_input input {
+  width: 100%;
+  height: 40px;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.compliance_audit_options_header p {
+  color: rgba(30, 39, 73, 0.7);
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+
+/* Workforce-Duty of Care End */
 
 /* Compliance Audit Tabs End */
