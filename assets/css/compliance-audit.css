@@ -211,11 +211,31 @@
   margin-right: 10px;
 }
 
+.option_items_left_col_1 .option_select {
+  margin-right: 10px;
+  font-size: .8em;
+}
+
+.option_items_left_col_1 p {
+  font-size: .8em;
+  margin-bottom: 2px;
+}
+
 .option_items_right_col_1 .option_select input[type="radio"] {
   accent-color: #144492;
 }
 
+.option_items_left_col_1 .option_select input[type="radio"] {
+  accent-color: #144492;
+}
+
 .option_items_right_col_1 .option_select label {
+  margin-right: 8px;
+  cursor: pointer;
+  color: rgba(30, 39, 73, 0.4);
+}
+
+.option_items_left_col_1 .option_select label {
   margin-right: 8px;
   cursor: pointer;
   color: rgba(30, 39, 73, 0.4);
