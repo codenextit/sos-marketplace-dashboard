@@ -152,14 +152,86 @@
   font-family: var(--primary-font);
   font-size: 1.5em;
   font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .compliance_audit_option_items {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
 }
 
 .compliance_audit_option_items:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.option_items_left p {
+  margin-bottom: 0;
+  color: #1e2749;
+  font-family: var(--primary-font);
+  font-size: 1.08em;
+  font-weight: 500;
+}
+
+.option_items_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option_items_right .option_items_right_col_1 {
+  display: flex;
+  align-items: center;
+}
+
+.option_items_right_col_1 .option_select input[type="radio"] {
+  accent-color: #144492;
+}
+
+.option_items_right_col_1 .option_select label {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.option_items_right_col_1 .select_box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 40px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.option_items_right_col_1 .select_box select {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.option_items_right_col_2 button {
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: rgba(20, 68, 146, 0.1);
+  margin-left: 15px;
+}
+
+.option_items_right_col_2 button img {
+  width: 22px;
+}
+
+.option_items_add_btn button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fc7e14;
+  font-family: var(--primary-font);
+  font-size: 1.09em;
+  font-weight: 600;
 }
 
 /* Compliance Audit Tabs End */
