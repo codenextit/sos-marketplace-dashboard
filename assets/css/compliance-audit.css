@@ -111,7 +111,7 @@
 .contribution_header_content p {
   color: rgba(255, 255, 255, 0.6);
   font-family: var(--primary-font);
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 300;
   margin: 15px 0 20px;
 }
@@ -168,7 +168,7 @@
   margin-bottom: 0;
   color: #1e2749;
   font-family: var(--primary-font);
-  font-size: 1.08em;
+  font-size: 1em;
   font-weight: 500;
 }
 
@@ -247,7 +247,11 @@
   padding-left: 15px;
 }
 
-.option_items_right_col_2 button {
+.option_items_right_col_2 a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
   border: none;
   outline: none;
   width: 40px;
@@ -257,32 +261,130 @@
   margin-left: 15px;
 }
 
-.option_items_right_col_2 button img {
+.option_items_right_col_2 a img {
   width: 22px;
 }
 
 .option_items_add_btn .start_btn {
+  text-decoration: none;
   border: none;
+  display: inline-block;
   outline: none;
   border-radius: 4px;
   background: #fc7e14;
   font-family: var(--primary-font);
   color: var(--white);
-  font-size: 1.09em;
+  font-size: 1em;
   height: 40px;
   padding: 0 20px;
   font-weight: 400;
 }
 
-.option_items_add_btn button {
+.option_items_add_btn a {
+  text-decoration: none;
   border: none;
   outline: none;
+  display: inline-block;
+  line-height: 40px;
   background: transparent;
   height: 40px;
   color: #fc7e14;
   font-family: var(--primary-font);
-  font-size: 1.09em;
+  font-size: 1em;
   font-weight: 600;
 }
+
+.options_item_link a {
+  color: #037bff;
+  font-family: var(--primary-font);
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1730px) {
+  .compliance_audit_options_header h4 {
+    font-size: 1.3em;
+  }
+
+  .option_items_left p {
+    font-size: 0.8em;
+  }
+
+  .option_items_left .select_box {
+    height: 35px;
+    width: 160px;
+  }
+
+  .option_items_left .select_box select {
+    font-size: 0.8em !important;
+  }
+
+  .option_items_right_col_1 .select_box select {
+    font-size: 0.8em !important;
+  }
+
+  .option_items_add_btn .start_btn {
+    font-size: 0.8em;
+  }
+
+  .option_items_add_btn a {
+    font-size: 0.8em;
+  }
+
+  .option_items_right_col_1 .option_select label {
+    margin-right: 6px;
+    font-size: 0.8em;
+  }
+
+  .option_items_right_col_1 .option_select input[type="radio"] {
+    transform: scale(0.9);
+  }
+
+  .option_items_right_col_1 .select_box {
+    height: 35px;
+    width: 160px;
+  }
+
+  .option_items_right_col_1 .enter_usd_value {
+    height: 35px;
+    width: 160px;
+    font-size: 0.8em;
+  }
+
+  .option_items_right_col_2 a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 8px;
+  }
+
+  .option_items_right_col_2 a img {
+    width: 18px;
+  }
+
+  .options_item_link a {
+    font-size: 0.8em;
+  }
+}
+
+/* @media screen and (max-width: 1400px) {
+  .option_items_right_col_1 .option_select input[type="radio"] {
+    transform: scale(0.8);
+  }
+
+  .option_items_right_col_2 button {
+    width: 25px;
+    height: 25px;
+    margin-left: 6px;
+  }
+
+  .option_items_right_col_2 button img {
+    width: 16px;
+  }
+
+  .options_item_link a {
+    font-size: 0.7em;
+  }
+} */
 
 /* Compliance Audit Tabs End */
