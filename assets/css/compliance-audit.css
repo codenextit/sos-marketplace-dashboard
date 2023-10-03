@@ -301,6 +301,46 @@
   font-weight: 400;
 }
 
+.submit_btn {
+  float: right;
+  margin: 30px 0;
+}
+
+.submit_btn a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: #144492;
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 4px;
+  background-color: rgba(20, 68, 146, 0.1);
+  transition: 0.4s;
+  margin-left: 10px;
+}
+
+.submit_btn a.active,
+.submit_btn a:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.submit_btn a.active svg path,
+.submit_btn a:hover svg path {
+  fill: var(--white);
+}
+
+.submit_btn a svg {
+  margin-right: 6px;
+  transition: 0.4s;
+}
+
+.submit_btn a svg path {
+  fill: #144492;
+  transition: 0.4s;
+}
+
 @media screen and (max-width: 1730px) {
   .compliance_audit_options_header h4 {
     font-size: 1.3em;
