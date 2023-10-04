@@ -521,4 +521,112 @@
 
 /* Workforce-Duty of Care End */
 
+/* Environment & Sustainability Start */
+
+.environment_option_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.environment_option_col_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.environment_option_col_1 .radio_btn {
+  width: 55px;
+}
+
+.environment_option_col_1 .radio_btn label {
+  color: rgba(30, 39, 73, 0.4);
+}
+.environment_option_col_2 .radio_btn label {
+  color: rgba(30, 39, 73, 0.4);
+}
+
+.environment_option_select {
+  width: calc(100% - 160px);
+  max-width: 160px;
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.environment_option_select select {
+  border: none;
+  outline: none;
+  width: 100%;
+  color: rgba(30, 39, 73, 0.4);
+}
+
+.environment_option_upload_btn a {
+  display: inline-block;
+  max-width: 100px;
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 1em;
+  text-align: center;
+  background-color: rgba(20, 68, 146, 0.05);
+  border-radius: 4px;
+  color: rgba(20, 68, 146, 0.5);
+  text-decoration: none;
+}
+
+.environment_option_upload_btn a svg {
+  width: 15px;
+}
+
+.environment_option_upload_btn a svg path {
+  fill: rgba(20, 68, 146, 0.5);
+}
+
+.environment_option_col_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.environment_option_col_2 .radio_btn {
+  width: 50px;
+}
+
+.environment_option_col_2 .start_btn a {
+  display: inline-block;
+  padding: 0 10px;
+  max-width: 180px;
+  background: #fc7e14 !important;
+  font-size: 1em;
+  white-space: nowrap;
+  color: var(--white);
+  font-weight: 500;
+  font-family: var(--primary-font);
+  text-decoration: none;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1400px) {
+  .environment_option_upload_btn a {
+    font-size: 0.8em;
+  }
+  .environment_option_upload_btn a svg {
+    width: 16px;
+  }
+  .environment_option_col_2 .start_btn a {
+    font-size: 0.8em;
+  }
+}
+
+/* Environment & Sustainability End */
+
 /* Compliance Audit Tabs End */
