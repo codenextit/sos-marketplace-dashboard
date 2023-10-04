@@ -703,4 +703,249 @@
 
 /* Environment & Sustainability End */
 
+/* Modern Slavery Start */
+
+.modern_slavery_input input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  font-size: 1em;
+  padding: 0 15px;
+}
+
+.modern_slavery_select {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modern_slavery_select select {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-family: var(--primary-font);
+  color: rgba(30, 39, 73, 0.7);
+}
+
+.modern_slavery_link_btn {
+  float: right;
+}
+
+.modern_slavery_link_btn a {
+  text-decoration: none;
+  width: 85px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  color: #f2994a;
+  font-size: 1em;
+  font-family: var(--primary-font);
+  background-color: rgba(242, 153, 74, 0.1);
+}
+
+.modern_slavery_link_btn a svg {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.modern_slavery_btn {
+  float: right;
+}
+
+.modern_slavery_btn a {
+  text-decoration: none;
+  width: 120px;
+  height: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(20, 68, 146, 0.1);
+  color: #144492;
+  font-size: 1em;
+  margin-left: 8px;
+  font-family: var(--primary-font);
+}
+
+.modern_slavery_btn a svg {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.modern_slavery_certification_btn {
+  margin-top: 20px;
+}
+
+.modern_slavery_certification_btn a {
+  text-decoration: none;
+  height: 40px;
+  padding: 0 15px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(20, 68, 146, 0.1);
+  color: #144492;
+  font-size: 1em;
+  font-family: var(--primary-font);
+}
+
+.modern_slavery_btn a svg {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.modern_audit_option_start_btn {
+  margin-top: 15px;
+}
+
+.modern_audit_option_start_btn a {
+  text-decoration: none;
+  height: 40px;
+  padding: 0 15px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fc7e14;
+  color: var(--white);
+  font-size: 1em;
+  font-family: var(--primary-font);
+}
+
+.modern_slavery_risk_chart {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* height: 430px; */
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.modern_slavery_risk_chart h4 {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  color: #144492;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modern_slavery_risk_chart p {
+  font-family: var(--primary-font);
+  font-size: 1em;
+  color: var(--black);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.modern_slavery_risk_chart .chart_legends {
+  display: flex;
+  align-items: center;
+}
+
+.chart_legends {
+  display: flex;
+  justify-content: center;
+}
+
+.legend_items {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.legend_items .legend_box.blue {
+  background-color: #144492;
+}
+.legend_items .legend_box.red {
+  background-color: #ff0000;
+}
+
+.legend_items .legend_box {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+.legend_items span {
+  font-size: 0.8em;
+  color: #878787;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.modern_audit_option_box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  .modern_slavery_risk_chart {
+    padding: 20px 10px;
+  }
+  .modern_slavery_input input {
+    font-size: 0.8em;
+  }
+
+  .modern_slavery_select select {
+    font-size: 0.8em;
+  }
+
+  .modern_slavery_link_btn a {
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.8em;
+  }
+
+  .modern_slavery_link_btn a svg {
+    width: 18px;
+  }
+
+  .modern_slavery_btn a {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.8em;
+  }
+
+  .modern_slavery_btn a svg {
+    width: 16px;
+  }
+
+  .modern_audit_option_start_btn a,
+  .modern_slavery_btn a {
+    font-size: 0.8em;
+  }
+
+  .modern_slavery_btn a svg {
+    width: 16px;
+  }
+
+  /* .modern_slavery_risk_chart {
+    height: 400px;
+  } */
+
+  .modern_slavery_risk_chart h4 {
+    font-size: 1.2em;
+  }
+}
+
+/* Modern Slavery End */
+
 /* Compliance Audit Tabs End */
