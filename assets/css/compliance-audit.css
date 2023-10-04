@@ -370,7 +370,7 @@
   transition: 0.4s;
 }
 
-@media screen and (max-width: 1730px) {
+@media screen and (max-width: 1400px) {
   .compliance_audit_options_header h4 {
     font-size: 1.3em;
   }
@@ -539,11 +539,26 @@
   width: 55px;
 }
 
+.environment_option_col_1 .radio_btn input {
+  accent-color: #144492;
+}
+.environment_option_col_2 .radio_btn input {
+  accent-color: #144492;
+}
+
 .environment_option_col_1 .radio_btn label {
   color: rgba(30, 39, 73, 0.4);
+  cursor: pointer;
+  font-family: var(--primary-font);
+  margin-right: 6px;
+  font-size: 1rem;
 }
 .environment_option_col_2 .radio_btn label {
   color: rgba(30, 39, 73, 0.4);
+  cursor: pointer;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  margin-right: 6px;
 }
 
 .environment_option_select {
@@ -615,6 +630,40 @@
   border-radius: 4px;
 }
 
+.environment_option_col_3 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.environment_option_textarea textarea {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 4px;
+  width: 100%;
+  resize: none;
+  height: 70px;
+  margin-top: 15px;
+  padding: 8px 15px;
+  font-size: 1em;
+}
+
+.option_items_right_col_2 {
+  width: 120px;
+  display: flex;
+  justify-content: end;
+}
+
+.options_item_link {
+  text-align: right;
+}
+
+@media screen and (max-width: 1600px) {
+  .option_items_right_col_2 {
+    width: 100px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .environment_option_upload_btn a {
     font-size: 0.8em;
@@ -623,6 +672,23 @@
     width: 16px;
   }
   .environment_option_col_2 .start_btn a {
+    font-size: 0.8em;
+  }
+  .environment_option_textarea textarea {
+    font-size: 0.8em;
+  }
+  .environment_option_col_1 .radio_btn label {
+    font-size: 0.8rem;
+  }
+  .environment_option_col_2 .radio_btn label {
+    font-size: 0.8rem;
+  }
+
+  .environment_option_select select {
+    font-size: 0.8em;
+  }
+
+  .options_item_link {
     font-size: 0.8em;
   }
 }
