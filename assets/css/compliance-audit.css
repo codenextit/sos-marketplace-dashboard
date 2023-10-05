@@ -539,7 +539,12 @@ margin-bottom: 5px;
   font-size: 1em;
 }
 
-@media screen and (max-width: 1400px) {
+.policy_option_single_start_btn {
+  width: 280px; 
+  justify-content: start !important;
+}
+
+@media screen and (max-width: 1560px) {
   .policy_option_items_text p {
   font-size: 0.8em;
   }
@@ -558,6 +563,11 @@ margin-bottom: 5px;
   
   .policy_option_select select {
     font-size: 0.8em;
+  }
+
+  .policy_option_single_start_btn {
+    width: 215px; 
+    justify-content: start !important;
   }
 }
 
@@ -1000,6 +1010,12 @@ margin-bottom: 5px;
   border-radius: 8px;
   padding: 20px;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+  .chart_box p {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (max-width: 1400px) {
