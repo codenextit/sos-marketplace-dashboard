@@ -456,6 +456,113 @@
   }
 } */
 
+/* Policy Compliance Start */
+
+.policy_option_items_text p {
+  color: #4F4F4F;
+font-family: var(--primary-font);
+font-size: 1em;
+font-weight: 500;
+margin-bottom: 5px;
+}
+
+.policy_option_btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.policy_option_btn a {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+.policy_option_btn a svg {
+  width: 18px;
+  margin-right: 4px;
+}
+
+.policy_option_btn a.link_btn {
+  color: #F2994A;
+  background-color: rgba(242, 153, 74, 0.1);
+}
+.policy_option_btn a.upload_btn {
+  color: #144492;
+  background-color: rgba(20, 68, 146, 0.1);
+  margin-left: 10px;
+}
+.policy_option_btn a.start_btn {
+  color: var(--white);
+  background-color: #FC7E14;
+  padding: 0 10px;
+}
+
+.policy_option_left_col_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.policy_option_left_col_2 .option_select {
+  width: 50px;
+  margin-right: 0;
+}
+
+.policy_option_left_col_2 .option_select label {
+  margin-right: 0 !important;
+}
+
+.policy_option_select {
+  width: calc(100% - 100px);
+  max-width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.policy_option_select select {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: rgba(30, 39, 73, 0.7);
+  font-size: 1em;
+}
+
+@media screen and (max-width: 1400px) {
+  .policy_option_items_text p {
+  font-size: 0.8em;
+  }
+
+  .policy_option_btn a {
+    font-size: 0.8em;
+    padding: 0 5px;
+    height: 35px;
+  line-height: 35px;
+  }
+
+  .policy_option_btn a svg {
+    width: 16px;
+    margin-right: 0px;
+  }
+  
+  .policy_option_select select {
+    font-size: 0.8em;
+  }
+}
+
+/* Policy Compliance End */
+
 /* Workforce-Duty of Care Start */
 
 .option_items_right_btn {
