@@ -1,6 +1,6 @@
-// Project Risk Levels chart
+// Project Indigenous Inclusion Risk Levels
 var options = {
-  series: [76, 55, 68, 50],
+  series: [78, 70, 55, 60, 50],
   chart: {
     height: 370,
     type: "radialBar",
@@ -14,7 +14,7 @@ var options = {
       hollow: {
         margin: 5,
         size: "30%",
-        background: "#F3BE00",
+        background: "#FF0000",
         image: undefined,
       },
       dataLabels: {
@@ -27,7 +27,7 @@ var options = {
         },
         total: {
           show: true,
-          label: ["Medium"],
+          label: ["High"],
           color: "#000",
           fontSize: "15px",
         },
@@ -40,7 +40,7 @@ var options = {
       },
     },
   },
-  colors: ["#144492", "#F3BE00", "#00B050", "#FF0000"],
+  colors: ["#144492", "#00B050", "#F3BE00", "#00B050", "#FF0000"],
   labels: ["Completion", "Medium", "Low", "High"],
   legend: {
     show: false,
@@ -80,28 +80,28 @@ var chart = new ApexCharts(
 );
 chart.render();
 
-// <---- Total Project Social Suppliers Chart ----->
+// <---- Total Project Number of Indigenous Businesses ----->
 var options = {
   series: [
     {
       name: "Net Profit",
       type: "column",
-      data: [25, 35, 45, 55, 65, 75, 85, 95, 75],
+      data: [35, 30, 30, 38, 23, 30, 38, 30, 25, 38, 30, 25],
     },
     {
       name: "Revenue",
       type: "column",
-      data: [20, 30, 40, 50, 60, 70, 80, 90, 70],
+      data: [18, 16, 15, 13, 18, 12, 15, 12, 18, 14, 11, 15],
     },
     {
       name: "Free Cash Flow",
       type: "column",
-      data: [15, 25, 35, 45, 55, 65, 75, 85, 65],
+      data: [5, 8, 5, 4, 5, 3, 6, 7, 4, 6, 5, 4],
     },
     {
       name: "01",
       type: "line",
-      data: [15, 28, 35, 45, 60, 65, 75, 80, 70],
+      data: [35, 30, 38, 23, 30, 38, 30, 25, 38, 30, 35, 28],
       color: "#FD4802",
     },
   ],
@@ -116,7 +116,7 @@ var options = {
     width: [5, 5],
     curve: "smooth",
   },
-  colors: ["#00BC8B", "#037BFF", "#FF49ED", "#FD4802"],
+  colors: ["#F3BE00", "#964B00", "#FF5252", "#FD4802"],
 
   legend: {
     show: false,
@@ -138,11 +138,24 @@ var options = {
     colors: ["transparent"],
   },
   xaxis: {
-    categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+    categories: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ],
   },
   yaxis: {
     title: {
-      text: "$ (thousands)",
+      text: "",
     },
   },
   fill: {
@@ -206,7 +219,7 @@ var options = {
       enabled: false,
     },
   },
-  colors: ["#00BC8B", "#037BFF", "#FF49ED"],
+  colors: ["#964B00", "#FF5252", "#F3BE00"],
   dataLabels: {
     enabled: false,
   },
@@ -276,7 +289,7 @@ var options = {
       "Roofing",
       "Partitions and...",
       "Wall Finishes...",
-      "Vinyl and Car...",
+      "Vinyl and Carp...",
       "Blinds and Fly...",
       "Signage",
       "External Cladd...",
@@ -345,11 +358,11 @@ var chart = new ApexCharts(
 );
 chart.render();
 
-// pie chart
+// indigenous pie chart
 var options = {
-  series: [8, 7, 5, 8, 10, 15, 10, 7, 13, 5, 8, 4],
+  series: [20, 20, 15, 10, 20, 15],
   chart: {
-    width: 420,
+    width: "50%",
     type: "pie",
     fontFamily: "Poppins",
   },
@@ -367,41 +380,33 @@ var options = {
     "Asylum seeker/refugees",
     "Long term unemployed",
     "LGBTQI+",
-    "Aboriginal & Torres Strait Islanders",
-    "Women",
-    "People living with a disability",
-    "Entrenched disadvantage",
-    "Women escaping violence",
-    "New migrants",
   ],
   stroke: {
     show: false,
     width: 0,
     colors: ["transparent"],
   },
-  colors: [
-    "#FF5438",
-    "#000091",
-    "#980090",
-    "#FF9F51",
-    "#A1DAE8",
-    "#FFBDCB",
-    "#FF787C",
-    "#82E200",
-    "#00C3FF",
-    "#8D0085",
-    "#00FFFF",
-    "#A627D3",
-  ],
+  colors: ["#FF5438", "#000091", "#980090", "#FF9F51", "#A1DAE8", "#FFBDCB"],
   legend: {
     show: false,
   },
   responsive: [
     {
-      breakpoint: 480,
+      breakpoint: 1600,
       options: {
         chart: {
-          width: 200,
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          width: 220,
         },
         legend: {
           position: "bottom",
@@ -413,6 +418,154 @@ var options = {
 
 var chart = new ApexCharts(
   document.querySelector("#indigenousChartPie"),
+  options
+);
+chart.render();
+
+// Indigenous Training type Pie Chart
+var options = {
+  series: [50, 20, 20, 40],
+  chart: {
+    width: "100%",
+    type: "pie",
+    fontFamily: "Poppins",
+  },
+  dataLabels: {
+    enabled: true,
+    style: {
+      fontFamily: "Poppins", // Set the font family to Poppins
+      fontWeight: 300, // Set the font weight to 300
+    },
+    formatter: function (val, opt) {
+      // return val + " " + "FTE";
+      return opt.w.globals.seriesNames[opt.seriesIndex];
+    },
+  },
+  plotOptions: {
+    pie: {
+      offsetX: 0,
+      offsetY: 0,
+    },
+  },
+
+  labels: [
+    ["Trainee", "(1.2 FTE)"],
+    ["Cadet", "0.4 FTE"],
+    ["Apprentice", "1.5 FTE"],
+    ["Work", "Experience", "(0.4 FTE)"],
+  ],
+  stroke: {
+    show: false,
+    width: 0,
+    colors: ["transparent"],
+  },
+  colors: ["#FF5438", "#000091", "#980090", "#FF9F51"],
+  legend: {
+    show: false,
+  },
+  responsive: [
+    {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          width: 220,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+  ],
+};
+
+var chart = new ApexCharts(
+  document.querySelector("#indigenousTrainingChartPie"),
+  options
+);
+chart.render();
+
+// Indigenous Employment type Pie Chart
+var options = {
+  series: [20, 20, 20, 40],
+  chart: {
+    width: "100%",
+    type: "pie",
+    fontFamily: "Poppins",
+  },
+  dataLabels: {
+    enabled: true,
+    style: {
+      fontFamily: "Poppins", // Set the font family to Poppins
+      fontWeight: 300, // Set the font weight to 300
+    },
+    formatter: function (val, opt) {
+      // return val + " " + "FTE";
+      return opt.w.globals.seriesNames[opt.seriesIndex];
+    },
+    position: "inside",
+    offset: 25,
+  },
+  plotOptions: {
+    pie: {
+      offsetX: 0,
+      offsetY: 0,
+    },
+  },
+
+  labels: [
+    ["1.5 FTE"],
+    ["Part Time", "(1.0 FTE)"],
+    ["Casual", "(0.4 FTE)"],
+    ["Labour Hire", "(0.3 FTE)"],
+  ],
+  stroke: {
+    show: false,
+    width: 0,
+    colors: ["transparent"],
+  },
+  colors: ["#FF5438", "#000091", "#980090", "#FF9F51"],
+  legend: {
+    show: false,
+  },
+  responsive: [
+    {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          width: 280,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          width: 220,
+        },
+        legend: {
+          position: "bottom",
+        },
+      },
+    },
+  ],
+};
+
+var chart = new ApexCharts(
+  document.querySelector("#indigenousEmploymentChartPie"),
   options
 );
 chart.render();
