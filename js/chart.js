@@ -27,7 +27,7 @@ var options = {
         },
         total: {
           show: true,
-          label: ["Medium", "Risk"],
+          label: ["Medium"],
           color: "#000",
           fontSize: "15px",
         },
@@ -41,7 +41,7 @@ var options = {
     },
   },
   colors: ["#144492", "#F3BE00", "#00B050", "#FF0000"],
-  labels: ["Completion", "Medium", "Low Risk", "High Risk"],
+  labels: ["Completion", "Medium", "Low", "High"],
   legend: {
     show: false,
     floating: true,
@@ -86,22 +86,22 @@ var options = {
     {
       name: "Net Profit",
       type: "column",
-      data: [25, 35, 45, 55, 65, 75, 85, 95, 75],
+      data: [28, 25, 35, 45, 55, 65, 75, 85, 95, 75, 60, 70],
     },
     {
       name: "Revenue",
       type: "column",
-      data: [20, 30, 40, 50, 60, 70, 80, 90, 70],
+      data: [23, 20, 30, 40, 50, 60, 70, 80, 90, 70, 55, 65],
     },
     {
       name: "Free Cash Flow",
       type: "column",
-      data: [15, 25, 35, 45, 55, 65, 75, 85, 65],
+      data: [20, 15, 25, 35, 45, 55, 65, 75, 85, 65, 45, 60],
     },
     {
       name: "01",
       type: "line",
-      data: [15, 28, 35, 45, 60, 65, 75, 80, 70],
+      data: [20, 18, 28, 35, 45, 60, 65, 75, 80, 70, 55, 65],
       color: "#FD4802",
     },
   ],
@@ -138,11 +138,24 @@ var options = {
     colors: ["transparent"],
   },
   xaxis: {
-    categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+    categories: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ],
   },
   yaxis: {
     title: {
-      text: "$ (thousands)",
+      text: "",
     },
   },
   fill: {
